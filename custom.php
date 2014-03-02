@@ -6,7 +6,7 @@ function front_page_blocks($blocks)
 {
     $blocks['FeaturedItem'] = array('name'             => 'FeaturedItem',
                                     'heading'          => __('Featured Item'),
-                                    'callback'         => 'random_featured_items',
+                                    'callback'         => 'berlin_random_featured_items',
                                     'options'          => 1
                                     );
 
@@ -33,6 +33,11 @@ function front_page_blocks($blocks)
                                   'wrap_attributes' => array('id' => 'search-wrap', 'style' => 'display:block;')
                                  );
     return $blocks;
+}
+
+function berlin_random_featured_items($block, $view)
+{
+    return random_featured_items($block['options']);
 }
 
 function recent_items($block)
