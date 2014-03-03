@@ -6,13 +6,13 @@ function front_page_blocks($blocks)
 {
     $blocks['FeaturedItem'] = array('name'             => 'FeaturedItem',
                                     'heading'          => __('Featured Item'),
-                                    'callback'         => 'berlin_random_featured_items',
+                                    'callback'         => 'front_random_featured_items',
                                     'options'          => 1
                                     );
 
-    $blocks['FeaturedCollection'] = array('name'             => 'FeaturedCollection',
-                                          'heading'          => __('Featured Collection'),
-                                          'callback'         => 'random_featured_collection',
+    $blocks['FeaturedCollection'] = array('name'       => 'FeaturedCollection',
+                                          'heading'    => __('Featured Collection'),
+                                          'callback'   => 'random_featured_collection',
                                           );    
     
     $blocks['RecentItems'] = array('name'             => 'RecentItems',
@@ -30,19 +30,18 @@ function front_page_blocks($blocks)
                                   'heading'         => __("Search"),
                                   'callback'        => 'search_form',
                                   'options'         => array('show_advanced' => true),
-                                  'wrap_attributes' => array('id' => 'search-wrap', 'style' => 'display:block;')
+                                  'wrap_attributes' => array('id' => 'search-container') //this differs across themes?
                                  );
     return $blocks;
 }
 
-function berlin_random_featured_items($block, $view)
+function front_random_featured_items($block, $view)
 {
     return random_featured_items($block['options']);
 }
 
-function recent_items($block)
+function recent_items($block, $view)
 {
-    $view = get_view();
     return $view->partial('items/recent-items.php', array('homepageRecentItems' => $block['options']));
 }
 
