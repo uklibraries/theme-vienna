@@ -18,7 +18,8 @@ function front_page_blocks($blocks)
     $blocks['RecentItems'] = array('name'             => 'RecentItems',
                                    'heading'          => __('Recently Added Items'),
                                    'callback'         => 'recent_items',
-                                   'options'          => (int)get_theme_option('Homepage Recent Items') ? get_theme_option('Homepage Recent Items') : '3'
+                                   'options'          => (int)get_theme_option('Homepage Recent Items') ? get_theme_option('Homepage Recent Items') : '3',
+                                   'wrap_attributes'  => array('id' => 'recent-items')
                                    );
     
     $blocks['HomePageText'] = array('name'     => "HomePageText",
@@ -32,12 +33,22 @@ function front_page_blocks($blocks)
                                   'options'         => array('show_advanced' => true),
                                   'wrap_attributes' => array('id' => 'search-container') //this differs across themes?
                                  );
+    $blocks['Carousel'] = array('name'     => "Carousel",
+                                'heading'  => __("Carousal"),
+                                'callback' => 'front_carousel'
+                                );
     return $blocks;
 }
 
 function front_random_featured_items($block, $view)
 {
     return random_featured_items($block['options']);
+}
+
+function front_carousel($block, $view)
+{
+    $items = get_random_featured_items(5, true);
+    return $view->partial('items/carousel.php', array('items' => $items));
 }
 
 function recent_items($block, $view)
