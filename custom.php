@@ -37,7 +37,19 @@ function front_page_blocks($blocks)
                                 'heading'  => __("Carousal"),
                                 'callback' => 'front_carousel'
                                 );
+    
+    $blocks['Orbit'] = array('name' => 'Orbit',
+                             'heading' => __('Orbit Slider'),
+                             'callback' => 'front_orbit'
+                             );    
+    
     return $blocks;
+}
+
+function front_orbit($block, $view)
+{
+    $items = get_random_featured_items(5, true);
+    return $view->partial('items/orbit.php', array('items' => $items));
 }
 
 function front_random_featured_items($block, $view)
