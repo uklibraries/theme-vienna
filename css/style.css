@@ -803,7 +803,7 @@ a#advanced-search.button {
 
 #secondary-nav, .secondary-nav {
   margin-bottom: 1.5em;
-  border-bottom: 1px solid #ccc;
+  border-bottom: url(https://www.uky.edu/~eweig/cat-bg-repeat.png) repeat;
 }
 #secondary-nav li, .secondary-nav li {
   padding: 1.5em 0;
