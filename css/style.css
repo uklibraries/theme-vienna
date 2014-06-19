@@ -402,8 +402,8 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 0px;
+  line-height: 0px;
   text-transform: uppercase;
   letter-spacing: .1em;
   visibility: hidden;
