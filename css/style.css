@@ -406,6 +406,7 @@ h1 {
   line-height: 36px;
   text-transform: uppercase;
   letter-spacing: .1em;
+  visibility: hidden;
 }
 
 h2 {
@@ -414,11 +415,6 @@ h2 {
   visibility: hidden;
 }
 
-item hentry, h2 {
-  visibility: visible;
-  font-size: 15;
-  line-height: 20;
-}
 
 
 h3 {
