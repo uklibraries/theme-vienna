@@ -414,6 +414,12 @@ h2 {
   visibility: hidden;
 }
 
+item hentry, h2 {
+  visibility: visible;
+  font-size: 15;
+  line-height: 20;
+}
+
 
 h3 {
   font-size: 18px;
