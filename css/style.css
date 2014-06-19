@@ -413,6 +413,10 @@ h2 {
   line-height: 36px;
 }
 
+div.element-set, h2 {
+   visibility: hidden;
+}
+
 h3 {
   font-size: 18px;
   line-height: 18px;
