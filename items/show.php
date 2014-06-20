@@ -5,6 +5,7 @@
     <!-- Items metadata -->
     <div id="item-metadata">
 
+<?php if(metadata('item', array('Dublin Core', 'Relation'))): ?>
         <div class="element-text"><a href="<?php echo metadata('item', array('Dublin Core', 'Relation')); ?>"><img src="/images/icon_play.png"/></a></div>
 <?php endif; ?>
 
