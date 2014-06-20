@@ -197,6 +197,7 @@ sub {
  */
 img {
   border: 0;
+  -webkit-box-shadow: 4px 4px 14px #444;
 }
 
 /**
