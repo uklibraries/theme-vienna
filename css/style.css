@@ -1104,6 +1104,10 @@ li.snippet {
   visibility: hidden;
 }
 
+div.dublin-core-title {
+  visibility: hidden;
+}
+
 .title-list li {
   font-size: 1.2em;
   line-height: 1.5em;
