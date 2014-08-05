@@ -733,6 +733,10 @@ a#advanced-search.button {
   float: right;
 }
 
+#snippet li {
+  visibility: hidden;
+}
+
 #primary-nav {
   clear: both;
   position: relative;
