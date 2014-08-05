@@ -1099,6 +1099,11 @@ ul.title-list {
   margin: 0;
 }
 
+ul.h1 {
+  margin: 0;
+  visibility: hidden;
+}
+
 .title-list li {
   font-size: 1.2em;
   line-height: 1.5em;
