@@ -428,6 +428,10 @@ h3 {
 }
 
 
+span.result-type {
+visibility: hidden;
+}
+
 div.element, h3 {
 font-size: 18px;
 line-height: 18px;
