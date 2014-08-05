@@ -1099,7 +1099,7 @@ ul.title-list {
   margin: 0;
 }
 
-ul.h1 {
+li.snippet {
   margin: 0;
   visibility: hidden;
 }
