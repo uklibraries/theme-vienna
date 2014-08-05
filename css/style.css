@@ -737,6 +737,10 @@ a#advanced-search.button {
   visibility: hidden;
 }
 
+#h1 ul {
+  visibility: hidden;
+}
+
 #primary-nav {
   clear: both;
   position: relative;
