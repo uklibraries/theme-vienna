@@ -1104,7 +1104,7 @@ li.snippet {
   visibility: hidden;
 }
 
-div.dublin-core-title {
+#dublin-core-title {
   visibility: hidden;
 }
 
