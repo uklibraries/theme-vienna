@@ -6,7 +6,7 @@
     <div id="item-metadata">
 
 <?php if(metadata('item', array('Dublin Core', 'Relation'))): ?>
-        <div class="element-text"><a href="<?php echo metadata('item', array('Dublin Core', 'Relation')); ?>" target="_blank"><img src="/images/icon_play2.png"/></a><br/><br/><iframe src="<?php echo metadata('item', array('Dublin Core', 'Relation')); ?>" width="935"></iframe><br/><br/></div>
+        <div class="element-text"><a href="<?php echo metadata('item', array('Dublin Core', 'Relation')); ?>" target="_blank"><img src="/images/icon_play2.png"/></a><br/><br/><iframe src="<?php echo metadata('item', array('Dublin Core', 'Relation')); ?>" width="935" height="750"></iframe><br/><br/></div>
 <?php endif; ?>
 
         <?php echo all_element_texts('item'); ?>
