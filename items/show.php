@@ -1,10 +1,10 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
 <div id="primary">
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
-
+   
     <!-- Items metadata -->
     <div id="item-metadata">
-
+<div class="element-text"><a href="https://oralhistory.uky.edu/admin/search?query=<?php echo __('Item Type'); ?>+AND+<?php echo __('Collection ID'); ?>C&query_type=keyword&record_types%5B%5D=Item">Edit Record</a></div>
 <?php if(metadata('item', array('Dublin Core', 'Relation'))): ?>
         <div class="element-text"><a href="<?php echo metadata('item', array('Dublin Core', 'Relation')); ?>" target="_blank"><img src="/images/icon_play2.png"/></a><br/><br/></div>
 <?php endif; ?>
