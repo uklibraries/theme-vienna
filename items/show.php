@@ -4,7 +4,7 @@
    
     <!-- Items metadata -->
     <div id="item-metadata">
-<div class="element-text"><p><a href="https://oralhistory.uky.edu/admin/search?query="<?php echo metadata('item', array ('Item Type Metadata', 'Item Type')); ?>"+AND+"<?php echo metadata('item', array ('Item Type Metadata', 'Collection ID')); ?>"&query_type=keyword&record_types%5B%5D=Item">EDIT RECORD</a></p></div>
+<div class="element-text"><p><a href="https://oralhistory.uky.edu/admin/search?query=""<?php echo metadata('item', array ('Item Type Metadata', 'Item Type')); ?>""+AND+""<?php echo metadata('item', array ('Item Type Metadata', 'Collection ID')); ?>""&query_type=keyword&record_types%5B%5D=Item">EDIT RECORD</a></p></div>
 <?php if(metadata('item', array('Dublin Core', 'Relation'))): ?>
         <div class="element-text"><a href="<?php echo metadata('item', array('Dublin Core', 'Relation')); ?>" target="_blank"><img src="/images/icon_play2.png"/></a><br/><br/></div>
 <?php endif; ?>
