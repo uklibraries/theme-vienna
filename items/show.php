@@ -4,7 +4,7 @@
    
     <!-- Items metadata -->
     <div id="item-metadata">
-<div class="element-text"><p><?php echo __('Collection ID'); ?></p></div>
+<div class="element-text"><p><?php echo metadata('item', array ('Item Type Metadata','Collection ID')); ?></p></div>
 <?php if(metadata('item', array('Dublin Core', 'Relation'))): ?>
         <div class="element-text"><a href="<?php echo metadata('item', array('Dublin Core', 'Relation')); ?>" target="_blank"><img src="/images/icon_play2.png"/></a><br/><br/></div>
 <?php endif; ?>
