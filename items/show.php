@@ -1,6 +1,6 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
 <div id="primary">
-<div class="element-text" style="strong"><p>--> <a href="https://oralhistory.uky.edu/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item">EDIT RECORD</a> <--</p></div>
+<div class="element-text" style="strong"><p><a href="https://oralhistory.uky.edu/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a></p></div>
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
    
     <!-- Items metadata -->
