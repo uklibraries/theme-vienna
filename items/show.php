@@ -14,6 +14,10 @@
         <div class="element-text"><a href="<?php echo metadata('item', array('Dublin Core', 'Relation')); ?>" target="_blank"><img src="/images/icon_play2.png"/></a><br/><br/></div>
 <?php endif; ?>
 
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Cache File'))): ?>
+        <div class="element-text"><a href="https://oralhistory.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>" target="_blank"><img src="/images/icon_play2.png"/></a><br/><br/></div>
+<?php endif; ?>
+
         <?php echo all_element_texts('item'); ?>
     </div>
 
