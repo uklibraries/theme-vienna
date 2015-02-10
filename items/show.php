@@ -26,6 +26,10 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?>
         <div class="element-text">Collection: <?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?></div>
 <?php endif; ?>   
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?>
+        <div class="element-text">Series: <?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?></div>
+<?php endif; ?>  
+<br/><br/>
     <!-- Items metadata -->
     <div id="item-metadata">
 
