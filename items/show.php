@@ -1,10 +1,15 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
+<table><tr><td>
 <?php if(metadata('item', array('Dublin Core', 'Format'))): ?>
         <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/tab_<?php echo metadata ('item', array('Dublin Core', 'Format')); ?>.png"/><br/><br/></div>
 <?php endif; ?>
+</td>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Restriction'))): ?>
         <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Restriction')); ?>.png"/><br/><br/></div>
 <?php endif; ?>
+</td>
+</tr>
+</table>
 <div id="primary">
     <ul class="item-pagination navigation">
         <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
