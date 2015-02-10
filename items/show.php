@@ -9,6 +9,7 @@
         <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Restriction')); ?>.png"/><br/><br/></div>
 <?php endif; ?>
 </td>
+<td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?></td>
 </tr>
 </table>
 <div id="primary">
