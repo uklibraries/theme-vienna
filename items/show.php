@@ -21,7 +21,7 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Cache File'))): ?>
         <a href="https://oralhistory.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/play_button.png"/></a>&nbsp;
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Cache File'))): ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Online Identifier'))): ?>
         <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Online Identifier')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>
 <?php endif; ?>
 </p></div>
