@@ -23,7 +23,9 @@
 <?php endif; ?>
 </p></div>
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
-   
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?>
+        <div class="element-text">Collection: <?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?></div>
+<?php endif; ?>   
     <!-- Items metadata -->
     <div id="item-metadata">
 
