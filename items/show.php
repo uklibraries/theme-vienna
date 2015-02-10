@@ -17,7 +17,11 @@
         <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
         <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
     </ul>
-<div class="element-text" style="strong"><p><a href="https://oralhistory.uky.edu/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a></p></div>
+<div class="element-text" style="strong"><p><a href="https://oralhistory.uky.edu/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a>&nbsp;
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Cache File'))): ?>
+        <a href="https://oralhistory.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/play_button.png"/></a><br/><br/>
+<?php endif; ?>
+</p></div>
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
    
     <!-- Items metadata -->
@@ -27,9 +31,7 @@
         <div class="element-text"><a href="<?php echo metadata('item', array('Dublin Core', 'Relation')); ?>" target="_blank"><img src="/images/icon_play2.png"/></a><br/><br/></div>
 <?php endif; ?>
 
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Cache File'))): ?>
-        <div class="element-text"><a href="https://oralhistory.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>" target="_blank"><img src="/images/icon_play2.png"/></a><br/><br/></div>
-<?php endif; ?>
+
 
         <?php echo all_element_texts('item'); ?>
     </div>
