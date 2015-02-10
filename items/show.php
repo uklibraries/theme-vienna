@@ -17,7 +17,7 @@
         <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
         <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
     </ul>
-<div class="element-text" style="strong"><p><a href="https://oralhistory.uky.edu/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a>&nbsp;
+<div class="element-text" style="strong"><p>OPTIONS: <a href="https://oralhistory.uky.edu/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a>&nbsp;
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Cache File'))): ?>
         <a href="https://oralhistory.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/play_button.png"/></a><br/><br/>
 <?php endif; ?>
