@@ -1,5 +1,5 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
-<?php if(metadata('item', array('Dubin Core', 'Format'))): ?>
+<?php if(metadata('item', array('Dublin Core', 'Format'))): ?>
         <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/tab_<?php echo metadata ('item', array('Dublin Core', 'Format')); ?>.png"/><br/><br/></div>
 <?php endif; ?>
 <div id="primary">
