@@ -3,7 +3,7 @@
         <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/tab_<?php echo metadata ('item', array('Dublin Core', 'Format')); ?>.png"/><br/><br/></div>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Restriction'))): ?>
-        <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/tab_<?php echo metadata ('item', array('Item Type Metadata', 'Interview Restriction')); ?>.png"/><br/><br/></div>
+        <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Restriction')); ?>.png"/><br/><br/></div>
 <?php endif; ?>
 <div id="primary">
     <ul class="item-pagination navigation">
