@@ -9,7 +9,11 @@
         <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Restriction')); ?>.png"/><br/><br/></div>
 <?php endif; ?>
 </td>
-<td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?></td>
+<td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?><br/>
+<?php if(metadata('item', array('Item Type Metadata', 'Archival Identifier'))): ?>
+        <img src="http://kdnp.uky.edu/spokedb/archive.png"/>&nbsp;<?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>
+<?php endif; ?>
+</td>
 </tr>
 </table>
 <div id="primary">
@@ -30,11 +34,7 @@
 <?php endif; ?></li>
     </ul>
     
-<div class="element-text" style="strong"><p>
-<?php if(metadata('item', array('Item Type Metadata', 'Archival Identifier'))): ?>
-        <img src="http://kdnp.uky.edu/spokedb/archive.png"/>&nbsp;<!--<img src="http://kdnp.uky.edu/spokedb/edit_archive.png"/>--> <?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>
-<?php endif; ?>
-</p></div>
+
 
 
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
