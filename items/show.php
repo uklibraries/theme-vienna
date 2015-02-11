@@ -18,9 +18,9 @@
         <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
     </ul>
         <ul class="item-pagination navigation">
-        <li id="previous-item" class="previous"><a href="https://oralhistory.uky.edu/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a>&nbsp;
+        <li id="previous-item" class="previous"><a href="https://oralhistory.uky.edu/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a>&nbsp;&nbsp;&nbsp;
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Cache File'))): ?>
-        <a href="https://oralhistory.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/play_button.png"/></a>&nbsp;
+        <a href="https://oralhistory.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/play_button.png"/></a>&nbsp;&nbsp;&nbsp;
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Online Identifier'))): ?>
         <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Online Identifier')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>&nbsp;
