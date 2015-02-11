@@ -40,7 +40,12 @@
         <div class="element-text"><a href="<?php echo metadata('item', array('Dublin Core', 'Relation')); ?>" target="_blank"><img src="/images/icon_play2.png"/></a><br/><br/></div>
 <?php endif; ?>
 
-
+<?php if ($lcsubjects = metadata('item', array('Item Type Metadata', 'Interview LC Subjects'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<h3>Interview LC Subjects:</h3>
+<?php echo $lcsubjects; ?>
+</div>
+<?php endif; ?>
 
         <?php echo all_element_texts('item'); ?>
     </div>
