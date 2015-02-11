@@ -42,7 +42,7 @@
 
 
 
-        <?php echo all_element_texts('item', array('delimiter' => ', ', 'all' => null)); ?>
+        <?php echo all_element_texts('item', array('delimiter' => ', ' => null)); ?>
         <!--<?php echo all_element_texts('item'); ?>-->
     </div>
 
