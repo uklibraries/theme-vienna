@@ -40,11 +40,10 @@
         <div class="element-text"><a href="<?php echo metadata('item', array('Dublin Core', 'Relation')); ?>" target="_blank"><img src="/images/icon_play2.png"/></a><br/><br/></div>
 <?php endif; ?>
 
-<?php if(metadata('item', array('Item Type Metadata', 'Interview LC Subjects'))): ?>
-<?php echo item('Item Type Metadata', 'Interview LC Subjects', array('delimiter' => ', ', 'all' => null)); ?>
-<?php endif; ?>
 
-        <?php echo all_element_texts('item'); ?>
+
+        <?php echo all_element_texts('item', array('delimiter' => ', ', 'all' => null)); ?>
+        <!--<?php echo all_element_texts('item'); ?>-->
     </div>
 
     <!--<h3><?php echo __('Files'); ?></h3>-->
