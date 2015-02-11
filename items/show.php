@@ -42,8 +42,7 @@
 
 
 
-        <?php echo all_element_texts('item', array('delimiter' => ', ' => null)); ?>
-        <!--<?php echo all_element_texts('item'); ?>-->
+        <?php echo all_element_texts('item'); ?>
     </div>
 
     <!--<h3><?php echo __('Files'); ?></h3>-->
