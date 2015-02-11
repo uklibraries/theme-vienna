@@ -10,6 +10,12 @@
 <?php endif; ?>
 </td>
 <td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?></td>
+<td>
+<?php if(metadata('item', array('Item Type Metadata', 'Archival Identifier'))): ?>
+        <div class="element-text">(<img src="http://kdnp.uky.edu/spokedb/edit_archive.png"/> <?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>)<br/><br/></div>
+<?php endif; ?>
+</td>
+<td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?></td>
 </tr>
 </table>
 <div id="primary">
