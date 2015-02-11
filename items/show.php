@@ -28,6 +28,10 @@
         <img src="http://kdnp.uky.edu/spokedb/archive.png"/>&nbsp;<!--<img src="http://kdnp.uky.edu/spokedb/edit_archive.png"/>--> <?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>
 <?php endif; ?>
 </p></div>
+<?php if(metadata('item', array('Item Type Metadata', 'Master Type'))): ?>
+        <img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Item Type Metadata', 'Master Type')); ?>.png"/>
+<?php endif; ?>
+
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?>
         <div class="element-text">Collection: <?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?></div>
