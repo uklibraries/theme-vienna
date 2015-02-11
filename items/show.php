@@ -22,10 +22,10 @@
         <a href="https://oralhistory.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/play_button.png"/></a>&nbsp;
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Online Identifier'))): ?>
-        <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Online Identifier')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>
+        <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Online Identifier')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>&nbsp;
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Archival Identifier'))): ?>
-        <div class="element-text">(<img src="http://kdnp.uky.edu/spokedb/edit_archive.png"/> <?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>)<br/><br/></div>
+        (<img src="http://kdnp.uky.edu/spokedb/edit_archive.png"/> <?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>)
 <?php endif; ?>
 </p></div>
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
