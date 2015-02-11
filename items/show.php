@@ -73,11 +73,7 @@
         <div class="element-text"><?php echo metadata('item','citation',array('no_escape'=>true)); ?></div>
     </div>-->
        <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
-<div class="element-text">
-<?php if(metadata('item', array('Item Type Metadata', 'Interview LC Subjects'))): ?>
-        <?php echo metadata ('item', array('Item Type Metadata', 'Interview LC Subjects')); ?>;&nbsp;
-<?php endif; ?>
-</div>
+
 
     <ul class="item-pagination navigation">
         <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
