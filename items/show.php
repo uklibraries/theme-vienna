@@ -10,12 +10,6 @@
 <?php endif; ?>
 </td>
 <td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?></td>
-<td>
-<?php if(metadata('item', array('Item Type Metadata', 'Archival Identifier'))): ?>
-        <div class="element-text">(<img src="http://kdnp.uky.edu/spokedb/edit_archive.png"/> <?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>)<br/><br/></div>
-<?php endif; ?>
-</td>
-<td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?></td>
 </tr>
 </table>
 <div id="primary">
@@ -29,6 +23,9 @@
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Online Identifier'))): ?>
         <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Online Identifier')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Archival Identifier'))): ?>
+        <div class="element-text">(<img src="http://kdnp.uky.edu/spokedb/edit_archive.png"/> <?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>)<br/><br/></div>
 <?php endif; ?>
 </p></div>
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
