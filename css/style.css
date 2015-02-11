@@ -521,7 +521,7 @@ th {
 
 /* -- Links -- */
 a:link, a:visited {
-  color: #369;
+  color: #394b89;
 }
 
 a:hover, a:active {
@@ -649,7 +649,7 @@ header:after {
 }
 #search-container input[type=submit] {
   padding: 2px;
-  background: #369;
+  background: #394b89;
   color: white;
   position: absolute;
   border: 0;
@@ -690,7 +690,7 @@ a#advanced-search.button {
   position: absolute;
   width: 100%;
   color: #fff;
-  background: #369;
+  background: #394b89;
   height: 30px;
   top: 0;
 }
