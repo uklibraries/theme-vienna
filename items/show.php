@@ -25,7 +25,7 @@
         <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Online Identifier')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>&nbsp;<br/><br/>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Archival Identifier'))): ?>
-        <img src="http://kdnp.uky.edu/spokedb/archive.png"/>&nbsp;<img src="http://kdnp.uky.edu/spokedb/edit_archive.png"/> <?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>
+        <img src="http://kdnp.uky.edu/spokedb/archive.png"/>&nbsp;<!--<img src="http://kdnp.uky.edu/spokedb/edit_archive.png"/>--> <?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>
 <?php endif; ?>
 </p></div>
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
