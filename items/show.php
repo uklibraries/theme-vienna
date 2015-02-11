@@ -59,6 +59,49 @@
 <?php echo $inkeywords; ?>
 <br/><br/></div>
 <?php endif; ?>
+
+<?php if ($colkeywords = metadata('item', array('Item Type Metadata', 'Collection Keywords'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<h3>Collection Keywords:</h3>
+<?php echo $colkeywords; ?>
+<br/><br/></div>
+<?php endif; ?>
+
+<?php if ($colsubjects = metadata('item', array('Item Type Metadata', 'Collection LC Subjects'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<h3>Collection LC Subjects:</h3>
+<?php echo $colsubjects; ?>
+<br/><br/></div>
+<?php endif; ?>
+
+<?php if ($colthemes = metadata('item', array('Item Type Metadata', 'Collection Themes'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<h3>Collection Themes:</h3>
+<?php echo $colthemes; ?>
+<br/><br/></div>
+<?php endif; ?>
+
+<?php if ($colkeywords = metadata('item', array('Item Type Metadata', 'Series Keywords'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<h3>Series Keywords:</h3>
+<?php echo $serieskeywords; ?>
+<br/><br/></div>
+<?php endif; ?>
+
+<?php if ($colsubjects = metadata('item', array('Item Type Metadata', 'Series LC Subjects'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<h3>Series LC Subjects:</h3>
+<?php echo $seriessubjects; ?>
+<br/><br/></div>
+<?php endif; ?>
+
+<?php if ($colthemes = metadata('item', array('Item Type Metadata', 'Series Themes'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<h3>Series Themes:</h3>
+<?php echo $seriesthemes; ?>
+<br/><br/></div>
+<?php endif; ?>
+
     </div>
 
     <!--<h3><?php echo __('Files'); ?></h3>-->
