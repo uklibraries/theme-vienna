@@ -17,20 +17,25 @@
         <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
         <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
     </ul>
-<div class="element-text" style="strong"><p><img src="http://kdnp.uky.edu/spokedb/options.png"/>&nbsp;<a href="https://oralhistory.uky.edu/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a>&nbsp;
+        <ul class="item-pagination navigation">
+        <li id="previous-item" class="previous"><a href="https://oralhistory.uky.edu/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a>&nbsp;
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Cache File'))): ?>
         <a href="https://oralhistory.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/play_button.png"/></a>&nbsp;
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Online Identifier'))): ?>
-        <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Online Identifier')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>&nbsp;<br/><br/>
-<?php endif; ?>
+        <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Online Identifier')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>&nbsp;
+<?php endif; ?></li>
+        <li id="next-item" class="next"><?php if(metadata('item', array('Item Type Metadata', 'Master Type'))): ?>
+        <img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Item Type Metadata', 'Master Type')); ?>.png"/>
+<?php endif; ?></li>
+    </ul>
+    
+<div class="element-text" style="strong"><p>
 <?php if(metadata('item', array('Item Type Metadata', 'Archival Identifier'))): ?>
         <img src="http://kdnp.uky.edu/spokedb/archive.png"/>&nbsp;<!--<img src="http://kdnp.uky.edu/spokedb/edit_archive.png"/>--> <?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>
 <?php endif; ?>
 </p></div>
-<?php if(metadata('item', array('Item Type Metadata', 'Master Type'))): ?>
-        <img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Item Type Metadata', 'Master Type')); ?>.png"/>
-<?php endif; ?>
+
 
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?>
