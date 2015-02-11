@@ -11,7 +11,7 @@
 </td>
 <td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?><br/>
 <?php if(metadata('item', array('Item Type Metadata', 'Archival Identifier'))): ?>
-        <img src="http://kdnp.uky.edu/spokedb/archive.png"/>&nbsp;<?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>
+        <?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>
 <?php endif; ?>
 </td>
 </tr>
