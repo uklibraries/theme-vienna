@@ -74,6 +74,13 @@
 <br/><br/></div>
 <?php endif; ?>
 
+<?php if ($colkeywords = metadata('item', array('Dublin Core', 'Subject'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<h3>Subjects:</h3>
+<?php echo $colkeywords; ?>
+<br/><br/></div>
+<?php endif; ?>
+
 <?php if ($colkeywords = metadata('item', array('Item Type Metadata', 'Collection Keywords'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
 <h3>Collection Keywords:</h3>
