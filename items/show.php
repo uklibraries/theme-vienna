@@ -5,8 +5,8 @@
 <?php endif; ?>
 </td>
 <td>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Restriction'))): ?>
-        <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Restriction')); ?>.png"/><br/><br/></div>
+<?php if(metadata('item', array('Dublin Core', 'Rights'))): ?>
+        <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Dublin Core', 'Rights')); ?>.png"/><br/><br/></div>
 <?php endif; ?>
 </td>
 <td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?><?php echo metadata('item', array('Item Type Metadata','Collection ID')); ?><?php echo metadata('item', array('Item Type Metadata','Series ID')); ?><br/>
