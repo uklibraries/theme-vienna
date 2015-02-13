@@ -42,7 +42,7 @@
 
 
 
-    <h1><?php echo metadata('item', array('Dublin Core','Title')); ?> (<?php echo metadata('item', array('Item Type Metadata','Number of Interviews')); ?> interviews)</h1>
+    <h1><?php echo metadata('item', array('Dublin Core','Title')); ?> <?php echo metadata('item', array('Item Type Metadata','Number of Interviews')); ?> interviews</h1>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?>
         <div class="element-text">Collection: <?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?></div>
 <?php endif; ?>   
