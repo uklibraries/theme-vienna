@@ -28,6 +28,11 @@
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Online Identifier'))): ?>
         <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Online Identifier')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>&nbsp;
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Collection ID'))): ?>
+        <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Collection ID')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>&nbsp;
+<?php endif; ?><?php if(metadata('item', array('Item Type Metadata', 'Series ID'))): ?>
+        <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ID')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>&nbsp;
 <?php endif; ?></li>
         <li id="next-item" class="next"><?php if(metadata('item', array('Item Type Metadata', 'Master Type'))): ?>
         <img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Item Type Metadata', 'Master Type')); ?>.png"/>
@@ -37,13 +42,16 @@
 
 
 
-    <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
+    <h1><?php echo metadata('item', array('Dublin Core','Title')); ?> (<?php echo metadata('item', array('Item Type Metadata','Number of Interviews')); ?>)</h1>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?>
         <div class="element-text">Collection: <?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?></div>
 <?php endif; ?>   
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?>
         <div class="element-text">Series: <?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?></div>
 <?php endif; ?>  
+<?php if(metadata('item', array('Item Type Metadata', 'Series Collection'))): ?>
+        <div class="element-text">Collection: <?php echo metadata('item', array('Item Type Metadata', 'Series Collection')); ?></div>
+<?php endif; ?> 
 <br/><br/>
     <!-- Items metadata -->
     <div id="item-metadata">
