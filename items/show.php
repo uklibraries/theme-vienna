@@ -29,8 +29,8 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Online Identifier'))): ?>
         <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Online Identifier')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>&nbsp;
 <?php endif; ?></li>
-        <li id="next-item" class="next"><?php if(metadata('item', array('Item Type Metadata', 'Master Type'))): ?>
-        <img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Item Type Metadata', 'Master Type')); ?>.png"/>
+        <li id="next-item" class="next"><?php if(metadata('item', array('Dublin Core', 'Type'))): ?>
+        <img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Dubin Core', 'Type')); ?>.png"/>
 <?php endif; ?></li>
     </ul>
     
