@@ -34,7 +34,7 @@
 <?php endif; ?></li>
     </ul>
     
-
+<h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1> <?php echo metadata('item', array('Item Type Metadata','Number of Interviews')); ?> interviews
 
 
 
