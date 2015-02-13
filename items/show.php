@@ -45,7 +45,7 @@
         <div class="element-text">Series: <?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?></div>
 <?php endif; ?>  
 <?php if(metadata('item', array('Item Type Metadata', 'Series Collection'))): ?>
-        <div class="element-text">Collection: <?php echo metadata('item', array('Item Type Metadata', 'Series Collection')); ?></div>
+        <div class="element-text">Collection: <?php echo metadata('item', array('Item Type Metadata', 'Collection Title')); ?></div>
 <?php endif; ?> 
 <br/><br/>
     <!-- Items metadata -->
