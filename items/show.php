@@ -61,7 +61,7 @@
 <br/><br/></div>
 <?php endif; ?>
 
-<?php if ($inkeywords = metadata('item', array('Item Type Metadata', 'Interview Keyword'), array('delimiter'=>', '))): ?>
+<?php if ($inkeywords = metadata('item', array('Item Type Metadata', 'Interview Keywords'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
 <h3>Interview Keywords:</h3>
 <?php echo $inkeywords; ?>
