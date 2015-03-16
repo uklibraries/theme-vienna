@@ -10,9 +10,7 @@
 <?php endif; ?>
 </td>
 <td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?><?php echo metadata('item', array('Item Type Metadata','Collection Accession')); ?><?php echo metadata('item', array('Item Type Metadata','Series Accession')); ?><br/>
-<!--<?php if(metadata('item', array('Item Type Metadata', 'Archival Identifier'))): ?>
-        <?php echo metadata ('item', array('Item Type Metadata', 'Archival Repository')); ?>: <?php echo metadata ('item', array('Item Type Metadata', 'Archival Identifier')); ?>
-<?php endif; ?>-->
+
 </td>
 </tr>
 </table>
@@ -23,18 +21,14 @@
     </ul>
         <ul class="item-pagination navigation">
         <li id="previous-item" class="previous"><a href="https://oralhistory.uky.edu/spokedb/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a>&nbsp;&nbsp;&nbsp;
-<!--<?php if(metadata('item', array('Item Type Metadata', 'Interview Cache File'))): ?>
-        <a href="https://oralhistory.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/play_button.png"/></a>&nbsp;&nbsp;&nbsp;
-<?php endif; ?>-->
-<!--<?php if(metadata('item', array('Item Type Metadata', 'Online Identifier'))): ?>
-        <a href="http://exploreuk.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Online Identifier')); ?>" target="_blank"><img src="http://kdnp.uky.edu/spokedb/online_button.png"/></a>&nbsp;
-<?php endif; ?>--></li>
+
+</li>
         <li id="next-item" class="next"><?php if(metadata('item', array('Dublin Core', 'Type'))): ?>
         <img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Dublin Core', 'Type')); ?>.png"/>
 <?php endif; ?></li>
     </ul>
     
-<h1><?php echo metadata('item', array('Dublin Core','Title')); ?> <?php if(metadata('item', array('Item Type Metadata', 'Number of Interviews'))): ?>- <?php echo metadata('item', array('Item Type Metadata','Series Number of Interviews')); ?> interviews<?php endif; ?></h1>
+<h1><?php echo metadata('item', array('Dublin Core','Title')); ?> <?php if(metadata('item', array('Item Type Metadata', 'Series Number of Interviews'))): ?>- <?php echo metadata('item', array('Item Type Metadata','Series Number of Interviews')); ?> interviews<?php endif; ?></h1>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?>
         <div class="element-text">Collection: <?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?></div>
@@ -74,49 +68,23 @@
 <br/><br/></div>
 <?php endif; ?>
 
-<!--<?php if ($colkeywords = metadata('item', array('Dublin Core', 'Subject'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<h3>Subjects:</h3>
-<?php echo $colkeywords; ?>
-<br/><br/></div>
-<?php endif; ?>-->
 
-<!--<?php if ($colkeywords = metadata('item', array('Item Type Metadata', 'Series Keyword'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<h3>Series Keywords:</h3>
-<?php echo $colkeywords; ?>
-<br/><br/></div>
-<?php endif; ?>-->
 
-<!--<?php if ($colsubjects = metadata('item', array('Item Type Metadata', 'Series LC Subject'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<h3>Series LC Subjects:</h3>
-<?php echo $colsubjects; ?>
-<br/><br/></div>
-<?php endif; ?>-->
-
-<!--<?php if ($colthemes = metadata('item', array('Item Type Metadata', 'Series Theme'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<h3>Series Themes:</h3>
-<?php echo $colthemes; ?>
-<br/><br/></div>
-<?php endif; ?>-->
-
-<?php if ($serieskeywords = metadata('item', array('Item Type Metadata', 'Series Keywords'), array('delimiter'=>', '))): ?>
+<?php if ($serieskeywords = metadata('item', array('Item Type Metadata', 'Series Keyword'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
 <h3>Series Keywords:</h3>
 <?php echo $serieskeywords; ?>
 <br/><br/></div>
 <?php endif; ?>
 
-<?php if ($seriessubjects = metadata('item', array('Item Type Metadata', 'Series LC Subjects'), array('delimiter'=>', '))): ?>
+<?php if ($seriessubjects = metadata('item', array('Item Type Metadata', 'Series LC Subject'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
 <h3>Series LC Subjects:</h3>
 <?php echo $seriessubjects; ?>
 <br/><br/></div>
 <?php endif; ?>
 
-<?php if ($seriesthemes = metadata('item', array('Item Type Metadata', 'Series Themes'), array('delimiter'=>', '))): ?>
+<?php if ($seriesthemes = metadata('item', array('Item Type Metadata', 'Series Theme'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
 <h3>Series Themes:</h3>
 <?php echo $seriesthemes; ?>
