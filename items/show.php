@@ -103,6 +103,27 @@
 </div>
 <?php endif; ?>
 
+<?php if ($colkeywords = metadata('item', array('Item Type Metadata', 'Collection Keyword'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Keywords:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $colkeywords; ?></td></tr></table>
+</div>
+<?php endif; ?>
+
+<?php if ($colsubjects = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>LC Subjects:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $colsubjects; ?></td></tr></table>
+</div>
+<?php endif; ?>
+
+<?php if ($colthemes = metadata('item', array('Item Type Metadata', 'Collection Theme'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Themes:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $colthemes; ?></td></tr></table>
+</div>
+<?php endif; ?>
+
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Master Type'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Format: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Master Type')); ?></td></tr></table></div>
 <?php endif; ?>
