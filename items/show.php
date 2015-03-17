@@ -30,19 +30,8 @@
     
 <h1><?php echo metadata('item', array('Dublin Core','Title')); ?> <?php if(metadata('item', array('Item Type Metadata', 'Series Number of Interviews'))): ?>- <?php echo metadata('item', array('Item Type Metadata','Series Number of Interviews')); ?> interviews<?php endif; ?></h1>
 
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?></td></tr></table></div>
-<?php endif; ?>   
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?></td></tr></table></div>
-<?php endif; ?>  
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Title'))): ?>
-        <div class="element-text">Collection: <?php echo metadata('item', array('Item Type Metadata', 'Collection Title')); ?></div>
-<?php endif; ?> 
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Series'))): ?>
-        <div class="element-text">Series: <a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?></a></div>
-<?php endif; ?> 
-<br/><br/>
+
+<br/>
 
     <!-- Items metadata -->
     <div id="item-metadata">
@@ -94,6 +83,18 @@
 <br/><br/></div>
 <?php endif; ?>
 
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?></td></tr></table></div>
+<?php endif; ?>   
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?></td></tr></table></div>
+<?php endif; ?>  
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Title'))): ?>
+        <div class="element-text">Collection: <?php echo metadata('item', array('Item Type Metadata', 'Collection Title')); ?></div>
+<?php endif; ?> 
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Series'))): ?>
+        <div class="element-text">Series: <a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?></a></div>
+<?php endif; ?> 
     </div>
 
     <!--<h3><?php echo __('Files'); ?></h3>-->
