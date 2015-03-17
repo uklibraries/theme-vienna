@@ -40,8 +40,6 @@
     <!--<?php echo all_element_texts('item'); ?>-->
     
 <div class="w3c">
-
-
 <div id="tab16">
 <a href="#tab16">General</a>
 <div>
@@ -92,7 +90,7 @@
 <?php endif; ?>
 
 </div>
-</div>
+
   
 <div id="tab17">
 <a href="#tab17">Description</a>
@@ -166,7 +164,7 @@
 <?php endif; ?>
 
 </div>
-</div>
+
 
 <div id="tab18">
 <a href="#tab18">Rights & Usage</a>
@@ -188,7 +186,7 @@
 <?php endif; ?>
 
 </div>
-</div>
+
 
     <!--<li>
         <input type="radio" name="tabs" id="tab4" />
@@ -217,7 +215,7 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Number of Interviews: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Number of Interviews')); ?></td></tr></table></div>
 <?php endif; ?>
 </div>
-</div>
+
 
     <!--<li>
         <input type="radio" name="tabs" id="tab6" />
