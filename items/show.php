@@ -84,23 +84,23 @@
 
 <?php if ($serieskeywords = metadata('item', array('Item Type Metadata', 'Series Keyword'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
-<h3>Series Keywords:</h3>
+<h3>Keywords:</h3>
 <?php echo $serieskeywords; ?>
-<br/><br/></div>
+</div>
 <?php endif; ?>
 
 <?php if ($seriessubjects = metadata('item', array('Item Type Metadata', 'Series LC Subject'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
-<h3>Series LC Subjects:</h3>
+<h3>LC Subjects:</h3>
 <?php echo $seriessubjects; ?>
-<br/><br/></div>
+</div>
 <?php endif; ?>
 
 <?php if ($seriesthemes = metadata('item', array('Item Type Metadata', 'Series Theme'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
-<h3>Series Themes:</h3>
+<h3>Themes:</h3>
 <?php echo $seriesthemes; ?>
-<br/><br/></div>
+</div>
 <?php endif; ?>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Master Type'))): ?>
