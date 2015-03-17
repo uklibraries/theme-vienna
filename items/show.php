@@ -46,8 +46,8 @@
 
         <?php echo all_element_texts('item'); ?>
         
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Accession'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Accession Number: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Accession')); ?></td></tr></table></div>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Accession Number'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Accession Number: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Accession Number')); ?></td></tr></table></div>
 <?php endif; ?>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewee'))): ?>
