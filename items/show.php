@@ -174,7 +174,7 @@
 <?php endif; ?> 
 </div>    
 
-<?php if ($seriesint = metadata('item', array('Item Type Metadata', 'Series Interview'), array('delimiter'=>', '))): ?>
+<?php if ($seriesint = metadata('item', array('Item Type Metadata', 'Series Interview'), array('delimiter'=>'<br/> '))): ?>
 <div class="item-description-static">
 <table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interviews Included in this Project:</h4></td><td style="width:300px;text-align:left;">
 <?php echo $seriesint; ?></td></tr></table>
