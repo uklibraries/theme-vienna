@@ -136,7 +136,7 @@
 
 <?php if ($seriessubjects = metadata('item', array('Item Type Metadata', 'Series LC Subject'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
-<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>LC Subjects:</h4></td><td style="width:300px;text-align:left;">
+<table style="width: 100%;"><tr><td style="width:100px;text-align:left;valign:top;"><h4>LC Subjects:</h4></td><td style="width:300px;text-align:left;">
 <?php echo $seriessubjects; ?></td></tr></table>
 </div>
 <?php endif; ?>
