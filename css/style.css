@@ -1809,6 +1809,9 @@ footer .navigation a {
 }
 
 /* Stuff for tabs */
+* { margin: 0; padding: 0; }
+#page-wrap { width: 960px; margin: 100px auto; }
+
 .tabs { list-style: none; }
 .tabs li { display: inline; }
 .tabs li a { color: black; float: left; display: block; padding: 4px 10px; margin-left: -1px; position: relative; left: 1px; background: white; text-decoration: none; }
