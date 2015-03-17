@@ -84,21 +84,21 @@
 
 <?php if ($serieskeywords = metadata('item', array('Item Type Metadata', 'Series Keyword'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
-<h3>Keywords:</h3>
+<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Keywords:</h4></td><td style="width:300px;text-align:left;">
 <?php echo $serieskeywords; ?>
 </div>
 <?php endif; ?>
 
 <?php if ($seriessubjects = metadata('item', array('Item Type Metadata', 'Series LC Subject'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
-<h3>LC Subjects:</h3>
+<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>LC Subjects:</h4></td><td style="width:300px;text-align:left;">
 <?php echo $seriessubjects; ?>
 </div>
 <?php endif; ?>
 
 <?php if ($seriesthemes = metadata('item', array('Item Type Metadata', 'Series Theme'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
-<h3>Themes:</h3>
+<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Themes:</h4></td><td style="width:300px;text-align:left;">
 <?php echo $seriesthemes; ?>
 </div>
 <?php endif; ?>
