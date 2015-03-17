@@ -88,7 +88,7 @@
 <table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interviews Included in this Project:</h4></td><td style="width:300px;text-align:left;">
 <?php echo $seriesint; ?></td></tr></table></div>
 <?php endif; ?>
-
+</div>
 </div>
 
   
@@ -162,12 +162,12 @@
 <?php echo $colthemes; ?></td></tr></table>
 </div>
 <?php endif; ?>
-
+</div>
 </div>
 
 
 <div id="tab18">
-<a href="#tab18">Rights & Usage</a>
+<a href="#tab18">Rights &amp; Usage</a>
 <div>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Restriction Details'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Restricted: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Restriction Details')); ?></td></tr></table></div>
@@ -186,7 +186,7 @@
 <?php endif; ?>
 
 </div>
-
+</div>
 
     <!--<li>
         <input type="radio" name="tabs" id="tab4" />
@@ -197,7 +197,7 @@
     </li>-->
 
 <div id="tab19">
-<a href="#tab19">Technical & Preservation</a>
+<a href="#tab19">Technical &amp; Preservation</a>
 <div>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Master Type'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Format: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Master Type')); ?></td></tr></table></div>
@@ -215,7 +215,7 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Number of Interviews: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Number of Interviews')); ?></td></tr></table></div>
 <?php endif; ?>
 </div>
-
+</div>
 
     <!--<li>
         <input type="radio" name="tabs" id="tab6" />
@@ -239,7 +239,7 @@
         <div id="tab-content8" class="tab-content">
 
         </div>-->
-</div>
+
 
 
  </div> 
