@@ -1808,21 +1808,63 @@ footer .navigation a {
   }
 }
 
-/* Stuff for tabs */
-* { margin: 0; padding: 0; }
-#page-wrap { width: 960px; margin: 100px auto; }
-.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+/* Tab Content - menucool.com */
+ul.tabs
+{
+    padding: 6px 0;
+    font-size: 0;
+    margin:0;
+    list-style-type: none;
+    text-align: center; /*set to left, center, or right to align the tabs as desired*/
+}
+        
+ul.tabs li
+{
+    display: inline;
+    margin: 0;
+    margin-right:4px; /*distance between tabs*/
+}
+        
+ul.tabs li a
+{
+    font: normal 12px Verdana;
+    text-decoration: none;
+    position: relative;
+    padding: 6px 14px;
+    border: 1px solid #B7B7B7;
+    color: #000;
+    background: #F7F7F7 url(tabbg2.gif) repeat-x 0 0;
+    border-radius: 3px 3px 0 0;
+    outline:none;
+}
+        
+ul.tabs li a:visited
+{
+    color: #000;
+}
+        
+ul.tabs li a:hover
+{
+    background:White url(tabbg.gif) repeat-x 0 0;
+}
+        
+ul.tabs li.selected a, ul.tabs li.selected a:hover
+{
+    position: relative;
+    top: 0px;
+    font-weight:bold;
+    background: white url(tabbg.gif) 0 0 repeat-x;
+    border-bottom-color: white;
+}
+        
+        
+ul.tabs li.selected a:hover
+{
+    text-decoration: none;
+}
+   
 
-.tabs { list-style: none; }
-.tabs li { display: inline; }
-.tabs li a { color: black; float: left; display: block; padding: 4px 10px; margin-left: -1px; position: relative; left: 1px; background: white; text-decoration: none; }
-.tabs li a:hover { background: #ccc; }
-
-.w3c { min-height: 1000px; position: relative; width: 100%; }
-.w3c > div { display: inline; }
-.w3c > div > a { margin-left: -1px; position: relative; left: 1px; text-decoration: none; color: black; background: white; display: block; float: left; padding: 5px 10px; border: 1px solid #ccc; border-bottom: 1px solid white; }
-..w3c > div:not(:target) > a { border-bottom: 0; background: -moz-linear-gradient(top, white, #eee); }	
-.w3c > div:target > a { background: white; }	
-.w3c > div > div { background: white; z-index: -2; left: 0; top: 30px; bottom: 0; right: 0; padding: 20px; border: 1px solid #ccc; }	
-.w3c > div:not(:target) > div { position: absolute }
-.w3c > div:target > div { position: absolute; z-index: -1; }
+div.tabcontents
+{
+    border-top: 1px solid #B7B7B7; padding:30px 16px;
+}
