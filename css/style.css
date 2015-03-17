@@ -1811,6 +1811,7 @@ footer .navigation a {
 /* Stuff for tabs */
 * { margin: 0; padding: 0; }
 #page-wrap { width: 960px; margin: 100px auto; }
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 
 .tabs { list-style: none; }
 .tabs li { display: inline; }
