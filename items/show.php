@@ -34,7 +34,7 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?></td></tr></table></div>
 <?php endif; ?>   
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?>
-        <div class="element-text">Series: <?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?></div>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?></td></tr></table></div>
 <?php endif; ?>  
 <?php if(metadata('item', array('Item Type Metadata', 'Collection Title'))): ?>
         <div class="element-text">Collection: <?php echo metadata('item', array('Item Type Metadata', 'Collection Title')); ?></div>
