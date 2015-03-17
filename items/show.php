@@ -232,7 +232,7 @@
 
         </div>-->
 
-</div>
+
 </div>
  </div> 
     <ul class="item-pagination navigation">
