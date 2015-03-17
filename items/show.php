@@ -39,10 +39,15 @@
     <div id="item-metadata">
     <!--<?php echo all_element_texts('item'); ?>-->
     
-<div class="w3c">
-<div id="tab16">
-<a href="#tab16">General</a>
-<div>
+    <div style="width: 500px; margin: 0 auto; padding: 120px 0 40px;">
+        <ul class="tabs" data-persist="true">
+            <li><a href="#view1">General</a></li>
+            <li><a href="#view2">Description</a></li>
+            <li><a href="#view3">Rights &amp; Usage</a></li>
+        </ul>
+        
+        <div class="tabcontents">
+            <div id="view1">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Accession Number'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Accession Number: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Accession Number')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -88,13 +93,8 @@
 <table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interviews Included in this Project:</h4></td><td style="width:300px;text-align:left;">
 <?php echo $seriesint; ?></td></tr></table></div>
 <?php endif; ?>
-</div>
-</div>
-
-  
-<div id="tab17">
-<a href="#tab17">Description</a>
-<div>
+            </div>
+            <div id="view2">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Summary: </h4></td></tr></table><table style="width:100%;text-align:left;"><tr><td style="width:15px;text-align:left;"></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?></td></tr></table></div
 <?php endif; ?>     
@@ -162,13 +162,8 @@
 <?php echo $colthemes; ?></td></tr></table>
 </div>
 <?php endif; ?>
-</div>
-</div>
-
-
-<div id="tab18">
-<a href="#tab18">Rights &amp; Usage</a>
-<div>
+            </div>
+            <div id="view3">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Restriction Details'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Restricted: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Restriction Details')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -185,8 +180,7 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Allowed Online?: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Allowed Online?')); ?></td></tr></table></div>
 <?php endif; ?>
 
-</div>
-</div>
+
 
     <!--<li>
         <input type="radio" name="tabs" id="tab4" />
@@ -196,9 +190,8 @@
         </div>
     </li>-->
 
-<div id="tab19">
-<a href="#tab19">Technical &amp; Preservation</a>
-<div>
+            </div>
+            <div id="view4">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Master Type'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Format: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Master Type')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -214,8 +207,7 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Series Number of Interviews'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Number of Interviews: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Number of Interviews')); ?></td></tr></table></div>
 <?php endif; ?>
-</div>
-</div>
+
 
     <!--<li>
         <input type="radio" name="tabs" id="tab6" />
