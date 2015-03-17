@@ -44,6 +44,7 @@
             <li><a href="#view1">General</a></li>
             <li><a href="#view2">Description</a></li>
             <li><a href="#view3">Rights &amp; Usage</a></li>
+            <li><a href="#view4">Technical &amp; Preservation</a></li>
         </ul>
         
         <div class="tabcontents">
