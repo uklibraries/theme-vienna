@@ -126,8 +126,19 @@
     </div>
     
 <input class="toggle-box" id="header1" type="checkbox" >
-<label for="header1">Click here to view more details.</label>
-<div>Lorem ipsum dolor sit amet, consectetuer adipiscing.</div>    
+<label for="header1">Restriction:</label>
+<div>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Statement'))): ?>
+        <div class="element-text">Rights Statement: <a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Statement')); ?></a></div>
+<?php endif; ?> 
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Deed of Gift'))): ?>
+        <div class="element-text">Deed of Gift: <a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Interview Deed of Gift')); ?></a></div>
+<?php endif; ?> </div> 
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Allowed Online?'))): ?>
+        <div class="element-text">Allowed Online?: <a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Interview Allowed Online?')); ?></a></div>
+<?php endif; ?> </div> 
+
+</div>    
 
     <!--<h3><?php echo __('Files'); ?></h3>-->
     <!--<div id="item-images">
