@@ -43,7 +43,7 @@
     <li>
         <input type="radio" name="tabs" id="tab1" checked />
         <label for="tab1">General</label>
-        <div id="tab-content1" class="tab-content">
+        <div id="tab-content1" class="tab-content"><p>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Accession Number'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Accession Number: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Accession Number')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -89,7 +89,7 @@
 <table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interviews Included in this Project:</h4></td><td style="width:300px;text-align:left;">
 <?php echo $seriesint; ?></td></tr></table></div>
 <?php endif; ?>
-
+             </p>
         </div>
     </li>
   
