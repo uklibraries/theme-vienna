@@ -140,6 +140,7 @@
  </div> 
 <input class="toggle-box" id="publish" type="checkbox" >
 <label for="publish">Publishing Details:</label>
+</div>
 <div>
 <input class="toggle-box" id="archival" type="checkbox" >
 <label for="archival">Archive Details:</label>
