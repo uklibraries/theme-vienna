@@ -50,14 +50,14 @@
 <div class="item-description-static">
 <table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview LC Subjects:</h4></td><td style="width:300px;text-align:left;">
 <?php echo $insubjects; ?></td></tr></table>
-<br/><br/></div>
+</div>
 <?php endif; ?>
 
 <?php if ($inkeywords = metadata('item', array('Item Type Metadata', 'Interview Keywords'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
 <table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interview Keywords:</h4></td><td style="width:300px;text-align:left;">
 <?php echo $inkeywords; ?></td></tr></table>
-<br/><br/></div>
+</div>
 <?php endif; ?>
 
 
