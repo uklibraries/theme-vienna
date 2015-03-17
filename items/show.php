@@ -94,10 +94,9 @@
 </div>
 </div>
   
-<div id="tab16">
-<a href="#tab16">Description</a>
+<div id="tab17">
+<a href="#tab17">Description</a>
 <div>
-        <div id="tab-content2" class="tab-content">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Summary: </h4></td></tr></table><table style="width:100%;text-align:left;"><tr><td style="width:15px;text-align:left;"></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?></td></tr></table></div
 <?php endif; ?>     
@@ -169,10 +168,9 @@
 </div>
 </div>
 
-<div id="tab16">
-<a href="#tab16">Rights & Usage</a>
+<div id="tab18">
+<a href="#tab18">Rights & Usage</a>
 <div>
-        <div id="tab-content3" class="tab-content">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Restriction Details'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Restricted: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Restriction Details')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -200,10 +198,9 @@
         </div>
     </li>-->
 
-<div id="tab16">
-<a href="#tab16">Technical & Preservation</a>
+<div id="tab19">
+<a href="#tab19">Technical & Preservation</a>
 <div>
-        <div id="tab-content5" class="tab-content">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Master Type'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Format: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Master Type')); ?></td></tr></table></div>
 <?php endif; ?>
