@@ -125,8 +125,8 @@
 <?php endif; ?> 
 </div>    
     
-<input class="toggle-box" id="header1" type="checkbox" >
-<label for="header1">Restriction:</label>
+<input class="toggle-box" id="restriction" type="checkbox" >
+<label for="restriction">Restriction Details:</label>
 <div>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Statement'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Rights Statement: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Statement')); ?></td></tr></table></div>
@@ -137,6 +137,15 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Allowed Online?'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Allowed Online?: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Allowed Online?')); ?></td></tr></table></div>
 <?php endif; ?>
+ </div> 
+<input class="toggle-box" id="publish" type="checkbox" >
+<label for="publish">Publishing Details:</label>
+<div>
+<input class="toggle-box" id="archival" type="checkbox" >
+<label for="archival">Archive Details:</label>
+<div>
+
+
  </div> 
 
 </div>    
