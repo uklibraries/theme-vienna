@@ -196,7 +196,52 @@
 </div>
 <?php endif; ?>
 
-
+<table><tr><td>    
+<input class="toggle-box" id="restriction" type="checkbox" >
+<label for="restriction">Restriction Details:</label>
+<table><tr><td>
+<div>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Statement'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Rights Statement: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Statement')); ?></td></tr></table></div>
+<?php endif; ?></td><td>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Deed of Gift'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Deed of Gift: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Deed of Gift')); ?></td></tr></table></div>
+<?php endif; ?></td><td>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Allowed Online?'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Allowed Online?: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Allowed Online?')); ?></td></tr></table></div>
+<?php endif; ?></td></tr></table>
+</td><td>
+<input class="toggle-box" id="related" type="checkbox" >
+<label for="related">Related Files:</label>
+<div>
+<!--<iframe src="https://ia601501.us.archive.org/33/items/xt77wm13pf8b/"></iframe>-->
+</div> 
+</td><td>
+<div>
+<input class="toggle-box" id="transcript" type="checkbox" >
+<label for="transcript">Transcript Details:</label>
+</div>
+</td><td>
+<div>
+<input class="toggle-box" id="translation" type="checkbox" >
+<label for="translation">Translation Details:</label>
+</div>
+</td><td>
+<div>
+<input class="toggle-box" id="technical" type="checkbox" >
+<label for="technical">Technical Details:</label>
+</div>
+</td><td>
+<div>
+<input class="toggle-box" id="publish" type="checkbox" >
+<label for="publish">Publishing Details:</label>
+</div>
+</td><td>
+<input class="toggle-box" id="archival" type="checkbox" >
+<label for="archival">Archive Details:</label>
+<div>
+ </div>
+</td></tr></table>
 
  </div> 
 
