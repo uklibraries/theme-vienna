@@ -124,6 +124,10 @@
         <div class="element-text">Series: <a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?></a></div>
 <?php endif; ?> 
     </div>
+    
+<input class="toggle-box" id="header1" type="checkbox" >
+<label for="header1">Click here to read more!</label>
+<div>Lorem ipsum dolor sit amet, consectetuer adipiscing.</div>    
 
     <!--<h3><?php echo __('Files'); ?></h3>-->
     <!--<div id="item-images">
