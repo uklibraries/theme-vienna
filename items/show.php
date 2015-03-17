@@ -168,6 +168,9 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Collection Series'))): ?>
         <div class="element-text">Series: <a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?></a></div>
 <?php endif; ?> 
+<?php if(metadata('item', array('Item Type Metadata', 'Series Collection'))): ?>
+        <div class="element-text">Collection: <a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Series Collection')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Series Collection')); ?></a></div>
+<?php endif; ?> 
 </div>    
     
 <input class="toggle-box" id="restriction" type="checkbox" >
