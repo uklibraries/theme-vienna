@@ -1808,86 +1808,13 @@ footer .navigation a {
   }
 }
 
-@import url("http://fonts.googleapis.com/css?family=Lato");
+/* Stuff for tabs */
 
-$background: #ffffff;
-$tabs-base-color: #d3d3d3;
-* {
-  margin: 0;
-  padding: 0; 
-  @include box-sizing(border-box);
-}
-
-
-.tabs {
-  width: 100%;  
-  float: none;
-  list-style: none;
-  position: relative;
-  margin: 80px 0 0 10px;
-  text-align: left;
-  li {
-    float: left;
-    display: block;
-  }
-  input[type="radio"] {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-  label {
-    display: block;
-    padding: 14px 21px;
-    border-radius: 2px 2px 0 0;
-    font-size: 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    background: $tabs-base-color;
-    cursor: pointer;
-    position: relative;
-    top: 4px; 
-    @include transition(all 0.2s ease-in-out);
-    &:hover {
-      background: darken($tabs-base-color, 10);
-    }
-  }
-  .tab-content{
-    z-index: 2;
-    display: none; 
-    overflow: hidden;
-    width: 100%;
-    font-size: 17px;
-    line-height: 25px;
-    padding: 25px;  
-    position: absolute;
-    top: 53px;
-    left: 0; 
-    background: darken($tabs-base-color, 15);
-  }
-  //The Magic
-  [id^="tab"]:checked + label { 
-    top: 0;
-    padding-top: 17px; 
-    background: darken($tabs-base-color, 15); 
-  }
-  [id^="tab"]:checked ~ [id^="tab-content"] {
-    display: block;
-  }
-}
-p.link {
-  clear: both;
-  margin: 380px 0 0 15px;
-  a {
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    padding: 5px 10px;
-    margin: 0 5px;
-    background-color: darken($tabs-base-color, 15);
-    @include transition(all 0.2s ease-in);
-    &:hover {
-      background-color: darken($tabs-base-color, 20);
-    }
-  }
-} 
+.w3c { min-height: 250px; position: relative; width: 100%; }
+.w3c > div { display: inline; }
+.w3c > div > a { margin-left: -1px; position: relative; left: 1px; text-decoration: none; color: black; background: white; display: block; float: left; padding: 5px 10px; border: 1px solid #ccc; border-bottom: 1px solid white; }
+.w3c > div:not(:target) > a { border-bottom: 0; background: -moz-linear-gradient(top, white, #eee); }	
+.w3c > div:target > a { background: white; }	
+.w3c > div > div { background: white; z-index: -2; left: 0; top: 30px; bottom: 0; right: 0; padding: 20px; border: 1px solid #ccc; }	
+.w3c > div:not(:target) > div { position: absolute }
+.w3c > div:target > div { position: absolute; z-index: -1; }
