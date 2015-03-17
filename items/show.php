@@ -237,5 +237,5 @@
     </ul>
 
 </div> <!-- End of Primary. -->
-
+</div>
  <?php echo foot(); ?>
