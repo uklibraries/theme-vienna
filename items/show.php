@@ -44,7 +44,12 @@
             <li><a href="#view1">General</a></li>
             <li><a href="#view2">Description</a></li>
             <li><a href="#view3">Rights &amp; Usage</a></li>
-            <li><a href="#view4">Technical &amp; Preservation</a></li>
+            <li><a href="#view4">Transcript</a></li>
+            <li><a href="#view5">Technical &amp; Preservation</a></li>
+            <li><a href="#view6">OHMS</a></li>
+            <li><a href="#view7">Links</a></li>
+            <li><a href="#view8">Workflow</a></li>
+            <li><a href="#view9">Publish</a></li>
         </ul>
         
         <div class="tabcontents">
@@ -181,18 +186,13 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Allowed Online?: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Allowed Online?')); ?></td></tr></table></div>
 <?php endif; ?>
 
+            </div>
+            <div id="view5">
 
 
-    <!--<li>
-        <input type="radio" name="tabs" id="tab4" />
-        <label for="tab4">Transcript</label>
-        <div id="tab-content4" class="tab-content">
-
-        </div>
-    </li>-->
 
             </div>
-            <div id="view4">
+            <div id="view5">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Master Type'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Format: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Master Type')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -209,31 +209,17 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Number of Interviews: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Number of Interviews')); ?></td></tr></table></div>
 <?php endif; ?>
 
+            </div>
+            <div id="view6">
 
-    <!--<li>
-        <input type="radio" name="tabs" id="tab6" />
-        <label for="tab6">OHMS</label>
-        <div id="tab-content6" class="tab-content">
+            </div>
+            <div id="view7">
 
-        </div>
-    </li>-->
+            </div>
+            <div id="view8">
 
-    <!--<li>
-        <input type="radio" name="tabs" id="tab7" />
-        <label for="tab7">Links</label>
-        <div id="tab-content7" class="tab-content">
-
-        </div>
-    </li>-->
-
-    <!--<li>
-        <input type="radio" name="tabs" id="tab8" />
-        <label for="tab8">Publish</label>
-        <div id="tab-content8" class="tab-content">
-
-        </div>-->
-
-
+            </div>
+            <div id="view9">
 </div>
  </div> 
     <ul class="item-pagination navigation">
