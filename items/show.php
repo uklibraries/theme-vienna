@@ -59,8 +59,8 @@
         
 <?php if ($insubjects = metadata('item', array('Item Type Metadata', 'Interview LC Subject'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
-<h3>Interview LC Subjects:</h3>
-<?php echo $insubjects; ?>
+<table><tr><td><h3>Interview LC Subjects:</h3></td><td>
+<?php echo $insubjects; ?></td></tr></table>
 <br/><br/></div>
 <?php endif; ?>
 
