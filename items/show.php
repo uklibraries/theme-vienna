@@ -126,7 +126,7 @@
     </div>
     
 <input class="toggle-box" id="header1" type="checkbox" >
-<label for="header1">Click here to read more!</label>
+<label for="header1">Click here to view more details.</label>
 <div>Lorem ipsum dolor sit amet, consectetuer adipiscing.</div>    
 
     <!--<h3><?php echo __('Files'); ?></h3>-->
