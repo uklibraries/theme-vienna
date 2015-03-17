@@ -145,6 +145,18 @@
 <!--<iframe src="https://ia601501.us.archive.org/33/items/xt77wm13pf8b/"></iframe>-->
 </div> 
 <div>
+<input class="toggle-box" id="transcript" type="checkbox" >
+<label for="transcript">Transcript Details:</label>
+</div>
+<div>
+<input class="toggle-box" id="translation" type="checkbox" >
+<label for="translation">Translation Details:</label>
+</div>
+<div>
+<input class="toggle-box" id="technical" type="checkbox" >
+<label for="technical">Technical Details:</label>
+</div>
+<div>
 <input class="toggle-box" id="publish" type="checkbox" >
 <label for="publish">Publishing Details:</label>
 </div>
