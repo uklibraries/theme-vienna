@@ -138,9 +138,10 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Allowed Online?: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Allowed Online?')); ?></td></tr></table></div>
 <?php endif; ?>
  </div>
-<div>
+
 <input class="toggle-box" id="related" type="checkbox" >
 <label for="related">Related Files:</label>
+<div>
 <iframe src="https://ia601501.us.archive.org/33/items/xt77wm13pf8b/"></iframe>
 </div> 
 <div>
