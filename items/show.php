@@ -49,7 +49,7 @@
             <li><a href="#view6">OHMS</a></li>
             <li><a href="#view7">Links</a></li>
             <li><a href="#view8">Workflow</a></li>
-            <li><a href="#view9">Publish</a></li>
+            <li><a href="<a href="https://oralhistory.uky.edu/spokedb/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item">">Edit</a></li>
         </ul>
         
         <div class="tabcontents">
