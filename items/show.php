@@ -281,67 +281,34 @@
             <p><pre>
 &lt;?xml version="1.0"?&gt;
 &lt;ROOT&gt;
-
 &lt;record id="00000000" dt="2015-01-01"&gt;
-
 &lt;version&gt;3&lt;/version&gt;
-
 &lt;date format="yyyy-mm-dd"&gt;&lt;/date&gt;
-
 &lt;date_nonpreferred_format&gt;
 &lt;/date_nonpreferred_format&gt;
-
 &lt;cms_record_id&gt;
 &lt;/cms_record_id&gt;
-
 &lt;title&gt;&lt;/title&gt;
-
 &lt;accession&gt;&lt;/accession&gt;
-
 &lt;duration&gt;&lt;/duration&gt;
-
 &lt;collection_id&gt;&lt;/collection_id&gt;
-
 &lt;collection_name&gt;&lt;/collection_name&gt;
-
 &lt;series_id&gt;&lt;/series_id&gt;
-
 &lt;series_name&gt;&lt;/series_name&gt;
-
 &lt;repository&gt;Louie B. Nunn Center for Oral History, University of Kentucky Libraries&lt;/repository&gt;
-
 &lt;repository_url /&gt;
-
 &lt;subject&gt;&lt;/subject&gt;
-
-
 &lt;interviewee&gt;&lt;/interviewee&gt;
-
 &lt;interviewer&gt;&lt;/interviewer&gt;
-
 &lt;file_name&gt;&lt;/file_name&gt;
-
-&lt;sync&gt;
-
-&lt;/sync&gt;
-
-&lt;syncpoints&gt;
-&lt;/syncpoints&gt;
-
-&lt;media_id&gt;
-&lt;/media_id&gt;
-
+&lt;sync&gt;&lt;/sync&gt;
+&lt;syncpoints&gt;&lt;/syncpoints&gt;
+&lt;media_id&gt;&lt;/media_id&gt;
 &lt;media_url&gt;&lt;/media_url&gt;
-
 &lt;mediafile&gt;
-
-&lt;host&gt;&lt;/host&gt;
-
-&lt;host_account_id&gt;
-&lt;/host_account_id&gt;
-
-&lt;host_player_id&gt;
-&lt;/host_player_id&gt;
+  &lt;host&gt;&lt;/host&gt;
+  &lt;host_account_id&gt;&lt;/host_account_id&gt;
+&lt;host_player_id&gt;&lt;/host_player_id&gt;
 
 &lt;host_clip_id&gt;&lt;/host_clip_id&gt;
 
