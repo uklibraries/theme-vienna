@@ -20,7 +20,7 @@
         <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
     </ul>
         <ul class="item-pagination navigation">
-        <li id="previous-item" class="previous"><a href="https://oralhistory.uky.edu/spokedb/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a>&nbsp;&nbsp;&nbsp;
+        <li id="previous-item" class="previous"><!--<a href="https://oralhistory.uky.edu/spokedb/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a>-->&nbsp;&nbsp;&nbsp;
 
 </li>
         <li id="next-item" class="next"><?php if(metadata('item', array('Dublin Core', 'Type'))): ?>
@@ -250,7 +250,8 @@
 
             </div>
             <div id="view9">
-            <p><a href="https://oralhistory.uky.edu/spokedb/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item"><img src="http://kdnp.uky.edu/spokedb/edit_button.png"/></a></p>
+            <p>SPOKEdb User Guide</p> 
+            <p><a href="https://oralhistory.uky.edu/spokedb/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item">Edit this record.</a></p>
 </div>
  </div> </div>
     <ul class="item-pagination navigation">
