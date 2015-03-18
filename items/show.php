@@ -236,18 +236,23 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Number of Interviews: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Number of Interviews')); ?></td></tr></table></div>
 <?php endif; ?>
 
+<p>Archival Storage Information</p>
+<p>Technical Metadata</p>
+
             </div>
             <div id="view6">
 <p>Referenced OHMS cache file</p>
 <p>Flag if online.</p>
 <p>Referenced index.xml file</p>
 <p>Referenced transcript.xml file</p>
+<p>Interview Online Indicator</p>
             </div>
             <div id="view7">
 
             </div>
             <div id="view8">
-
+<p>Interview Date Completed</p>
+<p>Interview Workflow State</p>
             </div>
             <div id="view9">
             <p>SPOKEdb User Guide</p> 
