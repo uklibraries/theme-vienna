@@ -209,6 +209,10 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Typescript: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Typescript')); ?></td></tr></table></div>
 <?php endif; ?>
 
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Translation'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Translation: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Translation')); ?></td></tr></table></div>
+<?php endif; ?>
+
             </div>
             <div id="view5">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Master Type'))): ?>
