@@ -195,7 +195,7 @@
 <?php endif; ?>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Associated Files'))): ?>
-        <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/files/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Collection Identifier')); ?><?php echo metadata ('item', array('Item Type Metadata', 'Interview Accession Identifier')); ?><?php echo metadata ('item', array('Dublin Core', 'Identifier')); ?>"/><br/><br/></div>
+        <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/files/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Collection Identifier')); ?>/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Series Identifier')); ?><?php echo metadata ('item', array('Dublin Core', 'Identifier')); ?>/"/><br/><br/></div>
 <?php endif; ?>
 
             </div>
