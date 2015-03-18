@@ -49,7 +49,7 @@
             <li><a href="#view6">OHMS</a></li>
             <li><a href="#view7">Links</a></li>
             <li><a href="#view8">Workflow</a></li>
-            <li style="color: red;"><a href="#view9">Edit</a></li>
+            <li><a href="#view9" style="color:red">Edit</a></li>
         </ul>
         
         <div class="tabcontents">
