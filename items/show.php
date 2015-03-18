@@ -202,7 +202,6 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Files: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Collection Identifier')); ?>/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Series Identifier')); ?>/<?php echo metadata ('item', array('Dublin Core', 'Identifier')); ?>/">Download Files</a></td></tr></table></div>
 <?php endif; ?>
 
-<p>Need to add Usage Statement</p>
             </div>
             <div id="view4">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript'))): ?>
