@@ -270,8 +270,8 @@
 <p>Interview Workflow State</p>
             </div>
             <div id="view9">
-            <p>Index for Online</p>
-            <p>Generate OHMS XML</p>
+            <p>Index for Online (only if unrestricted)</p>
+            <p>Generate OHMS XML (only if unrestricted)</p>
             <p>SPOKEdb User Guide</p> 
             <p><a href="https://oralhistory.uky.edu/spokedb/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item">Edit this record.</a></p>
 </div>
