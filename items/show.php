@@ -273,7 +273,7 @@
             <p>Index for Online (only if unrestricted)</p>
             <p>
             <?php if(metadata('item', array('Dublin Core', 'Rights'))): ?>
-        <div class="element-text"><pre> interviewti_display <?php echo metadata ('item', array('Item Type Metadata', 'Interview Title')); ?> interviewid_display <?php echo metadata ('item', array('Item Type Metadata', 'Interview Accession Number')); ?> id <?php echo metadata ('item', array('Dublin Core', 'Identifier')); ?> </pre><br/><br/></div>
+        <div class="element-text"><pre> \{interviewti_display <?php echo metadata ('item', array('Item Type Metadata', 'Interview Title')); ?> interviewid_display <?php echo metadata ('item', array('Item Type Metadata', 'Interview Accession Number')); ?> id <?php echo metadata ('item', array('Dublin Core', 'Identifier')); ?> \}</pre><br/><br/></div>
 <?php endif; ?>
 </p>
             <p>Generate OHMS XML (only if unrestricted)</p>
