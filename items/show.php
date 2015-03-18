@@ -278,6 +278,103 @@
 <?php endif; ?>
 </p>
             <p>Generate OHMS XML (only if unrestricted)</p>
+            <p><pre>
+            <?xml version="1.0"?>
+<ROOT>
+
+<record id="00000000" dt="2015-01-01">
+
+<version>3</version>
+
+<date format="yyyy-mm-dd"></date>
+
+<date_nonpreferred_format>
+</date_nonpreferred_format>
+
+<cms_record_id>
+</cms_record_id>
+
+<title></title>
+
+<accession></accession>
+
+<duration></duration>
+
+<collection_id></collection_id>
+
+<collection_name></collection_name>
+
+<series_id></series_id>
+
+<series_name></series_name>
+
+<repository>Louie B. Nunn Center for Oral History, University of Kentucky Libraries</repository>
+
+<repository_url />
+
+<subject></subject>
+
+
+<interviewee></interviewee>
+
+<interviewer></interviewer>
+
+<file_name></file_name>
+
+<sync>
+
+</sync>
+
+<syncpoints>
+</syncpoints>
+
+<media_id>
+</media_id>
+
+<media_url></media_url>
+
+<mediafile>
+
+<host></host>
+
+<host_account_id>
+</host_account_id>
+
+<host_player_id>
+</host_player_id>
+
+<host_clip_id></host_clip_id>
+
+<clip_format></clip_format>
+
+</mediafile>
+
+<language>
+</language>
+
+<index>
+
+</index>
+
+<type>Oral History</type>
+
+<description></description>
+
+<rel />
+
+<transcript></transcript>
+
+<rights>All rights to the interviews, including but not restricted to legal title, copyrights and literary property rights, have been transferred to the University of Kentucky Libraries.</rights>
+
+<fmt>audio</fmt>
+
+<usage>Interviews may only be reproduced with permission from Louie B. Nunn Center for Oral History, Special Collections and Digital Programs, University of Kentucky Libraries.</usage>
+
+</record>
+
+</ROOT>
+</pre>
+</p>
             <p>SPOKEdb User Guide</p> 
             <p><a href="https://oralhistory.uky.edu/spokedb/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item">Edit this record.</a></p>
 </div>
