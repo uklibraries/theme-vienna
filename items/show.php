@@ -197,10 +197,8 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Associated Files'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Files: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Collection Identifier')); ?>/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Series Identifier')); ?><?php echo metadata ('item', array('Dublin Core', 'Identifier')); ?>/">Download Files</a></td></tr></div>
 <?php endif; ?>
-
             </div>
             <div id="view4">
-
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Transcript: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -220,7 +218,6 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Translation'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Translation: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Translation')); ?></td></tr></table></div>
 <?php endif; ?>
-
             </div>
             <div id="view5">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Master Type'))): ?>
