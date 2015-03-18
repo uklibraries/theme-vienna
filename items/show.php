@@ -259,6 +259,7 @@
 <p>Referenced index.xml file</p>
 <p>Referenced transcript.xml file</p>
 <p>Interview Online Indicator</p>
+<p>Interview Online Identifier</p>
             </div>
             <div id="view7">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview External Link'))): ?>
