@@ -94,6 +94,10 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection: </h4></td><td style="width:300px;text-align:left;"><a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Series Collection')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Series Collection')); ?></a></td></tr></table></div>
 <?php endif; ?> 
 
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Standard Date'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Standard Date: </h4></td><td style="width:300px;text-align:left;"><a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Interview Standard Date')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Series Collection')); ?></a></td></tr></table></div>
+<?php endif; ?> 
+
 <?php if ($seriesint = metadata('item', array('Item Type Metadata', 'Series Interview'), array('delimiter'=>'<br/> '))): ?>
         <div class="item-description-static">
 <table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interviews Included in this Project:</h4></td><td style="width:300px;text-align:left;">
