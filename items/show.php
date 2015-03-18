@@ -193,7 +193,13 @@
             </div>
             <div id="view4">
 
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Transcript: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript')); ?></td></tr></table></div>
+<?php endif; ?>
 
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Digital'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Digital Transcript: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Digital')); ?></td></tr></table></div>
+<?php endif; ?>
 
             </div>
             <div id="view5">
