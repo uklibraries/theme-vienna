@@ -194,6 +194,10 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Paperwork: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Paperwork')); ?></td></tr></table></div>
 <?php endif; ?>
 
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Usage Statement'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Usage: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Usage Statement')); ?></td></tr></table></div>
+<?php endif; ?>
+
 <?php if(metadata('item', array('Item Type Metadata', 'Associated Files'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Files: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Collection Identifier')); ?>/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Series Identifier')); ?>/<?php echo metadata ('item', array('Dublin Core', 'Identifier')); ?>/">Download Files</a></td></tr></table></div>
 <?php endif; ?>
@@ -250,7 +254,9 @@
 <p>Interview Online Indicator</p>
             </div>
             <div id="view7">
-
+<?php if(metadata('item', array('Item Type Metadata', 'Interview External Link'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>External Link: </h4></td><td style="width:300px;text-align:left;"><a href="<?php echo metadata('item', array('Item Type Metadata', 'Interview External Link')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Interview External Link')); ?></a></td></tr></table></div>
+<?php endif; ?>
             </div>
             <div id="view8">
 <p>Interview Date Completed</p>
