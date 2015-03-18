@@ -195,7 +195,7 @@
 <?php endif; ?>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Associated Files'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Files: </h4></td><td style="width:300px;text-align:left;">http://kdnp.uky.edu/spokedb/files/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Collection Identifier')); ?>/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Series Identifier')); ?><?php echo metadata ('item', array('Dublin Core', 'Identifier')); ?>/</td></tr></div>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Files: </h4></td><td style="width:300px;text-align:left;"><a href="http://kdnp.uky.edu/spokedb/files/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Collection Identifier')); ?>/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Series Identifier')); ?><?php echo metadata ('item', array('Dublin Core', 'Identifier')); ?>/">http://kdnp.uky.edu/spokedb/files/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Collection Identifier')); ?>/<?php echo metadata ('item', array('Item Type Metadata', 'Interview Series Identifier')); ?><?php echo metadata ('item', array('Dublin Core', 'Identifier')); ?></a></td></tr></div>
 <?php endif; ?>
 
             </div>
