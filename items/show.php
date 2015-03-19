@@ -281,19 +281,19 @@
             <p><pre>
 &lt;?xml version="1.0"?&gt;
 &lt;ROOT&gt;
-&lt;record id="00000000" dt="2015-01-01"&gt;
+&lt;record id="dipid" dt="2015-01-01"&gt;
 &lt;version&gt;3&lt;/version&gt;
-&lt;date format="yyyy-mm-dd"&gt;&lt;/date&gt;
+&lt;date format="yyyy-mm-dd"&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Standard Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Standard Date')); ?><?php endif; ?>&lt;/date&gt;
 &lt;date_nonpreferred_format&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Date')); ?><?php endif; ?>&lt;/date_nonpreferred_format&gt;
 &lt;cms_record_id&gt;<?php if(metadata('item', array('Dublin Core', 'Identifier'))): ?><?php echo metadata('item', array('Dublin Core', 'Identifier')); ?><?php endif; ?>&lt;/cms_record_id&gt;
 &lt;title&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Title'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Title')); ?><?php endif; ?>&lt;/title&gt;
-&lt;accession&gt;&lt;/accession&gt;
+&lt;accession&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Accession Number'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Accession Number')); ?><?php endif; ?>&lt;/accession&gt;
 &lt;duration&gt;&lt;/duration&gt;
 &lt;collection_id&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Collection Identifier'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Collection Identifier')); ?><?php endif; ?>&lt;/collection_id&gt;
 &lt;collection_name&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?><?php endif; ?>&lt;/collection_name&gt;
 &lt;series_id&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Series Identifier'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Series Identifier')); ?><?php endif; ?>&lt;/series_id&gt;
 &lt;series_name&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?><?php endif; ?>&lt;/series_name&gt;
-&lt;repository&gt;Louie B. Nunn Center for Oral History, University of Kentucky Libraries&lt;/repository&gt;
+&lt;repository&gt;<?php if(metadata('item', array('Dublin Core', 'Publisher'))): ?><?php echo metadata('item', array('Dublin Core', 'Publisher')); ?><?php endif; ?>&lt;/repository&gt;
 &lt;repository_url /&gt;
 &lt;subject&gt;&lt;/subject&gt;
 &lt;interviewee&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interviewee'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interviewee')); ?><?php endif; ?>&lt;/interviewee&gt;
@@ -318,9 +318,9 @@
 &lt;description&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?><?php endif; ?>&lt;/description&gt;
 &lt;rel /&gt;
 &lt;transcript&gt;&lt;/transcript&gt;
-&lt;rights&gt;All rights to the interviews, including but not restricted to legal title, copyrights and literary property rights, have been transferred to the University of Kentucky Libraries.&lt;/rights&gt;
+&lt;rights&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Statement'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Statement')); ?><?php endif; ?>&lt;/rights&gt;
 &lt;fmt&gt;audio&lt;/fmt&gt;
-&lt;usage&gt;Interviews may only be reproduced with permission from Louie B. Nunn Center for Oral History, Special Collections and Digital Programs, University of Kentucky Libraries.&lt;/usage&gt;
+&lt;usage&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Usage Statement'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Usage Statement')); ?><?php endif; ?>&lt;/usage&gt;
 &lt;/record&gt;
 &lt;/ROOT&gt;
 
