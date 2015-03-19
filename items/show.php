@@ -284,7 +284,7 @@
 <input style="border-style: none;" type="text" value="&lt;ROOT&gt;" readonly>
 <input style="border-style: none;" type="text" value="&lt;record id=&ldquo;dipid&rdquo; dt=&ldquo;2015-01-01&rdquo;&gt;" readonly>
 <input style="border-style: none;" type="text" value="&lt;version&gt;3&lt;/version&gt;" readonly>
-<input style="border-style: none;" type="text" value="&lt;date format=&ldquo;yyyy-mm-dd&rdquo;&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Standard Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Standard Date')); ?><?php endif; ?>&lt;/date&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;date format=&ldquo;yyyy-mm-dd&rdquo;&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Standard Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Standard Date')); ?><?php endif; ?>&lt;/date&gt;" readonly>
 <br/><br/>
 <input type="submit" value="Generate OHMS XML">
 </form> 
