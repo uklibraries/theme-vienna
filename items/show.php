@@ -289,7 +289,7 @@
 <input style="border-style: none;" size="100%" type="text" value="&lt;cms_record_id&gt;<?php if(metadata('item', array('Dublin Core', 'Identifier'))): ?><?php echo metadata('item', array('Dublin Core', 'Identifier')); ?><?php endif; ?>&lt;/cms_record_id&gt;" readonly>
 <input style="border-style: none;" size="100%" type="text" value="&lt;title&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Title'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Title')); ?><?php endif; ?>&lt;/title&gt;" readonly>
 <input style="border-style: none;" size="100%" type="text" value="&lt;accession&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Accession Number'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Accession Number')); ?><?php endif; ?>&lt;/accession&gt;" readonly>
-<input style="border-style: none;" size="100%" type="text" value="&lt;duration&gt;&lt;/duration&gt;
+<input style="border-style: none;" size="100%" type="text" value="&lt;duration&gt;&lt;/duration&gt;" readonly>
 <textarea form="ohmsxml" style="border-style: none;" cols="100%" rows="10" name="desc" readonly>&lt;description&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?><?php endif; ?>&lt;/description&gt;</textarea>
 
 <br/><br/>
