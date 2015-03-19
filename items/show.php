@@ -278,7 +278,15 @@
 <?php endif; ?>
 </p>
             <p>Generate OHMS XML (only if unrestricted)</p>
-            <p><pre>
+            
+<form action="action_xml">
+<input type="text" value="&lt;?xml version="1.0"?&gt;" readonly>
+<input type="text" value="&lt;ROOT&gt;" readonly>
+<input type="submit" value="Generate OHMS XML">
+</form> 
+<p>
+
+<pre>
 &lt;?xml version="1.0"?&gt;
 &lt;ROOT&gt;
 &lt;record id="dipid" dt="2015-01-01"&gt;
@@ -326,6 +334,7 @@
 
 
 </pre>
+<br/><br/>
 </p>
             <p>SPOKEdb User Guide</p> 
             <p><a href="https://oralhistory.uky.edu/spokedb/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item">Edit this record.</a></p>
