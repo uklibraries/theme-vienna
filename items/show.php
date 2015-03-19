@@ -284,10 +284,8 @@
 &lt;record id="00000000" dt="2015-01-01"&gt;
 &lt;version&gt;3&lt;/version&gt;
 &lt;date format="yyyy-mm-dd"&gt;&lt;/date&gt;
-&lt;date_nonpreferred_format&gt;
-&lt;/date_nonpreferred_format&gt;
-&lt;cms_record_id&gt;
-&lt;/cms_record_id&gt;
+&lt;date_nonpreferred_format&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Date')); ?><?php endif; ?>&lt;/date_nonpreferred_format&gt;
+&lt;cms_record_id&gt;<?php if(metadata('item', array('Dublin Core', 'Identifier'))): ?><?php echo metadata('item', array('Dublin Core', 'Identifier')); ?><?php endif; ?>&lt;/cms_record_id&gt;
 &lt;title&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Title'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Title')); ?><?php endif; ?>&lt;/title&gt;
 &lt;accession&gt;&lt;/accession&gt;
 &lt;duration&gt;&lt;/duration&gt;
