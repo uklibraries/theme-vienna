@@ -290,64 +290,42 @@
 <input style="border-style: none;" size="100%" type="text" value="&lt;title&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Title'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Title')); ?><?php endif; ?>&lt;/title&gt;" readonly>
 <input style="border-style: none;" size="100%" type="text" value="&lt;accession&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Accession Number'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Accession Number')); ?><?php endif; ?>&lt;/accession&gt;" readonly>
 <input style="border-style: none;" size="100%" type="text" value="&lt;duration&gt; &lt;/duration&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;collection_id&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Collection Identifier'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Collection Identifier')); ?><?php endif; ?>&lt;/collection_id&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;collection_name&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?><?php endif; ?>&lt;/collection_name&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;series_id&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Series Identifier'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Series Identifier')); ?><?php endif; ?>&lt;/series_id&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;series_name&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?><?php endif; ?>&lt;/series_name&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;repository&gt;<?php if(metadata('item', array('Dublin Core', 'Publisher'))): ?><?php echo metadata('item', array('Dublin Core', 'Publisher')); ?><?php endif; ?>&lt;/repository&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;repository_url /&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;subject&gt; &lt;/subject&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;interviewee&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interviewee'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interviewee')); ?><?php endif; ?>&lt;/interviewee&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;interviewer&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interviewer'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interviewer')); ?><?php endif; ?>&lt;/interviewer&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;file_name&gt; &lt;/file_name&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;sync&gt; &lt;/sync&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;syncpoints&gt; &lt;/syncpoints&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;media_id&gt; &lt;/media_id&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;media_url&gt; &lt;/media_url&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;mediafile&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;host&gt; &lt;/host&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;host_account_id&gt; &lt;/host_account_id&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;host_player_id&gt; &lt;/host_player_id&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;host_clip_id&gt; &lt;/host_clip_id&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;clip_format&gt; &lt;/clip_format&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;/mediafile&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;language&gt; &lt;/language&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;index&gt; &lt;/index&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;type&gt;Oral History&lt;/type&gt;" readonly>
 <textarea form="ohmsxml" style="border-style: none;" cols="100%" rows="10" name="desc" readonly>&lt;description&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?><?php endif; ?>&lt;/description&gt;</textarea>
-
-<br/><br/>
+<input style="border-style: none;" size="100%" type="text" value="&lt;rel /&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;transcript&gt; &lt;/transcript&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;rights&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Statement'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Statement')); ?><?php endif; ?>&lt;/rights&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;fmt&gt;audio&lt;/fmt&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;usage&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Usage Statement'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Usage Statement')); ?><?php endif; ?>&lt;/usage&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;/record&gt;" readonly>
+<input style="border-style: none;" size="100%" type="text" value="&lt;/ROOT&gt;" readonly>
 <input type="submit" value="Generate OHMS XML">
 </form> 
 
-<p>
-
-<pre>
-&lt;?xml version="1.0"?&gt;
-&lt;ROOT&gt;
-&lt;record id="dipid" dt="2015-01-01"&gt;
-&lt;version&gt;3&lt;/version&gt;
-&lt;date format="yyyy-mm-dd"&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Standard Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Standard Date')); ?><?php endif; ?>&lt;/date&gt;
-&lt;date_nonpreferred_format&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Date')); ?><?php endif; ?>&lt;/date_nonpreferred_format&gt;
-&lt;cms_record_id&gt;<?php if(metadata('item', array('Dublin Core', 'Identifier'))): ?><?php echo metadata('item', array('Dublin Core', 'Identifier')); ?><?php endif; ?>&lt;/cms_record_id&gt;
-&lt;title&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Title'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Title')); ?><?php endif; ?>&lt;/title&gt;
-&lt;accession&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Accession Number'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Accession Number')); ?><?php endif; ?>&lt;/accession&gt;
-&lt;duration&gt;&lt;/duration&gt;
-&lt;collection_id&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Collection Identifier'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Collection Identifier')); ?><?php endif; ?>&lt;/collection_id&gt;
-&lt;collection_name&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?><?php endif; ?>&lt;/collection_name&gt;
-&lt;series_id&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Series Identifier'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Series Identifier')); ?><?php endif; ?>&lt;/series_id&gt;
-&lt;series_name&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?><?php endif; ?>&lt;/series_name&gt;
-&lt;repository&gt;<?php if(metadata('item', array('Dublin Core', 'Publisher'))): ?><?php echo metadata('item', array('Dublin Core', 'Publisher')); ?><?php endif; ?>&lt;/repository&gt;
-&lt;repository_url /&gt;
-&lt;subject&gt;&lt;/subject&gt;
-&lt;interviewee&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interviewee'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interviewee')); ?><?php endif; ?>&lt;/interviewee&gt;
-&lt;interviewer&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interviewer'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interviewer')); ?><?php endif; ?>&lt;/interviewer&gt;
-&lt;file_name&gt;&lt;/file_name&gt;
-&lt;sync&gt;&lt;/sync&gt;
-&lt;syncpoints&gt;&lt;/syncpoints&gt;
-&lt;media_id&gt;&lt;/media_id&gt;
-&lt;media_url&gt;&lt;/media_url&gt;
-&lt;mediafile&gt;
-&lt;host&gt;&lt;/host&gt;
-&lt;host_account_id&gt;&lt;/host_account_id&gt;
-&lt;host_player_id&gt;&lt;/host_player_id&gt;
-&lt;host_clip_id&gt;&lt;/host_clip_id&gt;
-&lt;clip_format&gt;&lt;/clip_format&gt;
-&lt;/mediafile&gt;
-&lt;language&gt;
-&lt;/language&gt;
-&lt;index&gt;
-&lt;/index&gt;
-&lt;type&gt;Oral History&lt;/type&gt;
-&lt;description&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?><?php endif; ?>&lt;/description&gt;
-&lt;rel /&gt;
-&lt;transcript&gt;&lt;/transcript&gt;
-&lt;rights&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Statement'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Statement')); ?><?php endif; ?>&lt;/rights&gt;
-&lt;fmt&gt;audio&lt;/fmt&gt;
-&lt;usage&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Usage Statement'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Usage Statement')); ?><?php endif; ?>&lt;/usage&gt;
-&lt;/record&gt;
-&lt;/ROOT&gt;
-
-
-</pre>
 <br/><br/>
-</p>
             <p>SPOKEdb User Guide</p> 
             <p><a href="https://oralhistory.uky.edu/spokedb/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item">Edit this record.</a></p>
 </div>
