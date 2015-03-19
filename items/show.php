@@ -5,7 +5,9 @@
 <?php endif; ?>
 </td>
 <td>
+<?php if(metadata('item','Collection Name')): ?>
 <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/<?php echo __('Collection'); ?>.png"/><br/><br/></div>
+<?php endif; ?>
 </td>
 <td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?><?php echo metadata('item', array('Item Type Metadata','Collection Accession')); ?><?php echo metadata('item', array('Item Type Metadata','Series Accession')); ?><br/>
 
