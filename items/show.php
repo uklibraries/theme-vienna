@@ -279,7 +279,7 @@
 </p>
             <p>Generate OHMS XML (only if unrestricted)</p>
             
-<form action="action_xml">
+<form action="action_xml" id="ohmsxml">
 <input style="border-style: none;" size="100%" type="text" value="&lt;?xml version=&ldquo;1.0&rdquo;?&gt;" readonly>
 <input style="border-style: none;" size="100%" type="text" value="&lt;ROOT&gt;" readonly>
 <input style="border-style: none;" size="100%" type="text" value="&lt;record id=&ldquo;dipid&rdquo; dt=&ldquo;2015-01-01&rdquo;&gt;" readonly>
@@ -287,11 +287,12 @@
 <input style="border-style: none;" size="100%" type="text" value="&lt;date format=&ldquo;yyyy-mm-dd&rdquo;&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Standard Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Standard Date')); ?><?php endif; ?>&lt;/date&gt;" readonly>
 <input style="border-style: none;" size="100%" type="text" value="&lt;date_nonpreferred_format&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Date')); ?><?php endif; ?>&lt;/date_nonpreferred_format&gt;" readonly>
 <input style="border-style: none;" size="100%" type="text" value="&lt;cms_record_id&gt;<?php if(metadata('item', array('Dublin Core', 'Identifier'))): ?><?php echo metadata('item', array('Dublin Core', 'Identifier')); ?><?php endif; ?>&lt;/cms_record_id&gt;" readonly>
-<input style="border-style: none;" size="100%" type="textarea" value="&lt;description&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?><?php endif; ?>&lt;/description&gt;" readonly>
+<textarea form="ohmsxml" style="border-style: none;" size="100%" name="desc" readonly>&lt;description&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?><?php endif; ?>&lt;/description&gt;</textarea>
 
 <br/><br/>
 <input type="submit" value="Generate OHMS XML">
 </form> 
+
 <p>
 
 <pre>
