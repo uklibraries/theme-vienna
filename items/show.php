@@ -6,7 +6,7 @@
 </td>
 <td>
 <?php if(metadata('item','Collection Name')): ?>
-<div class="element-text"><img src="http://kdnp.uky.edu/spokedb/<?php echo __('Collection'); ?>.png"/><br/><br/></div>
+<div class="element-text"><img src="http://kdnp.uky.edu/spokedb/<?php echo metadata('item','Collection Name'); ?>.png"/><br/><br/></div>
 <?php endif; ?>
 </td>
 <td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?><?php echo metadata('item', array('Item Type Metadata','Collection Accession')); ?><?php echo metadata('item', array('Item Type Metadata','Series Accession')); ?><br/>
@@ -341,12 +341,12 @@
          <?php echo files_for_item(); ?>
     </div>-->
 
-   <?php if(metadata('item','Collection Name')): ?>
+   <!--<?php if(metadata('item','Collection Name')): ?>
       <br/><br/><div id="collection" class="element">
-        <h3><?php echo __('Collection'); ?><?php echo metadata('item','Collection Name'); ?></h3>
-        <!--<div class="element-text"><?php echo link_to_collection_for_item(); ?></div>-->
+        <h3><?php echo __('Collection'); ?></h3>
+        <div class="element-text"><?php echo link_to_collection_for_item(); ?></div>
       </div>
-   <?php endif; ?>
+   <?php endif; ?>-->
    
 
 
