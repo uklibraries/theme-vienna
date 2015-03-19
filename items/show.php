@@ -280,7 +280,7 @@
             <p>Generate OHMS XML (only if unrestricted)</p>
             
 <form action="action_xml">
-<input type="text" value="&lt;?xml version="1.0"?&gt;" readonly>
+<input type="text" value="&lt;?xml version=&ldquo;1.0&rdquo;?&gt;" readonly>
 <input type="text" value="&lt;ROOT&gt;" readonly>
 <input type="submit" value="Generate OHMS XML">
 </form> 
