@@ -343,7 +343,7 @@
 
    <?php if(metadata('item','Collection Name')): ?>
       <br/><br/><div id="collection" class="element">
-        <h3><?php echo __('Collection'); ?></h3>
+        <h3><?php echo __('Collection'); ?><?php echo collection_for_item(); ?></h3>
         <!--<div class="element-text"><?php echo link_to_collection_for_item(); ?></div>-->
       </div>
    <?php endif; ?>
