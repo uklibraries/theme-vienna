@@ -288,7 +288,7 @@
 &lt;/date_nonpreferred_format&gt;
 &lt;cms_record_id&gt;
 &lt;/cms_record_id&gt;
-&lt;title&gt;&lt;/title&gt;
+&lt;title&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Title'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Title')); ?><?php endif; ?>&lt;/title&gt;
 &lt;accession&gt;&lt;/accession&gt;
 &lt;duration&gt;&lt;/duration&gt;
 &lt;collection_id&gt;&lt;/collection_id&gt;
@@ -306,39 +306,24 @@
 &lt;media_id&gt;&lt;/media_id&gt;
 &lt;media_url&gt;&lt;/media_url&gt;
 &lt;mediafile&gt;
-  &lt;host&gt;&lt;/host&gt;
-  &lt;host_account_id&gt;&lt;/host_account_id&gt;
+&lt;host&gt;&lt;/host&gt;
+&lt;host_account_id&gt;&lt;/host_account_id&gt;
 &lt;host_player_id&gt;&lt;/host_player_id&gt;
-
 &lt;host_clip_id&gt;&lt;/host_clip_id&gt;
-
 &lt;clip_format&gt;&lt;/clip_format&gt;
-
 &lt;/mediafile&gt;
-
 &lt;language&gt;
 &lt;/language&gt;
-
 &lt;index&gt;
-
 &lt;/index&gt;
-
 &lt;type&gt;Oral History&lt;/type&gt;
-
-&lt;description&gt;&lt;/description&gt;
-
+&lt;description&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?><?php endif; ?>&lt;/description&gt;
 &lt;rel /&gt;
-
 &lt;transcript&gt;&lt;/transcript&gt;
-
 &lt;rights&gt;All rights to the interviews, including but not restricted to legal title, copyrights and literary property rights, have been transferred to the University of Kentucky Libraries.&lt;/rights&gt;
-
 &lt;fmt&gt;audio&lt;/fmt&gt;
-
 &lt;usage&gt;Interviews may only be reproduced with permission from Louie B. Nunn Center for Oral History, Special Collections and Digital Programs, University of Kentucky Libraries.&lt;/usage&gt;
-
 &lt;/record&gt;
-
 &lt;/ROOT&gt;
 
 
