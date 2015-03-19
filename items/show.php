@@ -322,6 +322,7 @@
 <input style="border-style: none;" size="100%" type="text" value="&lt;usage&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Usage Statement'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Usage Statement')); ?><?php endif; ?>&lt;/usage&gt;" readonly>
 <input style="border-style: none;" size="100%" type="text" value="&lt;/record&gt;" readonly>
 <input style="border-style: none;" size="100%" type="text" value="&lt;/ROOT&gt;" readonly>
+<br/><br/>
 <input type="submit" value="Generate OHMS XML">
 </form> 
 
