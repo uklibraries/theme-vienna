@@ -295,7 +295,7 @@
 &lt;series_name&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?><?php endif; ?>&lt;/series_name&gt;
 &lt;repository&gt;<?php if(metadata('item', array('Dublin Core', 'Publisher'))): ?><?php echo metadata('item', array('Dublin Core', 'Publisher')); ?><?php endif; ?>&lt;/repository&gt;
 &lt;repository_url /&gt;
-&lt;subject&gt;<?php if ($insubjects = metadata('item', array('Item Type Metadata', 'Interview LC Subject'), array('delimiter'=>'</subject>'))): ?><?php echo $insubjects; ?>&lt;/subject&gt;
+&lt;subject&gt;<?php if ($insubjects = metadata('item', array('Item Type Metadata', 'Interview LC Subject'), array('delimiter'=>'/subject'))): ?><?php echo $insubjects; ?>&lt;/subject&gt;
 &lt;interviewee&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interviewee'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interviewee')); ?><?php endif; ?>&lt;/interviewee&gt;
 &lt;interviewer&gt;<?php if(metadata('item', array('Item Type Metadata', 'Interviewer'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interviewer')); ?><?php endif; ?>&lt;/interviewer&gt;
 &lt;file_name&gt;&lt;/file_name&gt;
