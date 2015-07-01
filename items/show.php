@@ -259,8 +259,86 @@
 <?php endif; ?>
             </div>
             <div id="view8">
-<p>Interview Date Completed</p>
-<p>Interview Workflow State</p>
+<!-- Collections -->
+
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Processing Overview'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Processing Overview: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Processing Overview')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Record in AT Date'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Record in AT Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Record in AT Date')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Record in AT'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Record in AT: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Record in AT')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Finding Aid Date'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Finding Aid Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Finding Aid Date')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Finding Aid'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Finding Aid: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Finding Aid')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Collection MARC Record Date'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection MARC Record Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection MARC Record Date')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Collection MARC Record'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection MARC Record: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection MARC Record')); ?></td></tr></table></div>
+<?php endif; ?>
+
+<!-- Series -->
+
+<?php if(metadata('item', array('Item Type Metadata', 'Series Finding Aid Date'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Finding Aid Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Finding Aid Date')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Series Finding Aid'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Finding Aid: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Finding Aid')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Series MARC Record Date'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series MARC Record Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series MARC Record Date')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Series MARC Record'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series MARC Record: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series MARC Record')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Series Processing Overview'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Processing Overview: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Processing Overview')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Series Record in AT Date'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Record in AT Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Record in AT Date')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Series Record in AT'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Record in AT: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Record in AT')); ?></td></tr></table></div>
+<?php endif; ?>
+
+<!-- Interviews -->
+
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Workflow Date Completed'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Workflow Date Completed: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Workflow Date Completed')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Workflow Finalized'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Workflow Finalized: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Workflow Finalized')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Workflow Main'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Workflow Main: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Workflow Main')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Digital File Name'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Digital File Name: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Digital File Name')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Editor Date Assigned'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Editor Date Assigned: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Editor Date Assigned')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Editor Date Completed'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Editor Date Completed: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Editor Date Completed')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Index XML'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Index XML: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Index XML')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Indexed'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Indexed: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Indexed')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Notes'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Notes: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Notes')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Media Identifier'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Media Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Media Identifier')); ?></td></tr></table></div>
+<?php endif; ?>
             </div>
             <div id="view9">
             <!--<p>
