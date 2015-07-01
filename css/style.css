@@ -536,7 +536,7 @@ header {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  width: 960px;
+  width: 1060px;
   padding: 3em 0;
   position: relative;
 }
@@ -567,7 +567,7 @@ header:after {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  width: 960px;
+  width: 1060px;
 }
 #header-image:after {
   content: "\0020";
@@ -1051,7 +1051,7 @@ a#advanced-search.button {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  width: 960px;
+  width: 1060px;
   padding: 1.5em 10px;
 }
 .items #content:after {
@@ -1451,7 +1451,7 @@ footer {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  width: 960px;
+  width: 1060px;
   overflow: hidden;
   margin-top: 1.5em;
 }
@@ -1676,7 +1676,7 @@ footer .navigation a {
   margin-right: auto;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1060px) {
   #featured-item img {
     max-width: 50%;
   }
@@ -1708,7 +1708,7 @@ footer .navigation a {
     position: relative;
     margin: 0 auto;
     padding: 0;
-    width: 960px;
+    width: 1060px;
     zoom: 1;
   }
   #mobile-nav:after {
