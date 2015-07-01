@@ -58,43 +58,69 @@
 
 
 
-<?php if(metadata('item', array('Item Type Metadata', 'Interviewee'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewee: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interviewee')); ?></td></tr></table></div>
+<!-- Collections General Tab -->
+
+
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Master Type'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Master Type: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Master Type')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Abbreviation'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Abbreviation: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Abbreviation')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Accession Date'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Accession Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Accession Date')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Accession'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Accession: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Accession')); ?></td></tr></table></div>
 <?php endif; ?>
 
-<?php if(metadata('item', array('Item Type Metadata', 'Interviewer'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewer: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interviewer')); ?></td></tr></table></div>
+
+<!-- Series General Tab -->
+
+
+<?php if(metadata('item', array('Item Type Metadata', 'Series Collection'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Collection: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Collection')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Series Master Type'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Master Type: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Master Type')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Series Accession Date'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Accession Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Accession Date')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Series Accession'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Accession: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Accession')); ?></td></tr></table></div>
 <?php endif; ?>
 
+
+<!-- Interviews General Tab -->
+
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Partial Date'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Partial Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Partial Date')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Dublin Core', 'Title'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Title: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Title')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Dublin Core', 'Format'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Format: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Format')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Dublin Core', 'Identifier '))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Identifier : </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Identifier ')); ?></td></tr></table></div>
+<?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Date'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Date')); ?></td></tr></table></div>
 <?php endif; ?>
-
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Collection'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Collection')); ?></td></tr></table></div>
-<?php endif; ?>   
-
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?></td></tr></table></div>
-<?php endif; ?>  
-
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Series'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series: </h4></td><td style="width:300px;text-align:left;"><a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Collection Series')); ?></a></td></tr></table></div>
-<?php endif; ?> 
-
-<?php if(metadata('item', array('Item Type Metadata', 'Series Collection'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection: </h4></td><td style="width:300px;text-align:left;"><a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Series Collection')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Series Collection')); ?></a></td></tr></table></div>
-<?php endif; ?> 
-
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Standard Date'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Standard Date: </h4></td><td style="width:300px;text-align:left;"><a href="/spokedb/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=50&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array('Item Type Metadata', 'Interview Standard Date')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Series Collection')); ?></a></td></tr></table></div>
-<?php endif; ?> 
-
-<?php if ($seriesint = metadata('item', array('Item Type Metadata', 'Series Interview'), array('delimiter'=>'<br/> '))): ?>
-        <div class="item-description-static">
-<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interviews Included in this Project:</h4></td><td style="width:300px;text-align:left;">
-<?php echo $seriesint; ?></td></tr></table></div>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Series Identifier'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Series Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Series Identifier')); ?></td></tr></table></div>
 <?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Series: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Language Terms'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Language Terms: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Language Terms')); ?></td></tr></table></div>
+<?php endif; ?>
+
+
+
             </div>
             <div id="view2">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?>
