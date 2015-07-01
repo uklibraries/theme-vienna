@@ -361,7 +361,7 @@
 <?php if ($intech = metadata('item', array('Item Type Metadata', 'Interview Technical Overview'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
 <table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interview Technical Overview:</h4></td><td style="width:300px;text-align:left;">
-<p></p><pre><?php echo $intech; ?></pre></p></td></tr></table>
+<p><pre><?php echo $intech; ?></p></pre></td></tr></table>
 </div>
 <?php endif; ?>
 
