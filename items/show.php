@@ -35,7 +35,7 @@
     
 
     <div id="item-metadata">
-    <!--<?php echo all_element_texts('item'); ?>-->
+
     
     <div style="width: 100%; margin: 0 auto;">
         <ul class="tabs" data-persist="true">
