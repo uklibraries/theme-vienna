@@ -258,32 +258,22 @@
 
             </div>
             <div id="view5">
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Master Type'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Format: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Master Type')); ?></td></tr></table></div>
+
+
+<!-- Collections Technical & Preservation Tab -->
+
+
+
+<!-- Series Technical & Preservation Tab -->
+
+
+
+
+<!-- Interviews Technical & Preservation Tab -->
+
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Technical Overview'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Technical Overview: </h4></td><td style="width:300px;text-align:left;"><pre><?php echo metadata('item', array('Item Type Metadata', 'Interview Technical Overview')); ?></pre></td></tr></table></div>
 <?php endif; ?>
-
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Master Type'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Format: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Master Type')); ?></td></tr></table></div>
-<?php endif; ?>
-
-<?php if(metadata('item', array('Item Type Metadata', 'Series Master Type'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Format: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Master Type')); ?></td></tr></table></div>
-<?php endif; ?>
-
-<?php if(metadata('item', array('Item Type Metadata', 'Series Number of Interviews'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Number of Interviews: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Number of Interviews')); ?></td></tr></table></div>
-<?php endif; ?>
-
-<?php if(metadata('item', array('Item Type Metadata', 'Archival Repository'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Archival Repository: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Archival Repository')); ?></td></tr></table></div>
-<?php endif; ?>
-
-<?php if(metadata('item', array('Item Type Metadata', 'Archival Identifier'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Archival Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Archival Identifier')); ?></td></tr></table></div>
-<?php endif; ?>
-
-
-<p>Technical Metadata</p>
 
             </div>
             <div id="view6">
