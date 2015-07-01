@@ -9,7 +9,7 @@
 <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/<?php echo metadata('item','Collection Name'); ?>.png"/><br/><br/></div>
 <?php endif; ?>
 </td>
-<td><?php echo metadata('item', array('Item Type Metadata','Interview Accession Number')); ?><?php echo metadata('item', array('Item Type Metadata','Collection Accession')); ?><?php echo metadata('item', array('Item Type Metadata','Series Accession')); ?><br/>
+<td><?php echo metadata('item', array('Dublin Core','Identifier')); ?><br/>
 
 </td>
 </tr>
