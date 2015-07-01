@@ -281,7 +281,7 @@
 
 <br/><br/>
             <p>SPOKEdb User Guide</p> 
-            <p><a href="https://oralhistory.uky.edu/spokedb/admin/search?query=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&query_type=keyword%5B%5D=Item">Edit this record.</a></p>
+            <p><a href="https://oralhistory.uky.edu/spokedb/admin/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=43&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&range=&collection=&type=&tags=&featured=&submit_search=Search">Edit this record.</a></p>
 </div>
  </div> </div>
     <ul class="item-pagination navigation">
