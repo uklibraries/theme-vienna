@@ -167,61 +167,7 @@
             </div>
             <div id="view3">
 
-<!-- Collections Rights & Usage Tab -->
 
-<?php if(metadata('item', array('Dublin Core', 'Rights'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Rights: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Rights')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Suppress Project Page'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Suppress Project Page: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Suppress Project Page')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'DCRights'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>DCRights: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'DCRights')); ?></td></tr></table></div>
-<?php endif; ?>
-
-<!-- Series Rights & Usage Tab -->
-
-
-<?php if(metadata('item', array('Dublin Core', 'Rights'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Rights: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Rights')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Series Release'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Release: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Release')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Series Suppress Project Page'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Suppress Project Page: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Suppress Project Page')); ?></td></tr></table></div>
-<?php endif; ?>
-
-<!-- Interviews Rights & Usage Tab -->
-
-
-<?php if(metadata('item', array('Dublin Core', 'Rights'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Rights: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Rights')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Deed of Gift'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Deed of Gift: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Deed of Gift')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Paperwork'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Paperwork: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Paperwork')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Restriction Details'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Restriction Details: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Restriction Details')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Rights Interviewee: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Rights Interviewer: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Transferred'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Rights Transferred: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Transferred')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Rights'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Rights: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Usage'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Usage: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Usage')); ?></td></tr></table></div>
-<?php endif; ?>
 
 
 
