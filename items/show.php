@@ -358,7 +358,7 @@
 
 <!-- Interviews Technical & Preservation Tab -->
 
-<?php if ($intech = metadata('item', array('Item Type Metadata', 'Interview Technical Overview'), array('delimiter'=>', '))): ?>
+<?php if ($intech = metadata('item', array('Item Type Metadata', 'Interview Technical Overview'), array('delimiter'=>'<br/><br/> '))): ?>
 <div class="item-description-static">
 <table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interview Technical Overview:</h4></td><td style="width:300px;text-align:left;">
 <p><pre><?php echo $intech; ?></p></pre></td></tr></table>
