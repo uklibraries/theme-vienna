@@ -52,17 +52,11 @@
         
         <div class="tabcontents">
             <div id="view1">
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Accession Number'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Accession Number: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Accession Number')); ?></td></tr></table></div>
-<?php endif; ?>
 
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Accession'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Accession Number: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Accession')); ?></td></tr></table></div>
-<?php endif; ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Accession Number: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Identifier')); ?></td></tr></table></div>
 
-<?php if(metadata('item', array('Item Type Metadata', 'Series Accession'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Accession Number: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Accession')); ?></td></tr></table></div>
-<?php endif; ?>
+
+
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewee'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewee: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interviewee')); ?></td></tr></table></div>
