@@ -122,73 +122,104 @@
 
             </div>
             <div id="view2">
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Summary: </h4></td></tr></table><table style="width:100%;text-align:left;"><tr><td style="width:15px;text-align:left;"></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?></td></tr></table></div>
-<?php endif; ?>     
+<!-- Collections Description Tab -->
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Summary'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Summary: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Summary')); ?></td></tr></table></div>
+<?php endif; ?>
+
+<?php if ($ckeyword = metadata('item', array('Item Type Metadata', 'Collection Keyword'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Keyword:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $ckeyword; ?></td></tr></table>
+</div>
+<?php endif; ?>
+<?php if ($clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection LC Subject:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $clcsubject; ?></td></tr></table>
+</div>
+<?php endif; ?>
+<?php if ($ctheme = metadata('item', array('Item Type Metadata', 'Collection Theme'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Theme:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $ctheme; ?></td></tr></table>
+</div>
+<?php endif; ?>
+
+<!-- Series Description Tab -->
+
+<?php if ($skeyword = metadata('item', array('Item Type Metadata', 'Series Keyword'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Keyword:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $skeyword; ?></td></tr></table>
+</div>
+<?php endif; ?>
+<?php if ($slcsubject = metadata('item', array('Item Type Metadata', 'Series LC Subject'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series LC Subject:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $slcsubject; ?></td></tr></table>
+</div>
+<?php endif; ?>
+<?php if ($stheme = metadata('item', array('Item Type Metadata', 'Series Theme'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Theme:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $stheme; ?></td></tr></table>
+</div>
+<?php endif; ?>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Series Summary'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Summary: </h4></td></tr></table><table style="width:100%;text-align:left;"><tr><td style="width:15px;text-align:left;"></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Summary')); ?></td></tr></table></div>
-<?php endif; ?>   
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Summary: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Summary')); ?></td></tr></table></div>
+<?php endif; ?>
 
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Summary'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Summary: </h4></td></tr></table><table style="width:100%;text-align:left;"><tr><td style="width:15px;text-align:left;"></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Summary')); ?></td></tr></table></div>
-<?php endif; ?>   
-        
-<?php if ($insubjects = metadata('item', array('Item Type Metadata', 'Interview LC Subject'), array('delimiter'=>', '))): ?>
+
+<!-- Interview Description Tab -->
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Extra Tags'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Extra Tags: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Extra Tags')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Featured Image'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Featured Image: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Featured Image')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if ($inkeyword = metadata('item', array('Item Type Metadata', 'Interview Keyword'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
-<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>LC Subjects:</h4></td><td style="width:300px;text-align:left;">
-<?php echo $insubjects; ?></td></tr></table>
+<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Keyword:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $inkeyword; ?></td></tr></table>
+</div>
+<?php endif; ?>
+<?php if ($inlcsubject = metadata('item', array('Item Type Metadata', 'Interview LC Subject'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview LC Subject:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $inlcsubject; ?></td></tr></table>
 </div>
 <?php endif; ?>
 
-<?php if ($inkeywords = metadata('item', array('Item Type Metadata', 'Interview Keywords'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Keywords:</h4></td><td style="width:300px;text-align:left;">
-<?php echo $inkeywords; ?></td></tr></table>
-</div>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Location'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Location: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Location')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Summary: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interviewee First Name'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewee First Name: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interviewee First Name')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interviewee Last Name'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewee Last Name: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interviewee Last Name')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interviewee Middle Name'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewee Middle Name: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interviewee Middle Name')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interviewer First Name'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewer First Name: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interviewer First Name')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interviewer Last Name'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewer Last Name: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interviewer Last Name')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interviewer Middle Name'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewer Middle Name: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interviewer Middle Name')); ?></td></tr></table></div>
 <?php endif; ?>
 
-<?php if ($serieskeywords = metadata('item', array('Item Type Metadata', 'Series Keyword'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Keywords:</h4></td><td style="width:300px;text-align:left;">
-<?php echo $serieskeywords; ?></td></tr></table>
-</div>
-<?php endif; ?>
 
-<?php if ($seriessubjects = metadata('item', array('Item Type Metadata', 'Series LC Subject'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<table style="width: 100%;"><tr><td style="width:100px;text-align:left;valign:top;"><h4>LC Subjects:</h4></td><td style="width:300px;text-align:left;">
-<?php echo $seriessubjects; ?></td></tr></table>
-</div>
-<?php endif; ?>
 
-<?php if ($seriesthemes = metadata('item', array('Item Type Metadata', 'Series Theme'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Themes:</h4></td><td style="width:300px;text-align:left;">
-<?php echo $seriesthemes; ?></td></tr></table>
-</div>
-<?php endif; ?>
 
-<?php if ($colkeywords = metadata('item', array('Item Type Metadata', 'Collection Keyword'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Keywords:</h4></td><td style="width:300px;text-align:left;">
-<?php echo $colkeywords; ?></td></tr></table>
-</div>
-<?php endif; ?>
-
-<?php if ($colsubjects = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>LC Subjects:</h4></td><td style="width:300px;text-align:left;">
-<?php echo $colsubjects; ?></td></tr></table>
-</div>
-<?php endif; ?>
-
-<?php if ($colthemes = metadata('item', array('Item Type Metadata', 'Collection Theme'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Themes:</h4></td><td style="width:300px;text-align:left;">
-<?php echo $colthemes; ?></td></tr></table>
-</div>
-<?php endif; ?>
             </div>
             <div id="view3">
 
