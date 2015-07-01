@@ -367,12 +367,7 @@
 
             </div>
             <div id="view6">
-<p>Referenced OHMS cache file</p>
-<p>Flag if online.</p>
-<p>Referenced index.xml file</p>
-<p>Referenced transcript.xml file</p>
-<p>Interview Online Indicator</p>
-<p>Interview Online Identifier</p>
+
             </div>
             <div id="view7">
 <!-- Collections Links Tab -->
