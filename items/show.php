@@ -170,9 +170,7 @@
 
 <!-- Collections Rights & Usage Tab -->
 
-<?php if(metadata('item', array('Dublin Core', 'Rights'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Rights: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Rights')); ?></td></tr></table></div>
-<?php endif; ?>
+
 <?php if(metadata('item', array('Item Type Metadata', 'Collection Release'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Release: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Release')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -184,9 +182,6 @@
 <!-- Series Rights & Usage Tab -->
 
 
-<?php if(metadata('item', array('Dublin Core', 'Rights'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Rights: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Rights')); ?></td></tr></table></div>
-<?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Series Release'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Release: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Release')); ?></td></tr></table></div>
 <?php endif; ?>
