@@ -103,8 +103,8 @@
 <?php if(metadata('item', array('Dublin Core', 'Format'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Format: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Format')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Dublin Core', 'Identifier '))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Identifier : </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Identifier ')); ?></td></tr></table></div>
+<?php if(metadata('item', array('Dublin Core', 'Identifier'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Identifier : </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Identifier')); ?></td></tr></table></div>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Date'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Date')); ?></td></tr></table></div>
@@ -118,6 +118,9 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Language Terms'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Language Terms: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Language Terms')); ?></td></tr></table></div>
 <?php endif; ?>
+
+
+
 
 
 
