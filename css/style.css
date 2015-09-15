@@ -658,6 +658,10 @@ header:after {
   width: 25%;
 }
 
+#simple-pages-breakcrumbs {
+   visibility:hidden;
+}
+
 a#advanced-search.button {
   width: 10%;
   right: 0;
