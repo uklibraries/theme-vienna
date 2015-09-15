@@ -255,8 +255,6 @@
 <th>Rights Interviewee</th>
 <th>Rights Interviewer</th>
 <th>Rights Transferred</th>
-<th>Interview Rights</th>
-<th>Usage</th>
 <th>Suppressed</th>
 </tr>
  <tr>
@@ -266,8 +264,6 @@
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee')); ?><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer')); ?><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Transferred'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Transferred')); ?><?php endif; ?></td>
-<td>x</td>
-<td>x</td>
 <td>x</td>
 </tr>
 </table>
