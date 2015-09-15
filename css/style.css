@@ -383,7 +383,7 @@ body {
   font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 18px;
   color: #333;
-  background: url(https://www.uky.edu/~eweig/bg_noise.png) repeat;
+  background: #F0F0F0;
 }
 
 form, fieldset {
