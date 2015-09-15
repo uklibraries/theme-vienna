@@ -247,6 +247,31 @@
 
 <!-- Interviews Rights & Usage Tab -->
 
+<table class="tableizer-table">
+<tr class="tableizer-firstrow">
+<th>Rights</th>
+<th>Interview Deed of Gift</th>
+<th>Interview Paperwork</th>
+<th>Rights Interviewee</th>
+<th>Rights Interviewer</th>
+<th>Rights Transferred</th>
+<th>Interview Rights</th>
+<th>Interview Usage</th>
+<th>Interview Suppressed</th>
+</tr>
+ <tr>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+</table>
+
 
 <?php if(metadata('item', array('Dublin Core', 'Rights'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Rights: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Rights')); ?></td></tr></table></div>
