@@ -210,7 +210,7 @@
 <?php endif; ?>
 </tr></table></div>
 
-<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewer First Name, Middle, Last: </h4>
+<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewer First Name, Middle, Last: </h4></td><td>
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewer First Name'))): ?>
 <?php echo metadata('item', array('Item Type Metadata', 'Interviewer First Name')); ?>, <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewer Middle Name'))): ?>
