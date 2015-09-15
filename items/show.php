@@ -261,7 +261,7 @@
 </tr>
  <tr>
 <td><?php if(metadata('item', array('Dublin Core', 'Rights'))): ?><?php echo metadata('item', array('Dublin Core', 'Rights')); ?><?php endif; ?></td>
-<td>x</td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Deed of Gift'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Deed of Gift')); ?><?php endif; ?></td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
@@ -273,12 +273,12 @@
 </table>
 
 
-<?php if(metadata('item', array('Dublin Core', 'Rights'))): ?>
+<!--<?php if(metadata('item', array('Dublin Core', 'Rights'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Rights: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Dublin Core', 'Rights')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Deed of Gift'))): ?>
+<?php endif; ?>-->
+<!--<?php if(metadata('item', array('Item Type Metadata', 'Interview Deed of Gift'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Deed of Gift: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Deed of Gift')); ?></td></tr></table></div>
-<?php endif; ?>
+<?php endif; ?>-->
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Paperwork'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Paperwork: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Paperwork')); ?></td></tr></table></div>
 <?php endif; ?>
