@@ -367,7 +367,7 @@
 <script type="text/javascript" src="http://caldwell.github.io/renderjson/renderjson.js"></script>
 <script>
     document.getElementById("test").appendChild(
-        renderjson(<?php echo $intech; ?>)
+        renderjson(<?php echo metadata('item', array('Item Type Metadata', 'Interview Technical Overview')); ?>)
     );
 </script>
 <?php endif; ?>
