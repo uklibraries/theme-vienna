@@ -658,7 +658,7 @@ header:after {
   width: 25%;
 }
 
-p#simple-pages-breakcrumbs {
+#simple-pages-breakcrumbs p {
    visibility:hidden;
 }
 
