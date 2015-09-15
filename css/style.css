@@ -951,6 +951,10 @@ a#advanced-search.button {
   display: none;
 }
 
+#home #primary a {
+  display: none;
+}
+
 @media only screen and (max-width: 767px) {
   #home #primary {
     margin: 0;
