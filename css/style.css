@@ -1900,7 +1900,7 @@ table.tableizer-table {
 .tableizer-table th {
 	background-color: #104E8B; 
 	color: #FFF;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .renderjson a { text-decoration: none; }
