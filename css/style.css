@@ -955,6 +955,7 @@ a#advanced-search.button {
 @media only screen and (max-width: 767px) {
   #home #primary {
     width: 300px;
+    visibility: hidden;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
