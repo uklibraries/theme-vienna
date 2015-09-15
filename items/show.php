@@ -260,7 +260,7 @@
 <th>Suppressed</th>
 </tr>
  <tr>
-<td>x</td>
+<td><?php if(metadata('item', array('Dublin Core', 'Rights'))): ?><?php echo metadata('item', array('Dublin Core', 'Rights')); ?><?php endif; ?></td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
