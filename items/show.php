@@ -199,7 +199,7 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Summary: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?></td></tr></table></div>
 <?php endif; ?>
 
-<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewee First Name, Middle, Last: </h4></td><td>
+<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewee First Name, Middle, Last: </h4></td><td style="width:300px;text-align:left;">
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewee First Name'))): ?>
 <?php echo metadata('item', array('Item Type Metadata', 'Interviewee First Name')); ?>, <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewee Middle Name'))): ?>
@@ -210,7 +210,7 @@
 <?php endif; ?>
 </td></tr></table></div>
 
-<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewer First Name, Middle, Last: </h4></td><td>
+<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewer First Name, Middle, Last: </h4></td><td style="width:300px;text-align:left;">
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewer First Name'))): ?>
 <?php echo metadata('item', array('Item Type Metadata', 'Interviewer First Name')); ?>, <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewee Middle Name'))): ?>
