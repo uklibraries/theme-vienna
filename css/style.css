@@ -1897,11 +1897,9 @@ table.tableizer-table {
 	margin: 3px;
 	border: 1px solid #ccc;
 }
-.tableizer-table tr {
-	height: 10px;
-}
+
 .tableizer-table th {
-	background-color: #104E8B; 
+	background-color: #394b89; 
 	color: #FFF;
 	font-weight: normal;
 	padding-left: 5px;
