@@ -1887,3 +1887,18 @@ div.tabcontents
 {
     border-top: 1px solid #B7B7B7; padding:30px 16px;
 }
+
+table.tableizer-table {
+	border: 1px solid #CCC; font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+} 
+.tableizer-table td {
+	padding: 4px;
+	margin: 3px;
+	border: 1px solid #ccc;
+}
+.tableizer-table th {
+	background-color: #104E8B; 
+	color: #FFF;
+	font-weight: bold;
+}
