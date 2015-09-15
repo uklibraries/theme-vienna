@@ -250,14 +250,14 @@
 <table class="tableizer-table">
 <tr class="tableizer-firstrow">
 <th>Rights</th>
-<th>Interview Deed of Gift</th>
-<th>Interview Paperwork</th>
+<th>Deed of Gift</th>
+<th>Paperwork</th>
 <th>Rights Interviewee</th>
 <th>Rights Interviewer</th>
 <th>Rights Transferred</th>
 <th>Interview Rights</th>
-<th>Interview Usage</th>
-<th>Interview Suppressed</th>
+<th>Usage</th>
+<th>Suppressed</th>
 </tr>
  <tr>
 <td>x</td>
