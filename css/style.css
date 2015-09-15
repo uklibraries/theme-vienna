@@ -1171,7 +1171,7 @@ li.snippet {
   overflow: hidden;
   border-top: 1px solid #eee;
   padding-top: 18px;
-  display: hidden;
+  display: none;
 }
 
 .item-pagination a {
