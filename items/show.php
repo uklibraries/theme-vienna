@@ -210,16 +210,16 @@
 <?php endif; ?>
 </tr></table></div>
 
-<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewer First Name, Middle, Last: </h4></td>
+<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewer First Name, Middle, Last: </h4>
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewer First Name'))): ?>
-<td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interviewer First Name')); ?></td><?php endif; ?>
+<?php echo metadata('item', array('Item Type Metadata', 'Interviewer First Name')); ?>, <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewer Middle Name'))): ?>
-<td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interviewee Middle Name')); ?></td>
+<?php echo metadata('item', array('Item Type Metadata', 'Interviewee Middle Name')); ?>, 
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewer Last Name'))): ?>
-<td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interviewer Last Name')); ?></td>
+<?php echo metadata('item', array('Item Type Metadata', 'Interviewer Last Name')); ?>
 <?php endif; ?>
-</tr></table></div>
+</td></tr></table></div>
 
 
             </div>
