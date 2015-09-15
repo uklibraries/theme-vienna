@@ -1804,13 +1804,17 @@ footer .navigation a {
     float: left;
     padding: 0 10px 10px 10px;
   }
-
 }
 @media only screen and (max-width: 768px) and (min-width: 768px) and (max-width: 959px) {
   #mobile-nav {
     width: 768px;
   }
 }
+
+  div.view-content {
+    width: 1050px;
+    padding: 0 10px 10px 10px;
+  }
 @media only screen and (max-width: 768px) and (max-width: 767px) {
   #mobile-nav {
     width: 300px;
