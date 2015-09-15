@@ -363,6 +363,13 @@
 <table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interview Technical Overview:</h4></td><td style="width:300px;text-align:left;">
 <p><pre><?php echo $intech; ?></p></pre></td></tr></table>
 </div>
+<div id="test">
+<script type="text/javascript" src="http://caldwell.github.io/renderjson/renderjson.js"></script>
+<script>
+    document.getElementById("test").appendChild(
+        renderjson(<?php echo $intech; ?>)
+    );
+</script>
 <?php endif; ?>
 
             </div>
