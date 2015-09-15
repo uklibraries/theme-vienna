@@ -946,6 +946,11 @@ a#advanced-search.button {
   margin-right: 0;
   padding-right: 10px;
 }
+
+#home #primary #p {
+  display: none;
+}
+
 @media only screen and (max-width: 767px) {
   #home #primary {
     margin: 0;
