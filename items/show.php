@@ -269,7 +269,7 @@
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee')); ?><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer')); ?><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Transferred'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Transferred')); ?><?php endif; ?></td>
-<td>x</td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Collection Suppressed'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection Suppressed')); ?><?php endif; ?></td>
 </tr>
 </table>
 
