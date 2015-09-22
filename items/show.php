@@ -282,9 +282,9 @@
 <th>Rights</th>
 <th>Deed of Gift</th>
 <th>Paperwork</th>
-<th>Rights Interviewee</th>
-<th>Rights Interviewer</th>
-<th>Rights Transferred</th>
+<th>Interviewee</th>
+<th>Interviewer</th>
+<th>Transferred</th>
 <th>Suppressed</th>
 </tr>
  <tr>
