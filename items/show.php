@@ -289,11 +289,11 @@
 </tr>
  <tr>
 <td><?php if(metadata('item', array('Dublin Core', 'Rights'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Dublin Core', 'Rights')); ?>.png"/><?php endif; ?></td>
-<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Deed of Gift'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Deed of Gift')); ?><?php endif; ?></td>
-<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Paperwork'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Paperwork')); ?><?php endif; ?></td>
-<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee')); ?><?php endif; ?></td>
-<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer')); ?><?php endif; ?></td>
-<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Transferred'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Transferred')); ?><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Deed of Gift'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Deed of Gift')); ?>.png"/><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Paperwork'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Paperwork')); ?>.png"/><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee')); ?>.png"/><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer')); ?>.png"/><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Transferred'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Transferred')); ?>.png"/><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Suppressed'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Suppressed')); ?><?php endif; ?><?php if(metadata('item', array('Item Type Metadata', 'Collection Suppressed'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection Suppressed')); ?><?php endif; ?><?php if(metadata('item', array('Item Type Metadata', 'Series Suppressed'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Series Suppressed')); ?><?php endif; ?></td>
 </tr>
 </table>
