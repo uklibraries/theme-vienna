@@ -288,7 +288,7 @@
 <th>Suppressed</th>
 </tr>
  <tr>
-<td><?php if(metadata('item', array('Dublin Core', 'Rights'))): ?><?php echo metadata('item', array('Dublin Core', 'Rights')); ?><?php endif; ?></td>
+<td><?php if(metadata('item', array('Dublin Core', 'Rights'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Dublin Core', 'Rights')); ?>.png"/><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Deed of Gift'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Deed of Gift')); ?><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Paperwork'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Paperwork')); ?><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee')); ?><?php endif; ?></td>
