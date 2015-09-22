@@ -38,6 +38,25 @@
 
     
     <div style="width: 100%; margin: 0 auto;">
+            <?php if(metadata('item', array('Item Type Metadata', 'Collection Abbreviation'))): ?>
+        <ul class="tabs" data-persist="true">
+            <li><a href="#view1">General</a></li>
+            <li><a href="#view2">Description</a></li>
+            <li><a href="#view3">Rights &amp; Usage</a></li>
+            <li><a href="#view8">Workflow</a></li>
+            <li><a href="#view9" style="color:red">Edit</a></li>
+        </ul>
+        <?php endif; ?>
+                    <?php if(metadata('item', array('Item Type Metadata', 'Series Master Type'))): ?>
+        <ul class="tabs" data-persist="true">
+            <li><a href="#view1">General</a></li>
+            <li><a href="#view2">Description</a></li>
+            <li><a href="#view3">Rights &amp; Usage</a></li>
+            <li><a href="#view8">Workflow</a></li>
+            <li><a href="#view9" style="color:red">Edit</a></li>
+        </ul>
+        <?php endif; ?>
+                            <?php if(metadata('item', array('Item Type Metadata', 'Interviewee First Name'))): ?>
         <ul class="tabs" data-persist="true">
             <li><a href="#view1">General</a></li>
             <li><a href="#view2">Description</a></li>
@@ -49,7 +68,7 @@
             <li><a href="#view8">Workflow</a></li>
             <li><a href="#view9" style="color:red">Edit</a></li>
         </ul>
-        
+        <?php endif; ?>
         <div class="tabcontents">
             <div id="view1">
 
