@@ -235,9 +235,7 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Collection Release'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Release: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>/<?php echo metadata('item', array('Item Type Metadata', 'Collection Release')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Collection Release')); ?></a></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Suppress Project Page'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Suppress Project Page: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Suppress Project Page')); ?></td></tr></table></div>
-<?php endif; ?>
+
 
 
 <!-- Series Rights & Usage Tab -->
@@ -246,9 +244,7 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Series Release'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Release: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Release')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Series Suppress Project Page'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Suppress Project Page: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Suppress Project Page')); ?></td></tr></table></div>
-<?php endif; ?>
+
 
 <!-- Interviews Rights & Usage Tab -->
 
@@ -269,7 +265,7 @@
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee')); ?><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer')); ?><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Transferred'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Transferred')); ?><?php endif; ?></td>
-<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Suppressed'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Suppressed')); ?><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Suppressed'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Interview Suppressed')); ?><?php endif; ?><?php if(metadata('item', array('Item Type Metadata', 'Collection Suppressed'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection Suppressed')); ?><?php endif; ?><?php if(metadata('item', array('Item Type Metadata', 'Series Suppressed'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Series Suppressed')); ?><?php endif; ?></td>
 </tr>
 </table>
 
