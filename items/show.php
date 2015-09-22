@@ -202,9 +202,9 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewee First Name'))): ?>
 <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewee Name: </h4></td><td style="width:300px;text-align:left;">
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewee First Name'))): ?>
-<?php echo metadata('item', array('Item Type Metadata', 'Interviewee First Name')); ?>, <?php endif; ?>
+<?php echo metadata('item', array('Item Type Metadata', 'Interviewee First Name')); ?> <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewee Middle Name'))): ?>
-<?php echo metadata('item', array('Item Type Metadata', 'Interviewee Middle Name')); ?>, 
+<?php echo metadata('item', array('Item Type Metadata', 'Interviewee Middle Name')); ?> 
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewee Last Name'))): ?>
 <?php echo metadata('item', array('Item Type Metadata', 'Interviewee Last Name')); ?>
@@ -215,9 +215,9 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewer First Name'))): ?>
 <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewer Name: </h4></td><td style="width:300px;text-align:left;">
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewer First Name'))): ?>
-<?php echo metadata('item', array('Item Type Metadata', 'Interviewer First Name')); ?>, <?php endif; ?>
+<?php echo metadata('item', array('Item Type Metadata', 'Interviewer First Name')); ?> <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewee Middle Name'))): ?>
-<?php echo metadata('item', array('Item Type Metadata', 'Interviewee Middle Name')); ?>, 
+<?php echo metadata('item', array('Item Type Metadata', 'Interviewee Middle Name')); ?> 
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewer Last Name'))): ?>
 <?php echo metadata('item', array('Item Type Metadata', 'Interviewer Last Name')); ?>
