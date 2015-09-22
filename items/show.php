@@ -236,6 +236,10 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Release: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>/<?php echo metadata('item', array('Item Type Metadata', 'Collection Release')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Collection Release')); ?></a></td></tr></table></div>
 <?php endif; ?>
 
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Notes on Rights and Usage'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Notes on Rights and Usage: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Notes on Rights and Usage')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Collection Notes on Rights and Usage')); ?></td></tr></table></div>
+<?php endif; ?>
+
 
 
 <!-- Series Rights & Usage Tab -->
