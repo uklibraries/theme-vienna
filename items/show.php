@@ -413,7 +413,7 @@ if ('interviews' === $type): ?>
 
 
 <!-- Interviews Technical & Preservation Tab -->
-array('delimiter' => blah, 'no_filter' => true)
+
 <?php 
 $type = $item->getItemType()->name;
 if ('interviews' === $type): ?>
