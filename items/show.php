@@ -550,8 +550,6 @@ if ('series' === $type): ?>
 </p>-->
 
 
-
-<br/><br/>
             <p>SPOKEdb User Guide</p> 
             <p><a href="https://oralhistory.uky.edu/spokedb/admin/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=43&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&range=&collection=&type=&tags=&featured=&submit_search=Search">Edit this record.</a> (authentication required)</p>
 </div>
