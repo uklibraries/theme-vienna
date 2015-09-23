@@ -1,12 +1,12 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
 <table><tr><td>
 <?php if(metadata('item', array('Dublin Core', 'Format'))): ?>
-        <div class="element-text"><img src="http://kdnp.uky.edu/spokedb/tab_<?php echo metadata ('item', array('Dublin Core', 'Format')); ?>.png"/><br/><br/></div>
+        <div class="element-text"><img src="https://kdnp.uky.edu/spokedb/tab_<?php echo metadata ('item', array('Dublin Core', 'Format')); ?>.png"/><br/><br/></div>
 <?php endif; ?>
 </td>
 <td>
 <?php if(metadata('item','Collection Name')): ?>
-<div class="element-text"><img src="http://kdnp.uky.edu/spokedb/<?php echo metadata('item','Collection Name'); ?>.png"/><br/><br/></div>
+<div class="element-text"><img src="https://kdnp.uky.edu/spokedb/<?php echo metadata('item','Collection Name'); ?>.png"/><br/><br/></div>
 <?php endif; ?>
 </td>
 <td><?php echo metadata('item', array('Dublin Core','Identifier')); ?><br/>
@@ -22,7 +22,7 @@
         <ul class="item-pagination navigation">
 
         <li id="next-item" class="next"><?php if(metadata('item', array('Dublin Core', 'Type'))): ?>
-        <img src="http://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Dublin Core', 'Type')); ?>.png"/>
+        <img src="https://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Dublin Core', 'Type')); ?>.png"/>
 <?php endif; ?></li>
     </ul>
     
@@ -433,7 +433,7 @@ if ('interviews' === $type): ?>
             </div>
             <div id="view6">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Cache File'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Cache File (raw view): </h4></td><td style="width:300px;text-align:left;"><p><div xmlns="http://www.w3.org/1999/xhtml"><iframe src='https://oralhistory.uky.edu/spokedb/oh-files/xml/<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>.xml' width='1060px' height='785px' frameborder='0' name="viewer" scrolling="no" ></iframe></div></p></td></tr></table></div>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Cache File (raw view): </h4></td><td style="width:300px;text-align:left;"><p><div xmlns="https://www.w3.org/1999/xhtml"><iframe src='https://oralhistory.uky.edu/spokedb/oh-files/xml/<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>.xml' width='1060px' height='785px' frameborder='0' name="viewer" scrolling="no" ></iframe></div></p></td></tr></table></div>
 <?php endif; ?>
             </div>
             <div id="view7">
