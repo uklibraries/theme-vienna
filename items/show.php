@@ -89,6 +89,8 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Collection Master Type'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Master Type: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Master Type')); ?></td></tr></table></div>
 <?php endif; ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Online Access: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Online Access')); ?></td></tr></table></div>
+<?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Collection Abbreviation'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Abbreviation: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Abbreviation')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -465,9 +467,9 @@ if ('collections' === $type): ?>
 <th>Collection MARC Record</th>
 </tr>
  <tr>
-<td><?php if(metadata('item', array('Item Type Metadata', 'Collection Record in AT'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Collection Record in AT')); ?>.png"/><?php endif; ?></br/><?php if(metadata('item', array('Item Type Metadata', 'Collection Record in AT Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection Record in AT Date')); ?><?php endif; ?></td>
-<td><?php if(metadata('item', array('Item Type Metadata', 'Collection Finding Aid'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Collection Finding Aid')); ?>.png"/><?php endif; ?></br/><?php if(metadata('item', array('Item Type Metadata', 'Collection Finding Aid Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection Finding Aid Date')); ?><?php endif; ?></td>
-<td><?php if(metadata('item', array('Item Type Metadata', 'Collection MARC Record'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Collection MARC Record')); ?>.png"/><?php endif; ?></br/><?php if(metadata('item', array('Item Type Metadata', 'Collection MARC Record Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection MARC Record Date')); ?><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Collection Record in AT'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Collection Record in AT')); ?>.png"/><?php endif; ?><br/><?php if(metadata('item', array('Item Type Metadata', 'Collection Record in AT Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection Record in AT Date')); ?><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Collection Finding Aid'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Collection Finding Aid')); ?>.png"/><?php endif; ?><br/><?php if(metadata('item', array('Item Type Metadata', 'Collection Finding Aid Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection Finding Aid Date')); ?><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Collection MARC Record'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Collection MARC Record')); ?>.png"/><?php endif; ?><br/><?php if(metadata('item', array('Item Type Metadata', 'Collection MARC Record Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection MARC Record Date')); ?><?php endif; ?></td>
 </tr>
 </table>
 <?php endif; ?>
