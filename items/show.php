@@ -573,7 +573,7 @@ if ('series' === $type): ?>
 
 
 <p>SPOKEdb User Guide</p> 
-<p><a href="https://oralhistory.uky.edu/spokedb/admin/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=43&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&range=&collection=&type=&tags=&featured=&submit_search=Search">Edit this record.</a> (<span style="color: red;">authentication required</span>)</p>
+<p><a href="https://oralhistory.uky.edu/spokedb/admin/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=43&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&range=&collection=&type=&tags=&featured=&submit_search=Search" target="_blank">Edit this record.</a> (<span style="color: red;">authentication required</span>)</p>
 </div>
  </div> </div>
     <ul class="item-pagination navigation">
