@@ -282,7 +282,9 @@ if ('interviews' === $type): ?>
 
 
 <!-- Interviews Rights & Usage Tab -->
-
+<?php 
+$type = $item->getItemType()->name;
+if ('interviews' === $type): ?>
 <table class="tableizer-table">
 <tr class="tableizer-firstrow">
 <th>Rights</th>
@@ -301,6 +303,7 @@ if ('interviews' === $type): ?>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Transferred'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Transferred')); ?>.png"/><?php endif; ?></td>
 </tr>
 </table>
+<?php endif; ?> 
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Suppressed'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Suppressed: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Suppressed')); ?></td></tr></table></div>
@@ -336,7 +339,9 @@ if ('interviews' === $type): ?>
 
 <!-- Interviews Transcript Tab -->
 
-
+<?php 
+$type = $item->getItemType()->name;
+if ('interviews' === $type): ?>
 <table class="tableizer-table">
 <tr class="tableizer-firstrow">
 <th>Transcript Digital</th>
@@ -353,6 +358,7 @@ if ('interviews' === $type): ?>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Typescript'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Typescript')); ?>.png"/><?php endif; ?></td>
 </tr>
 </table>
+<?php endif; ?>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Date Assigned'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript Date Assigned: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Date Assigned')); ?></td></tr></table></div>
@@ -438,7 +444,9 @@ if ('interviews' === $type): ?>
             </div>
             <div id="view8">
 <!-- Collections Workflow Tab -->
-
+<?php 
+$type = $item->getItemType()->name;
+if ('collections' === $type): ?>
 <table class="tableizer-table">
 <tr class="tableizer-firstrow">
 <th>Collection Record in AT</th>
@@ -451,7 +459,7 @@ if ('interviews' === $type): ?>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Collection MARC Record'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Collection MARC Record')); ?>.png"/><?php endif; ?></br/><?php if(metadata('item', array('Item Type Metadata', 'Collection MARC Record Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection MARC Record Date')); ?><?php endif; ?></td>
 </tr>
 </table>
-
+<?php endif; ?>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Collection Processing Overview'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Processing Overview: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Processing Overview')); ?></td></tr></table></div>
@@ -461,7 +469,9 @@ if ('interviews' === $type): ?>
 
 
 <!-- Series Workflow Tab -->
-
+<?php 
+$type = $item->getItemType()->name;
+if ('series' === $type): ?>
 <table class="tableizer-table">
 <tr class="tableizer-firstrow">
 <th>Series Record in AT</th>
@@ -474,6 +484,7 @@ if ('interviews' === $type): ?>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Series MARC Record'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Series MARC Record')); ?>.png"/><?php endif; ?></br/><?php if(metadata('item', array('Item Type Metadata', 'Series MARC Record Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Series MARC Record Date')); ?><?php endif; ?></td>
 </tr>
 </table>
+<?php endif; ?>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Series Processing Overview'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Processing Overview: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Processing Overview')); ?></td></tr></table></div>
