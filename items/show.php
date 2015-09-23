@@ -417,7 +417,7 @@ if ('interviews' === $type): ?>
 <?php 
 $type = $item->getItemType()->name;
 if ('interviews' === $type): ?>
-<?php ($intech = metadata('item', array('Item Type Metadata', 'Interview Technical Overview'), array('delimiter'=>'<br/><br/>, 'no_filter' => true)): ?>
+<?php ($intech = metadata('item', array('Item Type Metadata', 'Interview Technical Overview'), array('delimiter'=>'<br/><br/>', 'no_filter' => true)): ?>
 <table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interview Technical Overview:</h4></td><td style="width:300px;text-align:left;">
 <div class="item-description-static">
 <div id="test">
