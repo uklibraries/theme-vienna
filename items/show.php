@@ -330,6 +330,24 @@
 
 <!-- Interviews Transcript Tab -->
 
+
+<table class="tableizer-table">
+<tr class="tableizer-firstrow">
+<th>Transcript Digital</th>
+<th>Transcript Translation</th>
+<th>Transcript</th>
+<th>Transcript Status</th>
+<th>Typescript</th>
+</tr>
+ <tr>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Digital'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Digital')); ?>.png"/><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Translation'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Translation')); ?>.png"/><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript')); ?>.png"/><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Status'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Status')); ?>.png"/><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Typescript'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Typescript')); ?>.png"/><?php endif; ?></td>
+</tr>
+</table>
+
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Date Assigned'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript Date Assigned: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Date Assigned')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -337,10 +355,6 @@
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript Date Completed: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Date Completed')); ?></td></tr></table></div>
 <?php endif; ?>
 
-
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Digital'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript Digital: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Digital')); ?></td></tr></table></div>
-<?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Editor'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript Editor: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Editor')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -350,24 +364,18 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript State'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript State: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript State')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Status'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript Status: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Status')); ?></td></tr></table></div>
-<?php endif; ?>
+
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Text'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript Text: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Text')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Translation'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript Translation: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Translation')); ?></td></tr></table></div>
-<?php endif; ?>
+
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Translator'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript Translator: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Translator')); ?></td></tr></table></div>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript XML'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript XML: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript XML')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript')); ?></td></tr></table></div>
-<?php endif; ?>
+
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcriptionist'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcriptionist: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcriptionist')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -377,9 +385,7 @@
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Typescript State'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Typescript State: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Typescript State')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Typescript'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Typescript: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Typescript')); ?></td></tr></table></div>
-<?php endif; ?>
+
 
             </div>
             <div id="view5">
