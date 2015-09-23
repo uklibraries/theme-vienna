@@ -278,7 +278,6 @@
 <!-- Interviews Rights & Usage Tab -->
 
 <table class="tableizer-table">
-        <tr><th>Rights Details</th></tr>
 <tr class="tableizer-firstrow">
 <th>Rights</th>
 <th>Deed of Gift</th>
