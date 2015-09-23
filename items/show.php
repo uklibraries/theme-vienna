@@ -417,9 +417,16 @@ if ('interviews' === $type): ?>
 $type = $item->getItemType()->name;
 if ('interviews' === $type): ?>
 <?php if ($intech = metadata('item', array('Item Type Metadata', 'Interview Technical Overview'), array('delimiter'=>'<br/><br/> '))): ?>
-<div class="item-description-static">
 <table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interview Technical Overview:</h4></td><td style="width:300px;text-align:left;">
-<p><pre><?php echo $intech; ?></p></pre></td></tr></table>
+<div class="item-description-static">
+<div id="test">
+<script type="text/javascript" src="https://oralhistory.uky.edu/renderjson.js"></script>
+<script>
+    document.getElementById("test").appendChild(
+        renderjson(<?php echo $intech; ?>)
+    );
+</script>      
+</td></tr></table>
 </div>
 <?php endif; ?>
 <?php endif; ?>
