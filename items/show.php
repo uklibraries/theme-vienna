@@ -441,53 +441,51 @@
             <div id="view8">
 <!-- Collections Workflow Tab -->
 
+<table class="tableizer-table">
+<tr class="tableizer-firstrow">
+<th>Collection Record in AT</th>
+<th>Collection Finding Aid</th>
+<th>Collection MARC Record</th>
+</tr>
+ <tr>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Collection Record in AT'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Collection Record in AT')); ?>.png"/><?php endif; ?></br/><?php if(metadata('item', array('Item Type Metadata', 'Collection Record in AT Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection Record in AT Date')); ?><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Collection Finding Aid'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Collection Finding Aid')); ?>.png"/><?php endif; ?></br/><?php if(metadata('item', array('Item Type Metadata', 'Collection Finding Aid Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection Finding Aid Date')); ?><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Collection MARC Record'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Collection MARC Record')); ?>.png"/><?php endif; ?></br/><?php if(metadata('item', array('Item Type Metadata', 'Collection MARC Record Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Collection MARC Record Date')); ?><?php endif; ?></td>
+</tr>
+</table>
+
+
 <?php if(metadata('item', array('Item Type Metadata', 'Collection Processing Overview'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Processing Overview: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Processing Overview')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Record in AT Date'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Record in AT Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Record in AT Date')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Record in AT'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Record in AT: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Record in AT')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Finding Aid Date'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Finding Aid Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Finding Aid Date')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Finding Aid'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Finding Aid: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Finding Aid')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Collection MARC Record Date'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection MARC Record Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection MARC Record Date')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Collection MARC Record'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection MARC Record: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection MARC Record')); ?></td></tr></table></div>
-<?php endif; ?>
+
+
+
 
 <!-- Series Workflow Tab -->
 
-<?php if(metadata('item', array('Item Type Metadata', 'Series Finding Aid Date'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Finding Aid Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Finding Aid Date')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Series Finding Aid'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Finding Aid: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Finding Aid')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Series MARC Record Date'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series MARC Record Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series MARC Record Date')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Series MARC Record'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series MARC Record: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series MARC Record')); ?></td></tr></table></div>
-<?php endif; ?>
+<table class="tableizer-table">
+<tr class="tableizer-firstrow">
+<th>Series Record in AT</th>
+<th>Series Finding Aid</th>
+<th>Series MARC Record</th>
+</tr>
+ <tr>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Series Record in AT'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Series Record in AT')); ?>.png"/><?php endif; ?></br/><?php if(metadata('item', array('Item Type Metadata', 'Series Record in AT Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Series Record in AT Date')); ?><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Series Finding Aid'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Collection Finding Aid')); ?>.png"/><?php endif; ?></br/><?php if(metadata('item', array('Item Type Metadata', 'Series Finding Aid Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Series Finding Aid Date')); ?><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Series MARC Record'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Series MARC Record')); ?>.png"/><?php endif; ?></br/><?php if(metadata('item', array('Item Type Metadata', 'Series MARC Record Date'))): ?><?php echo metadata('item', array('Item Type Metadata', 'Series MARC Record Date')); ?><?php endif; ?></td>
+</tr>
+</table>
+
 <?php if(metadata('item', array('Item Type Metadata', 'Series Processing Overview'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Processing Overview: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Processing Overview')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Series Record in AT Date'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Record in AT Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Record in AT Date')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Series Record in AT'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Record in AT: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Record in AT')); ?></td></tr></table></div>
-<?php endif; ?>
+
 
 <!-- Interviews Workflow Tab-->
+
+
+
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Workflow Date Completed'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Workflow Date Completed: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Workflow Date Completed')); ?></td></tr></table></div>
