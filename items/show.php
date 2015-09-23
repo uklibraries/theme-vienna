@@ -43,6 +43,10 @@
             <li><a href="#view1">General</a></li>
             <li><a href="#view2">Description</a></li>
             <li><a href="#view3">Rights &amp; Usage</a></li>
+            <li><a href="#view4"></a></li>
+            <li><a href="#view5"></a></li>
+            <li><a href="#view6"></a></li>
+            <li><a href="#view7"></a></li>
             <li><a href="#view8">Workflow</a></li>
             <li><a href="#view9" style="color:red">Edit</a></li>
         </ul>
@@ -52,6 +56,10 @@
             <li><a href="#view1">General</a></li>
             <li><a href="#view2">Description</a></li>
             <li><a href="#view3">Rights &amp; Usage</a></li>
+            <li><a href="#view4"></a></li>
+            <li><a href="#view5"></a></li>
+            <li><a href="#view6"></a></li>
+            <li><a href="#view7"></a></li>
             <li><a href="#view8">Workflow</a></li>
             <li><a href="#view9" style="color:red">Edit</a></li>
         </ul>
