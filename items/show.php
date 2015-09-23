@@ -347,17 +347,19 @@ if ('interviews' === $type): ?>
 <th>Transcript Digital</th>
 <th>Transcript Translation</th>
 <th>Transcript</th>
-<th>Transcript Status</th>
 <th>Typescript</th>
 </tr>
  <tr>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Digital'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Digital')); ?>.png"/><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Translation'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Translation')); ?>.png"/><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript')); ?>.png"/><?php endif; ?></td>
-<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Status'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Status')); ?>.png"/><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Typescript'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Typescript')); ?>.png"/><?php endif; ?></td>
 </tr>
 </table>
+<?php endif; ?>
+
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Status'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript Status: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Status')); ?></td></tr></table></div>
 <?php endif; ?>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Date Assigned'))): ?>
