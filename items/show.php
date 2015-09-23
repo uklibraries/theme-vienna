@@ -269,9 +269,7 @@ if ('interviews' === $type): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Suppressed: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Suppressed')); ?></td></tr></table></div>
 <?php endif; ?>
 
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Release'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Release: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>/<?php echo metadata('item', array('Item Type Metadata', 'Collection Release')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Collection Release')); ?></a></td></tr></table></div>
-<?php endif; ?>
+
 
 <?php if(metadata('item', array('Item Type Metadata', 'Collection Notes on Rights and Usage'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Notes on Rights and Usage: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Notes on Rights and Usage')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Collection Notes on Rights and Usage')); ?></td></tr></table></div>
@@ -448,8 +446,29 @@ if ('interviews' === $type): ?>
             </div>
             <div id="view7">
 <!-- Collections Links Tab -->
+<?php 
+$type = $item->getItemType()->name;
+if ('collections' === $type): ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Release'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Release: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>/<?php echo metadata('item', array('Item Type Metadata', 'Collection Release')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Collection Release')); ?></a></td></tr></table></div>
+<?php endif; ?>
+<?php endif; ?>
+<?php 
+$type = $item->getItemType()->name;
+if ('series' === $type): ?>
 <!-- Series Links Tab -->
+<?php if(metadata('item', array('Item Type Metadata', 'Series Release'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Release: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>/<?php echo metadata('item', array('Item Type Metadata', 'Collection Release')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Series Release')); ?></a></td></tr></table></div>
+<?php endif; ?>
+<?php endif; ?>
 <!-- Interviews Links Tab -->
+<?php 
+$type = $item->getItemType()->name;
+if ('interviews' === $type): ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Release'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Release: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>/<?php echo metadata('item', array('Item Type Metadata', 'Interview Release')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Interview Release')); ?></a></td></tr></table></div>
+<?php endif; ?>
+
 <?php if(metadata('item', array('Item Type Metadata', 'Online Access'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Online Access: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Online Access')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -460,6 +479,7 @@ if ('interviews' === $type): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>OHMS Viewer: </h4></td></tr><tr><td style="width:300px;text-align:left;"><p><iframe src='https://nyx.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>.xml' width='1000px' height='785px' frameborder='0' name="viewer" scrolling="no" ></iframe></p></td></tr></table></div>
 <?php endif; ?>
 
+<?php endif; ?>
             </div>
             <div id="view8">
 <!-- Collections Workflow Tab -->
