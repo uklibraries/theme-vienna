@@ -460,7 +460,7 @@ $type = $item->getItemType()->name;
 if ('series' === $type): ?>
 <!-- Series Links Tab -->
 <?php if(metadata('item', array('Item Type Metadata', 'Series Release'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Release: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>/<?php echo metadata('item', array('Item Type Metadata', 'Collection Release')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Series Release')); ?></a></td></tr></table></div>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Release: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>/<?php echo metadata('item', array('Item Type Metadata', 'Series Release')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Series Release')); ?></a></td></tr></table></div>
 <?php endif; ?>
 <?php endif; ?>
 <!-- Interviews Links Tab -->
