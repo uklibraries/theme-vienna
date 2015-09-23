@@ -45,6 +45,7 @@ if ('collections' === $type): ?>
             <li><a href="#view1">General</a></li>
             <li><a href="#view2">Description</a></li>
             <li><a href="#view3">Rights &amp; Usage</a></li>
+            <li><a href="#view7">Links</a></li>
             <li><a href="#view8">Workflow</a></li>
             <li><a href="#view9" style="color:red">Edit</a></li>
         </ul>
@@ -56,6 +57,7 @@ if ('series' === $type): ?>
             <li><a href="#view1">General</a></li>
             <li><a href="#view2">Description</a></li>
             <li><a href="#view3">Rights &amp; Usage</a></li>
+            <li><a href="#view7">Links</a></li>
             <li><a href="#view8">Workflow</a></li>
             <li><a href="#view9" style="color:red">Edit</a></li>
         </ul>
