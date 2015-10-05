@@ -468,7 +468,7 @@ if ('series' === $type): ?>
 $type = $item->getItemType()->name;
 if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Release'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Release: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>/<?php echo metadata('item', array('Item Type Metadata', 'Interview Release')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Interview Release')); ?></a></td></tr></table></div>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Release: </h4></td><td style="width:300px;text-align:left;"><a href="https://oralhistory.uky.edu/spokedb/oh-files/<?php echo metadata('item', array('Item Type Metadata', 'Interview Release')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Interview Release')); ?></a></td></tr></table></div>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Online Access'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Online Access: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Online Access')); ?></td></tr></table></div>
