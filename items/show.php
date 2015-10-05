@@ -564,9 +564,6 @@ if ('series' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Notes'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Notes: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Notes')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Media Identifier'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Media Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Media Identifier')); ?></td></tr></table></div>
-<?php endif; ?>
             </div>
             <div id="view9">
             <!--<p>
