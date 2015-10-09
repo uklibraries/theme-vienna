@@ -122,6 +122,9 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Series Accession Date'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Accession Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Accession Date')); ?></td></tr></table></div>
 <?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Series ARK Identifier'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series ARK Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?></td></tr></table></div>
+<?php endif; ?>
 
 
 
@@ -144,6 +147,9 @@ if ('interviews' === $type): ?>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Series Identifier'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Series Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Series Identifier')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview ARK Identifier'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview ARK Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?></td></tr></table></div>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Series: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?></td></tr></table></div>
