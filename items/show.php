@@ -449,7 +449,7 @@ if ('interviews' === $type): ?>
             </div>
             <div id="view6">
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Cache File'))): ?>
-        <div class="item-description-static"><table style="width:95%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Cache File (viewer preview): </h4></td></tr><tr></tr><td style="width:300px;text-align:left;"><p><div xmlns="https://www.w3.org/1999/xhtml"><iframe src='https://oralhistory.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>.xml' width='1060px' height='785px' frameborder='0' name="viewer" scrolling="no" ></iframe></div></p></td></tr></table></div>
+        <div class="item-description-static"><table style="width:95%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Cache File (viewer preview): </h4></td></tr><tr></tr><td style="width:300px;text-align:left;"><p><div xmlns="https://www.w3.org/1999/xhtml"><iframe src='https://oralhistory.uky.edu/oh/render.php?cachefile=<?php echo metadata('item', array('Item Type Metadata', 'Interview Cache File')); ?>.xml' width='1050px' height='785px' frameborder='0' name="viewer" scrolling="no" ></iframe></div></p></td></tr></table></div>
 <?php endif; ?>
             </div>
             <div id="view7">
