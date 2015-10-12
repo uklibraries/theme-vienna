@@ -304,8 +304,8 @@ if ('interviews' === $type): ?>
 <th>No Paperwork</th>
 <th>Deed of Gift</th>
 <th>Rights Transferred</th>
-<th>Rights Transferred: Interviewee</th>
-<th>Rights Transferred: Interviewer</th>
+<th>Partial Rights Transferred: Interviewee</th>
+<th>Partial Rights Transferred: Interviewer</th>
 <th>Interview Restricted</th>
 </tr>
  <tr>
