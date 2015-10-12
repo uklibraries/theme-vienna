@@ -301,20 +301,20 @@ $type = $item->getItemType()->name;
 if ('interviews' === $type): ?>
 <table class="tableizer-table">
 <tr class="tableizer-firstrow">
-<th>Rights</th>
+<th>No Paperwork</th>
 <th>Deed of Gift</th>
-<th>Paperwork</th>
-<th>Interviewee</th>
-<th>Interviewer</th>
-<th>Transferred</th>
+<th>Rights Transferred</th>
+<th>Rights Transferred: Interviewee</th>
+<th>Rights Transferred: Interviewer</th>
+<th>Interview Restricted</th>
 </tr>
  <tr>
-<td><?php if(metadata('item', array('Dublin Core', 'Rights'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Dublin Core', 'Rights')); ?>.png"/><?php endif; ?></td>
-<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Deed of Gift'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Deed of Gift')); ?>.png"/><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Paperwork'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Paperwork')); ?>.png"/><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Deed of Gift'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Deed of Gift')); ?>.png"/><?php endif; ?></td>
+<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Transferred'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Transferred')); ?>.png"/><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewee')); ?>.png"/><?php endif; ?></td>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer')); ?>.png"/><?php endif; ?></td>
-<td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Transferred'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Transferred')); ?>.png"/><?php endif; ?></td>
+<td><?php if(metadata('item', array('Dublin Core', 'Rights'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Dublin Core', 'Rights')); ?>.png"/><?php endif; ?></td>
 </tr>
 </table>
 <?php endif; ?> 
