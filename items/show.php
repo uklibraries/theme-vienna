@@ -179,6 +179,12 @@ if ('interviews' === $type): ?>
 <?php endif; ?>
 </td></tr></table></div>
 <?php endif; ?>
+<?php if ($inkeyword = metadata('item', array('Item Type Metadata', 'Interview Keyword'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Keyword:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $inkeyword; ?></td></tr></table>
+</div>
+<?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Series: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -250,12 +256,7 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Featured Image'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Featured Image: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Featured Image')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if ($inkeyword = metadata('item', array('Item Type Metadata', 'Interview Keyword'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Keyword:</h4></td><td style="width:300px;text-align:left;">
-<?php echo $inkeyword; ?></td></tr></table>
-</div>
-<?php endif; ?>
+
 <?php if ($inlcsubject = metadata('item', array('Item Type Metadata', 'Interview LC Subject'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
 <table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview LC Subject:</h4></td><td style="width:300px;text-align:left;">
