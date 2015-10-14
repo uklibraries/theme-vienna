@@ -162,6 +162,8 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewee Last Name'))): ?>
 <?php echo metadata('item', array('Item Type Metadata', 'Interviewee Last Name')); ?>
 <?php endif; ?>
+</td></tr></table></div>
+<?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Series'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Series: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Series')); ?></td></tr></table></div>
 <?php endif; ?>
@@ -257,8 +259,7 @@ if ('interviews' === $type): ?>
 <?php endif; ?>
 
 
-</td></tr></table></div>
-<?php endif; ?>
+
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interviewer First Name'))): ?>
 <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interviewer Name: </h4></td><td style="width:300px;text-align:left;">
