@@ -132,7 +132,7 @@ if ('interviews' === $type): ?>
 <!-- Interviews General Tab -->
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Featured Image'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Featured Image: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Featured Image')); ?></td></tr></table></div>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Featured Image: </h4></td><td style="width:300px;text-align:left;"><img src="https://oralhistory.uky.edu/spokedb/oh-files/images/<?php echo metadata('item', array('Item Type Metadata', 'Interview Featured Image')); ?>.jpg width="150px" height="150px"/></td></tr></table></div>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Partial Date'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Partial Date: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Partial Date')); ?></td></tr></table></div>
