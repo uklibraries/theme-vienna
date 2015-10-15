@@ -182,6 +182,16 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Summary'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Summary: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Summary')); ?></td></tr></table></div>
 <?php endif; ?>
+<?php if ($inlcsubject = metadata('item', array('Item Type Metadata', 'Interview LC Subject'), array('delimiter'=>', '))): ?>
+<div class="item-description-static">
+<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview LC Subject:</h4></td><td style="width:300px;text-align:left;">
+<?php echo $inlcsubject; ?></td></tr></table>
+</div>
+<?php endif; ?>
+
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Location'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Location: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Location')); ?></td></tr></table></div>
+<?php endif; ?>
 <?php if ($inkeyword = metadata('item', array('Item Type Metadata', 'Interview Keyword'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
 <table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Keyword:</h4></td><td style="width:300px;text-align:left;">
@@ -263,16 +273,7 @@ if ('interviews' === $type): ?>
 
 
 
-<?php if ($inlcsubject = metadata('item', array('Item Type Metadata', 'Interview LC Subject'), array('delimiter'=>', '))): ?>
-<div class="item-description-static">
-<table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview LC Subject:</h4></td><td style="width:300px;text-align:left;">
-<?php echo $inlcsubject; ?></td></tr></table>
-</div>
-<?php endif; ?>
 
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Location'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Location: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Location')); ?></td></tr></table></div>
-<?php endif; ?>
 
 
 
