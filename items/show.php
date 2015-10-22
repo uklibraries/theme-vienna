@@ -317,8 +317,8 @@ if ('interviews' === $type): ?>
 <th>No Paperwork</th>
 <th>Deed of Gift</th>
 <th>Rights Transferred</th>
-<th>Partial Rights Transferred: Interviewee</th>
-<th>Partial Rights Transferred: Interviewer</th>
+<th>Partial Rights: Interviewee</th>
+<th>Partial Rights: Interviewer</th>
 <th>Interview Restricted</th>
 </tr>
  <tr>
@@ -342,10 +342,10 @@ if ('interviews' === $type): ?>
 
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Rights'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Rights: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights')); ?></td></tr></table></div>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Rights Description: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Rights')); ?></td></tr></table></div>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Usage'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Usage: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Usage')); ?></td></tr></table></div>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Usage Description: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Usage')); ?></td></tr></table></div>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Notes on Rights and Usage'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Notes on Rights and Usage: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Notes on Rights and Usage')); ?></td></tr></table></div>
@@ -419,7 +419,12 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcript Translator'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcript Translator: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcript Translator')); ?></td></tr></table></div>
 <?php endif; ?>
-
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Editor Date Assigned'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Editor Date Assigned: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Editor Date Assigned')); ?></td></tr></table></div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Editor Date Completed'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Editor Date Completed: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Editor Date Completed')); ?></td></tr></table></div>
+<?php endif; ?>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Transcriptionist'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Transcriptionist: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Transcriptionist')); ?></td></tr></table></div>
@@ -436,6 +441,7 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Translation Date Completed'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Translation Date Completed: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Translation Date Completed')); ?></td></tr></table></div>
 <?php endif; ?>
+
 
 
             </div>
@@ -468,6 +474,9 @@ if ('interviews' === $type): ?>
 </script>      
 </td></tr></table>
 </div>
+<?php endif; ?>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Digital File Name'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Digital File Name: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Digital File Name')); ?></td></tr></table></div>
 <?php endif; ?>
             </div>
             <div id="view6">
@@ -573,15 +582,8 @@ if ('series' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Workflow Main'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Workflow Main: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Workflow Main')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Digital File Name'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Digital File Name: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Digital File Name')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Editor Date Assigned'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Editor Date Assigned: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Editor Date Assigned')); ?></td></tr></table></div>
-<?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Interview Editor Date Completed'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Editor Date Completed: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Editor Date Completed')); ?></td></tr></table></div>
-<?php endif; ?>
+
+
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Index XML'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Index XML: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Index XML')); ?></td></tr></table></div>
 <?php endif; ?>
