@@ -334,7 +334,7 @@ if ('interviews' === $type): ?>
 </table>
 <?php endif; ?> 
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Suppressed'))): ?>
-        <table style="background-color:#E8E8E8"><tr><td>&nbsp;&nbsp;</td><td><?php echo metadata('item', array('Item Type Metadata', 'Interview Suppressed')); ?></td></tr></table>
+        <table style="background-color:#E8E8E8"><tr><td>&nbsp;&nbsp;</td><td><?php echo metadata('item', array('Item Type Metadata', 'Interview Suppressed')); ?></td><td>(<a href="#inline" data-lity>what is this?</a>)<div id="inline" style="background:#fff" class="lity-hide">a note about suppression</div></a></td></tr></table>
 <?php endif; ?> 
 
 <!--<?php if(metadata('item', array('Item Type Metadata', 'Interview Suppressed'))): ?>
