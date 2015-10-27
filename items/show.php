@@ -329,6 +329,11 @@ if ('interviews' === $type): ?>
 <td><?php if(metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Item Type Metadata', 'Interview Rights Interviewer')); ?>.png"/><?php endif; ?></td>
 <td><?php if(metadata('item', array('Dublin Core', 'Rights'))): ?><img src="https://oralhistory.uky.edu/<?php echo metadata('item', array('Dublin Core', 'Rights')); ?>.png"/><?php endif; ?></td>
 </tr>
+<tr><td>
+<?php if(metadata('item', array('Item Type Metadata', 'Interview Suppressed'))): ?>
+        Interview Suppressed: <?php echo metadata('item', array('Item Type Metadata', 'Interview Suppressed')); ?>
+<?php endif; ?>    
+</td></tr>
 </table>
 <?php endif; ?> 
 
