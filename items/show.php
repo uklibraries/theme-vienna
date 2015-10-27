@@ -331,7 +331,7 @@ if ('interviews' === $type): ?>
 </tr>
 <tr><td>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Suppressed'))): ?>
-        Interview Suppressed: <?php echo metadata('item', array('Item Type Metadata', 'Interview Suppressed')); ?>
+        <?php echo metadata('item', array('Item Type Metadata', 'Interview Suppressed')); ?>
 <?php endif; ?>    
 </td></tr>
 </table>
