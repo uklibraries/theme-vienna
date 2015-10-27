@@ -1,4 +1,6 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
+<script src="jquery.js"></script>
+<script src="lity.js"></script>
 <table><tr><td>
 <?php if(metadata('item', array('Dublin Core', 'Format'))): ?>
         <div class="element-text"><img src="https://kdnp.uky.edu/spokedb/tab_<?php echo metadata ('item', array('Dublin Core', 'Format')); ?>.png"/><br/><br/></div>
