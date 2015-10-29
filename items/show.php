@@ -607,14 +607,7 @@ if ('series' === $type): ?>
 <?php endif; ?>
 </p>-->
 
-<form method="link" action="https://oralhistory.uky.edu/spokedb/admin/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=43&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&range=&collection=&type=&tags=&featured=&submit_search=Search" formtarget="_blank">
-<input type="submit" value="Edit Item from Cataloging">
-</form>
-<br/><br/>
-<form method="post" action=""> 
-<input type="text" name="name" value="<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?>" readonly="readonly" style="border:none;display:none;">
-<input type="submit" name="delete" value="Delete Item from Public SPOKEdb"> 
-</form>
+
 
 <p><a href="https://oralhistory.uky.edu/spokedb/admin/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=43&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&range=&collection=&type=&tags=&featured=&submit_search=Search" data-lity>Edit this record.</a> (<span style="color: red;">authentication required</span>)</p>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview ARK Identifier'))): ?>
@@ -626,6 +619,11 @@ if ('series' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Series ARK Identifier'))): ?>
         <p>Is this item online?  <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?>" data-lity>https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?></a></p>
 <?php endif; ?>
+<br/>
+<form method="post" action=""> 
+<input type="text" name="name" value="<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?>" readonly="readonly" style="border:none;display:none;">
+<input type="submit" name="delete" value="Delete Item from Public SPOKEdb"> 
+</form>
 <p><A href="https://docs.google.com/spreadsheets/d/1-CkmS0a1s_ZUOFDzgRMeNRLwHZyikG712YRYFJAoLCo/edit#gid=0" target="_blank">SPOKEdb Technical Metadata Specification</a></p>
 <p>SPOKEdb User Guide</p> 
 </div>
