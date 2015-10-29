@@ -608,13 +608,13 @@ if ('series' === $type): ?>
 </p>-->
 <p><a href="https://oralhistory.uky.edu/spokedb/admin/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=43&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&range=&collection=&type=&tags=&featured=&submit_search=Search" data-lity>Edit this record.</a> (<span style="color: red;">authentication required</span>)</p>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview ARK Identifier'))): ?>
-        <p>Check to see if this record has been published online: <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?>">https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?></a></p>
+        <p>Check to see if this record has been published online: <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?>" data-lity>https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?></a></p>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Collection ARK Identifier'))): ?>
-        <p>Check to see if this record has been published online: <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Collection ARK Identifier')); ?>">https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Collection ARK Identifier')); ?></a></p>
+        <p>Check to see if this record has been published online: <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Collection ARK Identifier')); ?>" data-lity>https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Collection ARK Identifier')); ?></a></p>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Series ARK Identifier'))): ?>
-        <p>Check to see if this record has been published online: <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?>">https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?></a></p>
+        <p>Check to see if this record has been published online: <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?>" data-lity>https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?></a></p>
 <?php endif; ?>
 <p>Delete a record from the SPOKEdb public interface at https://kentuckyoralhistory.org (<span style="color: red;">controlled by IP restriction and LDAP</span>)</p>
 <p><A href="https://docs.google.com/spreadsheets/d/1-CkmS0a1s_ZUOFDzgRMeNRLwHZyikG712YRYFJAoLCo/edit#gid=0" target="_blank">SPOKEdb Technical Metadata Specification</a></p>
