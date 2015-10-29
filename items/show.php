@@ -606,6 +606,19 @@ if ('series' === $type): ?>
         <div class="element-text"><pre>{"interviewti_display":"<?php echo metadata ('item', array('Item Type Metadata', 'Interview Title')); ?>","interviewid_display":"<?php echo metadata ('item', array('Item Type Metadata', 'Interview Accession Number')); ?>","id:"<?php echo metadata ('item', array('Dublin Core', 'Identifier')); ?>"}</pre><br/><br/></div>
 <?php endif; ?>
 </p>-->
+<form method="post" action=" "> 
+<input type="text" name="name" value="ARK-Field">
+<input type="submit" name="edit" value="Edit Item"> 
+</form>
+<form method="post" action=" "> 
+<input type="text" name="name" value="ARK-Field">
+<input type="submit" name="online" value="Check Online Status"> 
+</form>
+<form method="post" action=" "> 
+<input type="text" name="name" value="ARK-Field">
+<input type="submit" name="delete" value="Delete Item"> 
+</form>
+
 <p><a href="https://oralhistory.uky.edu/spokedb/admin/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=43&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&range=&collection=&type=&tags=&featured=&submit_search=Search" data-lity>Edit this record.</a> (<span style="color: red;">authentication required</span>)</p>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview ARK Identifier'))): ?>
         <p>Check to see if this record has been published online: <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?>" data-lity>https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?></a></p>
