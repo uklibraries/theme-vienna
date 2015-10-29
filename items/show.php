@@ -608,7 +608,7 @@ if ('series' === $type): ?>
 </p>-->
 
 
-<form method="post" action=" "> 
+<form method="post" action=""> 
 <input type="text" name="name" value="<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?>" readonly="readonly" style="border:none;display:none;">
 <input type="submit" name="delete" value="Delete Item"> 
 </form>
