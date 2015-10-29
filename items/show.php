@@ -606,16 +606,9 @@ if ('series' === $type): ?>
         <div class="element-text"><pre>{"interviewti_display":"<?php echo metadata ('item', array('Item Type Metadata', 'Interview Title')); ?>","interviewid_display":"<?php echo metadata ('item', array('Item Type Metadata', 'Interview Accession Number')); ?>","id:"<?php echo metadata ('item', array('Dublin Core', 'Identifier')); ?>"}</pre><br/><br/></div>
 <?php endif; ?>
 </p>-->
+
 <form method="post" action=" "> 
-<input type="text" name="name" value="ARK-Field">
-<input type="submit" name="edit" value="Edit Item"> 
-</form>
-<form method="post" action=" "> 
-<input type="text" name="name" value="ARK-Field">
-<input type="submit" name="online" value="Check Online Status"> 
-</form>
-<form method="post" action=" "> 
-<input type="text" name="name" value="ARK-Field">
+<input type="text" name="name" value="<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?>" readonly="readonly">
 <input type="submit" name="delete" value="Delete Item"> 
 </form>
 
@@ -629,7 +622,6 @@ if ('series' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Series ARK Identifier'))): ?>
         <p>Check to see if this record has been published online: <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?>" data-lity>https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?></a></p>
 <?php endif; ?>
-<p>Delete a record from the SPOKEdb public interface at https://kentuckyoralhistory.org (<span style="color: red;">controlled by IP restriction and LDAP</span>)</p>
 <p><A href="https://docs.google.com/spreadsheets/d/1-CkmS0a1s_ZUOFDzgRMeNRLwHZyikG712YRYFJAoLCo/edit#gid=0" target="_blank">SPOKEdb Technical Metadata Specification</a></p>
 <p>SPOKEdb User Guide</p> 
 </div>
