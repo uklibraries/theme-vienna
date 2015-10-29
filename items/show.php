@@ -625,8 +625,9 @@ if ('series' === $type): ?>
 </form>
 <br/>
 <p>Documents:</p>
-<p><A href="https://docs.google.com/spreadsheets/d/1-CkmS0a1s_ZUOFDzgRMeNRLwHZyikG712YRYFJAoLCo/edit#gid=0" data-lity>SPOKEdb Technical Metadata Specification</a></p>
-<p>SPOKEdb User Guide</p> 
+<p><A href="https://docs.google.com/spreadsheets/d/1-CkmS0a1s_ZUOFDzgRMeNRLwHZyikG712YRYFJAoLCo/edit#gid=0" data-lity>SPOKEdb Technical Metadata Specification</a><br/>
+<a href="https://docs.google.com/drawings/d/19b-NbVek41S-QEF7o0rEGfd0o-G2-h87g1I1uZfR9tg/edit" data-lity>SPOKEdb Bar Napkin</a><br/>
+SPOKEdb User Guide</p> 
 </div>
  </div> </div>
     <ul class="item-pagination navigation">
