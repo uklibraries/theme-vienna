@@ -607,6 +607,9 @@ if ('series' === $type): ?>
 <?php endif; ?>
 </p>-->
 
+<form method="link" action="https://oralhistory.uky.edu/spokedb/admin/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=43&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&range=&collection=&type=&tags=&featured=&submit_search=Search" data-lity>
+<input type="submit" value="Edit This Item">
+</form>
 
 <form method="post" action=""> 
 <input type="text" name="name" value="<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?>" readonly="readonly" style="border:none;display:none;">
