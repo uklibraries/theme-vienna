@@ -610,7 +610,7 @@ if ('series' === $type): ?>
 
 <form method="post" action=" "> 
 <input type="text" name="name" value="<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?>" readonly="readonly" style="border:none;display:none;">
-<input type="submit" name="delete" value="Delete Item" style="background-color:#CC3333"> 
+<input type="submit" name="delete" value="Delete Item"> 
 </form>
 
 <p><a href="https://oralhistory.uky.edu/spokedb/admin/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=43&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&range=&collection=&type=&tags=&featured=&submit_search=Search" data-lity>Edit this record.</a> (<span style="color: red;">authentication required</span>)</p>
