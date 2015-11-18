@@ -272,7 +272,7 @@ if ('interviews' === $type): ?>
 <!-- Interview Description Tab -->
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Featured Image'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Featured Image: </h4></td><td style="width:300px;text-align:left;"><img src="/opt/shares/spoke/images/<?php echo metadata('item', array('Item Type Metadata', 'Interview Featured Image')); ?>.png" width="150px" height="150px"/></td></tr></table></div>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Featured Image: </h4></td><td style="width:300px;text-align:left;"><img src="https://oralhistory.uky.edu/spokedbimages/<?php echo metadata('item', array('Item Type Metadata', 'Interview Featured Image')); ?>.png" width="150px" height="150px"/></td></tr></table></div>
 <?php endif; ?>
 
 
