@@ -61,7 +61,7 @@ if ('series' === $type): ?>
             <li><a href="#view3">Rights &amp; Usage</a></li>
             <li><a href="#view7">Links</a></li>
             <li><a href="#view8">Workflow</a></li>
-            <li><a href="#view9" style="color:red">Edit</a></li>
+            <li><a href="#view9" style="color:red">Admin</a></li>
         </ul>
 <?php endif; ?>
 <?php 
@@ -76,7 +76,7 @@ if ('interviews' === $type): ?>
             <li><a href="#view6">OHMS</a></li>
             <li><a href="#view7">Links</a></li>
             <li><a href="#view8">Workflow</a></li>
-            <li><a href="#view9" style="color:red">Edit</a></li>
+            <li><a href="#view9" style="color:red">Admin</a></li>
         </ul>
 <?php endif; ?>
         <div class="tabcontents">
