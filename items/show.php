@@ -549,7 +549,18 @@ if ('collections' === $type): ?>
                 &#60;titleproper type="filing"&#62;<?php echo metadata('item', array('Dublin Core', 'Title')); ?>&#60;/titleproper&#62;
                 &#60;author&#62;Finding aid prepared by Kopana Terry&#60;/author&#62;
             &#60;/titlestmt&#62;
-
+            &#60;publicationstmt&#62;
+                &#60;publisher&#62;University of Kentucky Special Collections&#60;/publisher&#62;
+                &#60;address&#62;
+                    &#60;addressline&#62;Special Collections&#60;/addressline&#62;
+                    &#60;addressline&#62;Margaret I. King Building, North&#60;/addressline&#62;
+                    &#60;addressline&#62;Lexington, KY, 40506-0039&#60;/addressline&#62;
+                    &#60;addressline&#62;(859) 257-8611&#60;/addressline&#62;
+                    &#60;addressline&#62;SCLREF@LSV.UKY.EDU&#60;/addressline&#62;
+                &#60;/address&#62;
+                &#60;date&#62;2014 January 27&#60;/date&#62;
+            &#60;/publicationstmt&#62;
+        &#60;/filedesc&#62;
                     </p>
                     </div>
                     <?php endif; ?>
