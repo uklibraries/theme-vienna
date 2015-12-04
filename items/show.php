@@ -49,6 +49,7 @@ if ('collections' === $type): ?>
             <li><a href="#view3">Rights &amp; Usage</a></li>
             <li><a href="#view7">Links</a></li>
             <li><a href="#view8">Workflow</a></li>
+            <li><a href="#view10">EAD</a></li>
             <li><a href="#view9" style="color:red">Admin</a></li>
         </ul>
 <?php endif; ?>
@@ -529,6 +530,14 @@ if ('interviews' === $type): ?>
 
 <?php endif; ?>
             </div>
+            <!-- Collections EAD Tab -->
+            <?php 
+$type = $item->getItemType()->name;
+if ('collections' === $type): ?>
+            <div id="view10">
+                    <p>EAD View</p></p>
+                    </div>
+                    <?php endif; ?>
             <div id="view8">
 <!-- Collections Workflow Tab -->
 <?php 
