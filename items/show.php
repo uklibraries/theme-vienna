@@ -605,10 +605,10 @@ if ('collections' === $type): ?>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;head&#62;Immediate Source of Acquisition note&#60;/head&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;p&#62;&#60;/p&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/acqinfo&#62;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;controlaccess&#62;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;controlaccess&#62;
 <?php if ($clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>'&#60;/subject&#62;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;subject source="lcsh"&#62;'))): ?><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;subject source="lcsh"&#62;<?php echo $clcsubject; ?>&#60;/subject&#62;<br/>
-<?php endif; ?><br/>
+<?php endif; ?>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/controlaccess&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;dsc&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;c01 id="ref3" level="file"&#62;<br/>
