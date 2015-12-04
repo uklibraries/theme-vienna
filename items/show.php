@@ -563,7 +563,7 @@ if ('collections' === $type): ?>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/filedesc&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;profiledesc&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;creation&#62;This finding aid was produced using SPOKEdb<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;date&#62;<?php echo . date('Y-m-d') ."\n"; ?>&#60;/date&#62;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;date&#62;<?php echo . date('Y-m-d') .; ?>&#60;/date&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/creation&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;descrules&#62;Describing Archives: A Content Standard&#60;/descrules&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/profiledesc&#62;<br/>
