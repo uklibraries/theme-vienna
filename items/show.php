@@ -607,7 +607,7 @@ if ('collections' === $type): ?>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/acqinfo&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;controlaccess&#62;<br/>
 <?php if ($clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>', '))): ?><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;subject source="lcsh"&#62;<?php echo $slcsubject; ?>&#60;/subject&#62;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;subject source="lcsh"&#62;<?php echo $clcsubject; ?>&#60;/subject&#62;<br/>
 <?php endif; ?><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/controlaccess&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;dsc&#62;<br/>
