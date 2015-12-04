@@ -536,7 +536,7 @@ $type = $item->getItemType()->name;
 if ('collections' === $type): ?>
             <div id="view10">
                     <p>EAD View</p>
-                    <pre>
+                    <p>
                             &#60;?xml version="1.0" encoding="UTF-8" standalone="yes"?&#62;
 &#60;ead xmlns:ns2="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-22-9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd"&#62;
     &#60;eadheader findaidstatus="Completed" repositoryencoding="iso15511" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"&#62;
@@ -549,78 +549,8 @@ if ('collections' === $type): ?>
                 &#60;titleproper type="filing"&#62;<?php echo metadata('item', array('Dublin Core', 'Title')); ?>&#60;/titleproper&#62;
                 &#60;author&#62;Finding aid prepared by Kopana Terry&#60;/author&#62;
             &#60;/titlestmt&#62;
-            &#60;publicationstmt&#62;
-                &#60;publisher&#62;University of Kentucky Special Collections&#60;/publisher&#62;
-                &#60;address&#62;
-                    &#60;addressline&#62;Special Collections&#60;/addressline&#62;
-                    &#60;addressline&#62;Margaret I. King Building, North&#60;/addressline&#62;
-                    &#60;addressline&#62;Lexington, KY, 40506-0039&#60;/addressline&#62;
-                    &#60;addressline&#62;(859) 257-8611&#60;/addressline&#62;
-                    &#60;addressline&#62;SCLREF@LSV.UKY.EDU&#60;/addressline&#62;
-                &#60;/address&#62;
-                &#60;date&#62;2014 January 27&#60;/date&#62;
-            &#60;/publicationstmt&#62;
-        &#60;/filedesc&#62;
-        &#60;profiledesc&#62;
-            &#60;creation&#62;This finding aid was produced using SPOKEdb
-                &#60;date&#62;2014-08-18T15:45-0400&#60;/date&#62;
-            &#60;/creation&#62;
-            &#60;descrules&#62;Describing Archives: A Content Standard&#60;/descrules&#62;
-        &#60;/profiledesc&#62;
-    &#60;/eadheader&#62;
-    &#60;archdesc level="collection"&#62;
-        &#60;did&#62;
-            &#60;unittitle&#62;<?php echo metadata('item', array('Dublin Core', 'Title')); ?>&#60;/unittitle&#62;
-            &#60;unitid&#62;<?php echo metadata('item', array('Item Type Metadata', 'Collection Abbreviation')); ?>&#60;/unitid&#62;
-            &#60;repository&#62;
-                &#60;corpname&#62;University of Kentucky Special Collections&#60;/corpname&#62;
-            &#60;/repository&#62;
-            &#60;langmaterial&#62;
-                &#60;language langcode="eng"/&#62;
-            &#60;/langmaterial&#62;
-            &#60;physdesc&#62;
-                &#60;extent&#62;&#60;/extent&#62;
-                &#60;extent&#62;&#60;/extent&#62;
-            &#60;/physdesc&#62;
-            &#60;unitdate&#62;1796 July 2-October 1&#60;/unitdate&#62;
-            &#60;abstract id="ref14" label="Abstract"&#62;<?php echo metadata('item', array('Item Type Metadata', 'Collection Summary')); ?&#62;&#60;/abstract&#62;
-        &#60;/did&#62;
-        &#60;bioghist id="ref6"&#62;
-            &#60;head&#62;Biographical note&#60;/head&#62;
-            &#60;p&#62;&#60;/p&#62;
-        &#60;/bioghist&#62;
-        &#60;prefercite id="ref10"&#62;
-            &#60;head&#62;Preferred Citation note&#60;/head&#62;
-            &#60;p&#62;<?php echo metadata('item', array('Item Type Metadata', 'Collection Abbreviation')); ?>: [identification of item], <?php echo metadata('item', array('Dublin Core', 'Title')); ?>, <?php echo metadata('item', array('Item Type Metadata', 'Collection Accession Date')); ?>, University of Kentucky Special Collections.&#60;/p&#62;
-        &#60;/prefercite&#62;
-        &#60;userestrict id="ref8"&#62;
-            &#60;head&#62;Conditions Governing Use note&#60;/head&#62;
-            &#60;p&#62;Property rights reside with the University of Kentucky. The University of Kentucky holds the copyright for materials created in the course of business by University of Kentucky employees. Copyright for all other materials has not been assigned to the University of Kentucky. For information about permission to reproduce or publish, please contact Special Collections.&#60;/p&#62;
-        &#60;/userestrict&#62;
-        &#60;accessrestrict id="ref7"&#62;
-            &#60;head&#62;Conditions Governing Access note&#60;/head&#62;
-            &#60;p&#62;Collection is open to researchers by appointment.&#60;/p&#62;
-        &#60;/accessrestrict&#62;
-        &#60;acqinfo id="ref12"&#62;
-            &#60;head&#62;Immediate Source of Acquisition note&#60;/head&#62;
-            &#60;p&#62;&#60;/p&#62;
-        &#60;/acqinfo&#62;
-        &#60;controlaccess&#62;
-<?php if ($clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>', '))): ?>
-            &#60;subject source="lcsh"&#62;<?php echo $clcsubject; ?&#62;&#60;/subject&#62;
-<?php endif; ?>
-        &#60;/controlaccess&#62;
-        &#60;dsc&#62;
-            &#60;c01 id="ref3" level="file"&#62;
-                &#60;did&#62;
-                    &#60;unittitle&#62;&#60;/unittitle&#62;
-                &#60;/did&#62;
-            &#60;/c01&#62;
-        &#60;/dsc&#62;
-    &#60;/archdesc&#62;
-&#60;/ead&#62;
 
-                    </pre>
+                    </p>
                     </div>
                     <?php endif; ?>
             <div id="view8">
