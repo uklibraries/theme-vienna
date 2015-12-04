@@ -574,6 +574,52 @@ if ('collections' === $type): ?>
             &#60;unitid&#62;<?php echo metadata('item', array('Item Type Metadata', 'Collection Abbreviation')); ?>&#60;/unitid&#62;
             &#60;repository&#62;
                 &#60;corpname&#62;University of Kentucky Special Collections&#60;/corpname&#62;
+                            &#60;/repository&#62;
+            &#60;langmaterial&#62;
+                &#60;language langcode="eng"/&#62;
+            &#60;/langmaterial&#62;
+            &#60;physdesc&#62;
+                &#60;extent&#62;&#60;/extent&#62;
+                &#60;extent&#62;&#60;/extent&#62;
+            &#60;/physdesc&#62;
+            &#60;unitdate&#62;1796 July 2-October 1&#60;/unitdate&#62;
+            &#60;abstract id="ref14" label="Abstract"&#62;<?php echo metadata('item', array('Item Type Metadata', 'Collection Summary')); ?>&#62;&#60;/abstract&#62;
+        &#60;/did&#62;
+        &#60;bioghist id="ref6"&#62;
+            &#60;head&#62;Biographical note&#60;/head&#62;
+            &#60;p&#62;&#60;/p&#62;
+        &#60;/bioghist&#62;
+        &#60;prefercite id="ref10"&#62;
+            &#60;head&#62;Preferred Citation note&#60;/head&#62;
+            &#60;p&#62;<?php echo metadata('item', array('Item Type Metadata', 'Collection Abbreviation')); ?>: [identification of item], <?php echo metadata('item', array('Dublin Core', 'Title')); ?>, <?php echo metadata('item', array('Item Type Metadata', 'Collection Accession Date')); ?>, University of Kentucky Special Collections.&#60;/p&#62;
+        &#60;/prefercite&#62;
+        &#60;userestrict id="ref8"&#62;
+            &#60;head&#62;Conditions Governing Use note&#60;/head&#62;
+            &#60;p&#62;Property rights reside with the University of Kentucky. The University of Kentucky holds the copyright for materials created in the course of business by University of Kentucky employees. Copyright for all other materials has not been assigned to the University of Kentucky. For information about permission to reproduce or publish, please contact Special Collections.&#60;/p&#62;
+        &#60;/userestrict&#62;
+        &#60;accessrestrict id="ref7"&#62;
+            &#60;head&#62;Conditions Governing Access note&#60;/head&#62;
+            &#60;p&#62;Collection is open to researchers by appointment.&#60;/p&#62;
+        &#60;/accessrestrict&#62;
+        &#60;acqinfo id="ref12"&#62;
+            &#60;head&#62;Immediate Source of Acquisition note&#60;/head&#62;
+            &#60;p&#62;&#60;/p&#62;
+        &#60;/acqinfo&#62;
+        &#60;controlaccess&#62;
+<?php if ($clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>', '))): ?>
+            &#60;subject source="lcsh"&#62;<?php echo $clcsubject; ?&#62;&#60;/subject&#62;
+<?php endif; ?>
+        &#60;/controlaccess&#62;
+        &#60;dsc&#62;
+            &#60;c01 id="ref3" level="file"&#62;
+                &#60;did&#62;
+                    &#60;unittitle&#62;&#60;/unittitle&#62;
+                &#60;/did&#62;
+            &#60;/c01&#62;
+        &#60;/dsc&#62;
+    &#60;/archdesc&#62;
+&#60;/ead&#62;
+
                     </p>
                     </div>
                     <?php endif; ?>
