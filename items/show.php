@@ -605,20 +605,7 @@ if ('collections' === $type): ?>
             &#60;head&#62;Immediate Source of Acquisition note&#60;/head&#62;
             &#60;p&#62;&#60;/p&#62;
         &#60;/acqinfo&#62;
-        &#60;controlaccess&#62;
-<?php if ($clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>', '))): ?>
-            &#60;subject source="lcsh"&#62;<?php echo $clcsubject; ?&#62;&#60;/subject&#62;
-<?php endif; ?>
-        &#60;/controlaccess&#62;
-        &#60;dsc&#62;
-            &#60;c01 id="ref3" level="file"&#62;
-                &#60;did&#62;
-                    &#60;unittitle&#62;&#60;/unittitle&#62;
-                &#60;/did&#62;
-            &#60;/c01&#62;
-        &#60;/dsc&#62;
-    &#60;/archdesc&#62;
-&#60;/ead&#62;
+
 
                     </p>
                     </div>
