@@ -606,8 +606,8 @@ if ('collections' === $type): ?>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;p&#62;&#60;/p&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/acqinfo&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;controlaccess&#62;
-<?php if ($clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>'</span>&#60;/subject&#62;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;subject source="lcsh"&#62;<span style="pointer-events:none;cursor:default;">'))): ?><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;subject source="lcsh"&#62;<span style="pointer-events:none;cursor:default;"><?php echo $clcsubject; ?></span>&#60;/subject&#62;<br/>
+<?php if ($clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>'</span>&#60;/subject&#62;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;subject source="lcsh"&#62;<span style="text-decoration:none;pointer-events:none;cursor:default;">'))): ?><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;subject source="lcsh"&#62;<span style="text-decoration:none;pointer-events:none;cursor:default;"><?php echo $clcsubject; ?></span>&#60;/subject&#62;<br/>
 <?php endif; ?>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/controlaccess&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;dsc&#62;<br/>
