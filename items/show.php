@@ -540,11 +540,11 @@ if ('collections' === $type): ?>
 &#60;?xml version="1.0" encoding="UTF-8" standalone="yes"?&#62;<br/>
 &#60;ead xmlns:ns2="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-22-9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd"&#62;<br/>
 &nbsp;&nbsp;&nbsp;&#60;eadheader findaidstatus="Completed" repositoryencoding="iso15511" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"&#62;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;eadid&#62;<?php echo metadata('item', array('Item Type Metadata', 'Collection Abbreviation')); ?>&#60;/eadid&#62;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;eadid&#62;<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>&#60;/eadid&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;filedesc&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;titlestmt&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;titleproper&#62;<?php echo metadata('item', array('Dublin Core', 'Title')); ?><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;num&#62;<?php echo metadata('item', array('Item Type Metadata', 'Collection Abbreviation')); ?>&#60;/num&#62;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;num&#62;<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>&#60;/num&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/titleproper&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;titleproper type="filing"&#62;<?php echo metadata('item', array('Dublin Core', 'Title')); ?>&#60;/titleproper&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;author&#62;Finding aid prepared by Kopana Terry&#60;/author&#62;<br/>
@@ -571,7 +571,7 @@ if ('collections' === $type): ?>
 &nbsp;&nbsp;&nbsp;&#60;archdesc level="collection"&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;did&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;unittitle&#62;<?php echo metadata('item', array('Dublin Core', 'Title')); ?>&#60;/unittitle&#62;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;unitid&#62;<?php echo metadata('item', array('Item Type Metadata', 'Collection Abbreviation')); ?>&#60;/unitid&#62;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;unitid&#62;<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>&#60;/unitid&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;repository&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;corpname&#62;University of Kentucky Special Collections&#60;/corpname&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/repository&#62;<br/>
@@ -591,7 +591,7 @@ if ('collections' === $type): ?>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/bioghist&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;prefercite id="ref10"&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;head&#62;Preferred Citation note&#60;/head&#62;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;p&#62;<?php echo metadata('item', array('Item Type Metadata', 'Collection Abbreviation')); ?>: [identification of item], <?php echo metadata('item', array('Dublin Core', 'Title')); ?>, <?php echo metadata('item', array('Item Type Metadata', 'Collection Accession Date')); ?>, University of Kentucky Special Collections.&#60;/p&#62;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;p&#62;<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>: [identification of item], <?php echo metadata('item', array('Dublin Core', 'Title')); ?>, <?php echo metadata('item', array('Item Type Metadata', 'Collection Accession Date')); ?>, University of Kentucky Special Collections.&#60;/p&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/prefercite&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;userestrict id="ref8"&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;head&#62;Conditions Governing Use note&#60;/head&#62;<br/>
