@@ -561,6 +561,19 @@ if ('collections' === $type): ?>
                 &#60;date&#62;2014 January 27&#60;/date&#62;
             &#60;/publicationstmt&#62;
         &#60;/filedesc&#62;
+                &#60;profiledesc&#62;
+            &#60;creation&#62;This finding aid was produced using SPOKEdb
+                &#60;date&#62;2014-08-18T15:45-0400&#60;/date&#62;
+            &#60;/creation&#62;
+            &#60;descrules&#62;Describing Archives: A Content Standard&#60;/descrules&#62;
+        &#60;/profiledesc&#62;
+    &#60;/eadheader&#62;
+    &#60;archdesc level="collection"&#62;
+        &#60;did&#62;
+            &#60;unittitle&#62;<?php echo metadata('item', array('Dublin Core', 'Title')); ?>&#60;/unittitle&#62;
+            &#60;unitid&#62;<?php echo metadata('item', array('Item Type Metadata', 'Collection Abbreviation')); ?>&#60;/unitid&#62;
+            &#60;repository&#62;
+                &#60;corpname&#62;University of Kentucky Special Collections&#60;/corpname&#62;
                     </p>
                     </div>
                     <?php endif; ?>
