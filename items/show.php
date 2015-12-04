@@ -536,7 +536,7 @@ $type = $item->getItemType()->name;
 if ('collections' === $type): ?>
             <div id="view10">
                     <p>EAD View</p>
-                    <p>
+                    <pre>
                             &#60;?xml version="1.0" encoding="UTF-8" standalone="yes"?&#62;
 &#60;ead xmlns:ns2="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-22-9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd"&#62;
     &#60;eadheader findaidstatus="Completed" repositoryencoding="iso15511" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"&#62;
@@ -620,7 +620,7 @@ if ('collections' === $type): ?>
     &#60;/archdesc&#62;
 &#60;/ead&#62;
 
-                    </p>
+                    </pre>
                     </div>
                     <?php endif; ?>
             <div id="view8">
