@@ -582,7 +582,7 @@ if ('collections' === $type): ?>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;extent&#62;&#60;/extent&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;extent&#62;&#60;/extent&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/physdesc&#62;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;unitdate&#62;1796 July 2-October 1&#60;/unitdate&#62;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;unitdate&#62;????&#60;/unitdate&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;abstract id="ref14" label="Abstract"&#62;<?php echo metadata('item', array('Item Type Metadata', 'Collection Summary')); ?>&#60;/abstract&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/did&#62;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;bioghist id="ref6"&#62;<br/>
