@@ -623,11 +623,7 @@ if ('collections' === $type): ?>
 
 
                     </div>
-<?php
-$spokedbead = fopen("/home/rails/spoke_db/public/ead/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml", "a");
-echo fwrite($spokedbead,"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>");
-fclose($spokedbead);
-<?php endif; ?>
+
                     <?php endif; ?>
             <div id="view8">
 <!-- Collections Workflow Tab -->
