@@ -535,6 +535,7 @@ if ('interviews' === $type): ?>
 $type = $item->getItemType()->name;
 if ('collections' === $type): ?>
             <div id="view10">
+                    <p><form action="https://oralhistory.uky.edu/ead/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml"><input type="submit" value="Download XML"></form></p>
                     <p>EAD View</p>
                     <p>
 &#60;?xml version="1.0" encoding="UTF-8" standalone="yes"?&#62;<br/>
