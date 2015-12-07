@@ -535,12 +535,9 @@ if ('interviews' === $type): ?>
 $type = $item->getItemType()->name;
 if ('collections' === $type): ?>
             <div id="view10">
-                    <?php
-        if ('false' === $suppressed);
+                   
                     <p><form action="https://oralhistory.uky.edu/ead/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml"><input type="submit" value="View &amp; Download XML"></form></p>
-        else
-        <p></p>
-        <?php endif; ?>
+        
 
             <?php 
 $suppressed = metadata('item', array('Item Type Metadata', 'Collection Suppressed'));
