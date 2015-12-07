@@ -553,7 +553,8 @@ fclose($spokedbead); ?>
 <?php 
 $suppressed = metadata('item', array('Item Type Metadata', 'Collection Suppressed'));
 if ('true' === $suppressed): 
-echo ('hello');?>
+echo ('hello'); ?>
+<?php endif; ?>
 
                     </div>
 
