@@ -535,7 +535,7 @@ if ('interviews' === $type): ?>
 $type = $item->getItemType()->name;
 if ('collections' === $type): ?>
 
-<?php if ($clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>'</subject><subject source="lcsh">'))): 
+<?php if ($clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>'</subject><subject source="lcsh">'))): ?>
 $subjects = ('<subject source="lcsh"><?php echo $clcsubject; ?></subject>');
 <?php endif; ?>
 
