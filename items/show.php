@@ -534,10 +534,6 @@ if ('interviews' === $type): ?>
             <?php 
 $type = $item->getItemType()->name;
 if ('collections' === $type): ?>
-            <div id="view10">
-                   
-                    <p><form action="https://oralhistory.uky.edu/ead/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml"><input type="submit" value="View &amp; Download XML"></form></p>
-        
 
             <?php 
 $suppressed = metadata('item', array('Item Type Metadata', 'Collection Suppressed'));
@@ -550,15 +546,9 @@ $spokedbead = fopen("/home/rails/rails/blacklight/spoke_db/public/ead/$identifie
 echo fwrite($spokedbead,"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<ead xmlns:ns2=\"http://www.w3.org/1999/xlink\" xmlns=\"urn:isbn:1-931666-22-9\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd\">\n<eadheader findaidstatus=\"Completed\" repositoryencoding=\"iso15511\" countryencoding=\"iso3166-1\" dateencoding=\"iso8601\" langencoding=\"iso639-2b\">\n<eadid>$identifier</eadid>\n<filedesc>\n<titlestmt>\n<titleproper>$title\n<num>$identifier</num>\n</titleproper>\n<titleproper type=\"filing\">$title</titleproper>\n<author>Finding aid prepared by Kopana Terry</author>\n</titlestmt>\n<publicationstmt>\n<publisher>University of Kentucky Special Collections</publisher>\n<address>\n<addressline>Louie B. Nunn Center for Oral History</addressline>\n<addressline>Margaret I. King Building, North</addressline>\n<addressline>Lexington, KY, 40506-0039</addressline>\n<addressline>(859) 257-9672</addressline>\n<addressline>nunncenter@lsv.uky.edu</addressline>\n</address>\n<date>?????</date>\n</publicationstmt>\n</filedesc>\n<profiledesc>\n<creation>This finding aid was produced using SPOKEdb\n<date>$creationdate</date>\n</creation>\n<descrules>Describing Archives: A Content Standard</descrules>\n</profiledesc>\n</eadheader>\n<archdesc level=\"collection\">\n<did>\n<unittitle>$title</unittitle>\n<unitid>$identifier</unitid>\n<repository>\n<corpname>University of Kentucky Special Collections</corpname>\n</repository>\n<langmaterial>\n<language langcode=\"eng\"/>\n</langmaterial>\n<physdesc>\n<extent></extent>\n<extent></extent>\n</physdesc>\n<unitdate>????</unitdate>\n<abstract id=\"ref14\" label=\"Abstract\">$summary</abstract>\n</did>\n<bioghist id=\"ref6\">\n<head>Biographical note</head>\n<p></p>\n</bioghist>\n<prefercite id=\"ref10\">\n<head>Preferred Citation note</head>\n<p>$identifier: [identification of item], $title, $accessiondate, Louie B. Nunn Center for Oral History.</p>\n</prefercite>\n<userestrict id=\"ref8\">\n<head>Conditions Governing Use note</head>\n<p>Property rights reside with the University of Kentucky. The University of Kentucky holds the copyright for materials created in the course of business by University of Kentucky employees. Copyright for all other materials has not been assigned to the University of Kentucky. For information about permission to reproduce or publish, please contact Special Collections.</p>\n</userestrict>\n<accessrestrict id=\"ref7\">\n<head>Conditions Governing Access note</head>\n<p>Collection is open to researchers by appointment.</p>\n</accessrestrict>\n<acqinfo id=\"ref12\">\n<head>Immediate Source of Acquisition note</head>\n<p></p>\n</acqinfo>\n<controlaccess></controlaccess>\n<dsc>\n<c01 id=\"ref3\" level=\"file\">\n<did>\n<unittitle></unittitle>\n</did>\n</c01>\n</dsc>\n</archdesc>\n</ead>\n");
 fclose($spokedbead); ?>
 
-<?php 
-$suppressed = metadata('item', array('Item Type Metadata', 'Collection Suppressed'));
-if ('true' === $suppressed): 
-echo ('hello'); ?>
-<?php endif; ?>
-
-                    </div>
-
-                   
+<div id="view10">
+<p><form action="https://oralhistory.uky.edu/ead/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml"><input type="submit" value="View &amp; Download XML"></form></p>
+</div>
 
 <?php endif; ?>
   
