@@ -535,13 +535,14 @@ if ('interviews' === $type): ?>
 $type = $item->getItemType()->name;
 if ('collections' === $type): ?>
 
-<?php if ($clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>'</subject><subject source="lcsh">'))): ?>
+
 
 <div id="view10">
 <p><form action="https://oralhistory.uky.edu/ead/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml"><input type="submit" value="View &amp; Download XML"></form></p>
 </div>
 
             <?php 
+$clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>'</subject><subject source="lcsh">')));
 $suppressed = metadata('item', array('Item Type Metadata', 'Collection Suppressed'));
 $identifier = metadata('item', array('Dublin Core', 'Identifier'));
 $title = metadata('item', array('Dublin Core', 'Title'));
@@ -553,7 +554,7 @@ echo fwrite($spokedbead,"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"y
 fclose($spokedbead); ?>
 
 <?php endif; ?>
-<?php endif; ?>
+
   
                     
             <div id="view8">
