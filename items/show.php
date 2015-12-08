@@ -542,7 +542,6 @@ if ('collections' === $type): ?>
 </div>
 
             <?php 
-$clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>'</subject><subject source="lcsh">'));
 $suppressed = metadata('item', array('Item Type Metadata', 'Collection Suppressed'));
 $identifier = metadata('item', array('Dublin Core', 'Identifier'));
 $title = metadata('item', array('Dublin Core', 'Title'));
