@@ -543,9 +543,6 @@ if ('collections' === $type): ?>
 
 <div id="item-relations-display-item-relations">
     <h2><?php echo __('Item Relations'); ?></h2>
-    <?php if (!$subjectRelations && !$objectRelations): ?>
-    <p><?php echo __('This item has no relations.'); ?></p>
-    <?php else: ?>
     <table>
         <?php foreach ($subjectRelations as $subjectRelation): ?>
         <tr>
@@ -562,7 +559,6 @@ if ('collections' === $type): ?>
         </tr>
         <?php endforeach; ?>
     </table>
-    <?php endif; ?>
 </div>
 
             <?php 
