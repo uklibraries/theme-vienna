@@ -541,6 +541,13 @@ if ('collections' === $type): ?>
 <p><form action="https://oralhistory.uky.edu/ead/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml"><input type="submit" value="View &amp; Download XML"></form></p>
 </div>
 
+        <?php foreach ($objectRelations as $objectRelation): ?>
+        <table><tr>
+            <td>Item: <?php echo $objectRelation['subject_item_title']; ?></td>
+            <td><?php echo __('This Item'); ?></td>
+        </tr></table>
+        <?php endforeach; ?>
+
             <?php 
 $clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>'</subject><subject source="lcsh">'));
 $suppressed = metadata('item', array('Item Type Metadata', 'Collection Suppressed'));
