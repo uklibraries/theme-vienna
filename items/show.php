@@ -671,7 +671,7 @@ if ('series' === $type): ?>
         <p>Is this item online?  <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?>" data-lity>https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?></a></p>
 <?php endif; ?>
 <p>Forms:</p>
-<p><a href="http://papervault.uky.edu/spokedb/fr.html" data-lity>Feature Request Form</a></p>
+<p><a href="http://papervault.uky.edu/spokedb/fr.html" target="_blank">Feature Request Form</a> (<a href="https://docs.google.com/document/d/1tmqALy9yZu9Doh8XtOIYknZoXxpLXUxNN7QjMRBdGLc/edit" target="_blank">view current requests</a>)</p>
 <br/>
 <p>Documents:</p>
 <p><a href="https://docs.google.com/spreadsheets/d/1-CkmS0a1s_ZUOFDzgRMeNRLwHZyikG712YRYFJAoLCo/edit#gid=0" data-lity>SPOKEdb Technical Metadata Specification</a><br/>
