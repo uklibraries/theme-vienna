@@ -670,13 +670,7 @@ if ('series' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Series ARK Identifier'))): ?>
         <p>Is this item online?  <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?>" data-lity>https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?></a></p>
 <?php endif; ?>
-<p>Forms:</p>
-<p><a href="http://papervault.uky.edu/spokedb/fr.html" target="_blank">Feature Request Form</a> (<a href="https://docs.google.com/document/d/1tmqALy9yZu9Doh8XtOIYknZoXxpLXUxNN7QjMRBdGLc/edit" target="_blank">view current requests</a>)</p>
-<br/>
-<p>Documents:</p>
-<p><a href="https://docs.google.com/spreadsheets/d/1-CkmS0a1s_ZUOFDzgRMeNRLwHZyikG712YRYFJAoLCo/edit#gid=0" data-lity>SPOKEdb Technical Metadata Specification</a><br/>
-<a href="https://docs.google.com/drawings/d/19b-NbVek41S-QEF7o0rEGfd0o-G2-h87g1I1uZfR9tg/edit" data-lity>SPOKEdb Bar Napkin</a><br/>
-SPOKEdb User Guide</p> 
+
 </div>
  </div> </div>
     <ul class="item-pagination navigation">
