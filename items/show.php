@@ -660,9 +660,9 @@ if ('series' === $type): ?>
 
 
 
-<p><a href="https://oralhistory.uky.edu/spokedb/admin/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=43&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&range=&collection=&type=&tags=&featured=&submit_search=Search" data-lity>Edit this record.</a> (<span style="color: red;">authentication required</span>)</p>
+<p><a href="https://oralhistory.uky.edu/spokedb/admin/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=43&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=<?php echo metadata('item', array ('Dublin Core', 'Identifier')); ?>&range=&collection=&type=&tags=&featured=&submit_search=Search" data-lity><img src="https://oralhistory.uky.edu/edit_btn.png" /></a> (<span style="color: red;">authentication required</span>)</p>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview ARK Identifier'))): ?>
-        <p>Is this item online? <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?>" data-lity>https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?></a></p>
+        <p>Is this item online? <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Interview ARK Identifier')); ?>" data-lity><img src="https://oralhistory.uky.edu/online_btn.png" /></a></p>
 <?php endif; ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Collection ARK Identifier'))): ?>
         <p>Is this item online? <a href="https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Collection ARK Identifier')); ?>" data-lity>https://oralhistory.uky.edu/catalog/<?php echo metadata('item', array('Item Type Metadata', 'Collection ARK Identifier')); ?></a></p>
