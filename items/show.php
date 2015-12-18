@@ -539,7 +539,7 @@ if ('collections' === $type): ?>
 
 
 <div id="view10">
-<p><form action="https://oralhistory.uky.edu/ead/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml"><input type="submit" value="View &amp; Download XML"></form></p>
+<p><a href="https://oralhistory.uky.edu/ead/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml" target="_blank"><img src="https://oralhistory.uky.edu/ead_btn.png" /></a></p>
 </div>
 
             <?php 
