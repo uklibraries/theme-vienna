@@ -49,7 +49,7 @@ if ('collections' === $type): ?>
             <li><a href="#view3">Rights &amp; Usage</a></li>
             <li><a href="#view7">Links</a></li>
             <li><a href="#view8">Workflow</a></li>
-            <li><a href="#view10">EAD</a></li>
+            <li><a href="#view10">EAD/MARC</a></li>
             <li><a href="#view9" style="color:red">Admin</a></li>
         </ul>
 <?php endif; ?>
@@ -62,7 +62,7 @@ if ('series' === $type): ?>
             <li><a href="#view3">Rights &amp; Usage</a></li>
             <li><a href="#view7">Links</a></li>
             <li><a href="#view8">Workflow</a></li>
-            <li><a href="#view10">EAD</a></li>
+            <li><a href="#view10">EAD/MARC</a></li>
             <li><a href="#view9" style="color:red">Admin</a></li>
         </ul>
 <?php endif; ?>
@@ -531,7 +531,7 @@ if ('interviews' === $type): ?>
 
 <?php endif; ?>
             </div>
-            <!-- Collections EAD Tab -->
+            <!-- Collections EAD/MARC Tab -->
             <?php 
 $type = $item->getItemType()->name;
 if ('collections' === $type): ?>
@@ -545,6 +545,7 @@ if ('collections' === $type): ?>
             <?php 
 $clcsubject = metadata('item', array('Item Type Metadata', 'Collection LC Subject'), array('delimiter'=>'</subject><subject source="lcsh">'));
 $suppressed = metadata('item', array('Item Type Metadata', 'Collection Suppressed'));
+$ark = metadata('item', array('Item Type Metadata', 'Collection ARK Identifier'));
 $identifier = metadata('item', array('Dublin Core', 'Identifier'));
 $title = metadata('item', array('Dublin Core', 'Title'));
 $creationdate = date('Y-m-d');
@@ -556,7 +557,7 @@ fclose($spokedbead); ?>
 
 <?php endif; ?>
 
-            <!-- Series EAD Tab -->
+            <!-- Series EAD/MARC Tab -->
             <?php 
 $type = $item->getItemType()->name;
 if ('series' === $type): ?>
