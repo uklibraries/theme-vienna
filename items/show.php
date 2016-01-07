@@ -3,12 +3,12 @@
 <script src="https://oralhistory.uky.edu/lity/lity.js"></script>
 <table><tr><td>
 <?php if(metadata('item', array('Dublin Core', 'Format'))): ?>
-        <div class="element-text"><img src="https://kdnp.uky.edu/spokedb/tab_<?php echo metadata ('item', array('Dublin Core', 'Format')); ?>.png"/><br/><br/></div>
+        <div class="element-text"><img src="https://oralhistory.uky.edu/tab_<?php echo metadata ('item', array('Dublin Core', 'Format')); ?>.png"/><br/><br/></div>
 <?php endif; ?>
 </td>
 <td>
 <?php if(metadata('item','Collection Name')): ?>
-<div class="element-text"><img src="https://kdnp.uky.edu/spokedb/<?php echo metadata('item','Collection Name'); ?>.png"/><br/><br/></div>
+<div class="element-text"><img src="https://oralhistory.uky.edu/<?php echo metadata('item','Collection Name'); ?>.png"/><br/><br/></div>
 <?php endif; ?>
 </td>
 <td><?php echo metadata('item', array('Dublin Core','Identifier')); ?><br/>
@@ -24,7 +24,7 @@
         <ul class="item-pagination navigation">
 
         <li id="next-item" class="next"><?php if(metadata('item', array('Dublin Core', 'Type'))): ?>
-        <img src="https://kdnp.uky.edu/spokedb/<?php echo metadata ('item', array('Dublin Core', 'Type')); ?>.png"/>
+        <img src="https://oralhistory.uky.edu/<?php echo metadata ('item', array('Dublin Core', 'Type')); ?>.png"/>
 <?php endif; ?></li>
     </ul>
     
