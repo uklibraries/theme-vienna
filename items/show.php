@@ -457,12 +457,16 @@ if ('interviews' === $type): ?>
 <table style="width: 100%;"><tr><td style="width:100px;text-align:left;"><h4>Interview Technical Overview:</h4></td></tr><tr></tr><td style="width:300px;text-align:left;">
 <div class="item-description-static">
 <div id="test">
+if (strpos($intech, '{') !== false) {
 <script type="text/javascript" src="https://oralhistory.uky.edu/renderjson.js"></script>
 <script>
     document.getElementById("test").appendChild(
         renderjson(<?php echo $intech; ?>)
     );
-</script>      
+</script>;
+} else {
+<pre><?php echo $intech; ?></pre>
+}
 </td></tr></table>
 </div>
 <?php endif; ?>
