@@ -463,11 +463,10 @@ if ('interviews' === $type): ?>
     document.getElementById("test").appendChild(
         renderjson(<?php echo $intech; ?>)
     );
-</script>;
+</script>
 <?php endif; ?>
 <?php if (strpos($intech, '{') === false): ?>
 <pre><?php echo $intech; ?></pre>
-};?>
 <?php endif; ?>
 </td></tr></table>
 </div>
