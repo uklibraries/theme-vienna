@@ -199,9 +199,9 @@ if ('interviews' === $type): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Link to Interview Media File: </h4></td><td style="width:300px;text-align:left;"><a href="http://athena.uky.edu/audio/oralhist/<?php echo metadata('item', array('Item Type Metadata', 'Interview Media Identifier')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Interview Media Identifier')); ?></a></a></td></tr></table></div>
 <?php endif; ?>
 <?php if ($inlink = metadata('item', array('Item Type Metadata', 'Interview Linked Resource'), array('delimiter'=>', '))): ?>
-<?php foreach ($inlink as $linkval) 
-  $parts = explode("|", $linkval);
-  echo $parts[0];
+<?php foreach ($inlink as $linkval) {
+  echo $linkval;
+}
 <?php endforeach; ?>
 <?php endif; ?>
 
