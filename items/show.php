@@ -111,7 +111,9 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Collection Legacy Identifier'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Legacy Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Legacy Identifier')); ?></td></tr></table></div>
 <?php endif; ?>
-
+<?php if(metadata('item', array('Item Type Metadata', 'Collection Linked Resource'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Linked Resource: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Linked Resource')); ?></td></tr></table></div>
+<?php endif; ?>
 
 
 
@@ -130,7 +132,9 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Series ARK Identifier'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series ARK Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?></td></tr></table></div>
 <?php endif; ?>
-
+<?php if(metadata('item', array('Item Type Metadata', 'Series Linked Resource'))): ?>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Linked Resource: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Linked Resource')); ?></td></tr></table></div>
+<?php endif; ?>
 
 
 <!-- Interviews General Tab -->
@@ -196,7 +200,7 @@ if ('interviews' === $type): ?>
 <?php endif; ?>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Linked Resource'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Link to Interview Linked Resource: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Linked Resource')); ?></td></tr></table></div>
+        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Linked Resource: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Interview Linked Resource')); ?></td></tr></table></div>
 <?php endif; ?>
 
 <?php if(metadata('item', array('Item Type Metadata', 'Online Access'))): ?>
@@ -212,9 +216,6 @@ if ('interviews' === $type): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Summary: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Summary')); ?></td></tr></table></div>
 <?php endif; ?>
 
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Linked Resource'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Linked Resource: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Linked Resource')); ?></td></tr></table></div>
-<?php endif; ?>
 
 <?php if ($ckeyword = metadata('item', array('Item Type Metadata', 'Collection Keyword'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
@@ -237,9 +238,7 @@ if ('interviews' === $type): ?>
 
 <!-- Series Description Tab -->
 
-<?php if(metadata('item', array('Item Type Metadata', 'Series Linked Resource'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Linked Resource: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Linked Resource')); ?></td></tr></table></div>
-<?php endif; ?>
+
 <?php if ($skeyword = metadata('item', array('Item Type Metadata', 'Series Keyword'), array('delimiter'=>', '))): ?>
 <div class="item-description-static">
 <table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Keyword:</h4></td><td style="width:300px;text-align:left;">
