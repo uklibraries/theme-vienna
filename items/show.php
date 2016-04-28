@@ -201,7 +201,7 @@ if ('interviews' === $type): ?>
 <?php if ($inlink = metadata('item', array('Item Type Metadata', 'Interview Linked Resource'), array('delimiter'=>', '))): ?>
 <?php foreach ($inlink as $linkval){
   $parts = explode("|", $linkval);
-  echo '</div>';
+  <?php echo $parts[0]; ?>;
 }
 <?php endforeach; ?>
 <?php endif; ?>
