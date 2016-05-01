@@ -200,12 +200,10 @@ if ('interviews' === $type): ?>
 <?php endif; ?>
 <?php if (metadata('item', array('Item Type Metadata', 'Interview Linked Resource'))): ?>
 <?php $urllink = metadata('item', array('Item Type Metadata', 'Interview Linked Resource'));
-foreach($urllink as $value) {
 $parts = explode("|", $urllink);
-foreach($parts as $value2) {
-$value2 = $parts[0] . $parts[1];
+foreach($parts as $value) {
+$value = $parts[0] . $parts[1];
 echo $value;
-}
 }
 ?>
 <?php endif; ?>
