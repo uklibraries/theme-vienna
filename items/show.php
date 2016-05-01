@@ -200,7 +200,7 @@ if ('interviews' === $type): ?>
 <?php endif; ?>
 <?php if ($inlink = metadata('item', array('Item Type Metadata', 'Interview Linked Resource'), array('delimiter'=>', '))): ?>
 <?php 
-foreach ($inlink as $linkval){
+foreach ($inlink as $linkval)
 $parts = explode("|", $linkval); ?>
 <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Linked Resource: </h4></td><td style="width:300px;text-align:left;">
 </a></td></tr></table></div>
