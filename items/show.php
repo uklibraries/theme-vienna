@@ -198,14 +198,12 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Media Identifier'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Link to Interview Media File: </h4></td><td style="width:300px;text-align:left;"><a href="http://athena.uky.edu/audio/oralhist/<?php echo metadata('item', array('Item Type Metadata', 'Interview Media Identifier')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Interview Media Identifier')); ?></a></a></td></tr></table></div>
 <?php endif; ?>
-<?php if ($inlink = metadata('item', array('Item Type Metadata', 'Interview Linked Resource'), array('delimiter'=>', '))): ?>
-<?php $urllink = metadata('item', array('Item Type Metadata', 'Interview Linked Resource');
-$parts = explode("|", $urllink);
-foreach($parts as $value) {
-$value = <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Linked Resource: </h4></td><td style="width:300px;text-align:left;">
-echo $value;
-}
-?>
+<?php if ($inlink = metadata('item', array('Item Type Metadata', 'Interview Linked Resource'), array('all'=>'true'))): ?>
+<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Linked Resource: </h4></td>
+<?php foreach($parts as $value) {?>
+<td style="width:300px;text-align:left;">
+<?php echo $parts[0]; ?>: <a href="<?php echo $parts[1]; ?>"><?php echo $parts[1]; ?></a></td></tr></table></div>
+<?php }?>
 <?php endif; ?>
 
 
