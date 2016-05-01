@@ -202,7 +202,8 @@ if ('interviews' === $type): ?>
 <?php $urllink = metadata('item', array('Item Type Metadata', 'Interview Linked Resource');
 $parts = explode("|", $urllink);
 foreach($parts as &$value) {
-$value='<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Linked Resource: </h4></td><td style="width:300px;text-align:left;">$parts[0] <a href="$parts[1]">$parts[1]</a></td></tr></table></div>';
+$value='<p>$parts[0] $parts[1]</p>';
+echo $value;
 }
 ?>
 <?php endif; ?>
