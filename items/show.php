@@ -198,15 +198,12 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Interview Media Identifier'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Link to Interview Media File: </h4></td><td style="width:300px;text-align:left;"><a href="http://athena.uky.edu/audio/oralhist/<?php echo metadata('item', array('Item Type Metadata', 'Interview Media Identifier')); ?>"><?php echo metadata('item', array('Item Type Metadata', 'Interview Media Identifier')); ?></a></a></td></tr></table></div>
 <?php endif; ?>
-<?php if ($inlink = metadata('item', array('Item Type Metadata', 'Interview Linked Resource'), array('all'=>'true'))): ?>
+<?php if ($inlink = metadata('item', array('Item Type Metadata', 'Interview Linked Resource'), array('delimiter'=>', '))): ?>
 <?php $urllink = metadata('item', array('Item Type Metadata', 'Interview Linked Resource');
-foreach($urllink as &$value) {
 $parts = explode("|", $urllink);
-foreach($parts as &$value2) {
-$value2 = $parts[0] . $parts[1];
-$value = $urllink;
+foreach($parts as &$value) {
+$value = $parts[0] . $parts[1];
 echo $value;
-}
 }
 ?>
 <?php endif; ?>
