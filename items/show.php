@@ -203,7 +203,7 @@ if ('interviews' === $type): ?>
 foreach ($inlink as $linkval){
 $parts = explode("|", $linkval); ?>
 <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Linked Resource: </h4></td><td style="width:300px;text-align:left;">
-<?php echo $parts[0]; ?>: <a href="<?php echo $parts[1]; ?>"><?php echo $parts[1]; ?></a></td></tr></table></div>
+</a></td></tr></table></div>
 <?php endforeach; ?>
 <?php endif; ?>
 
