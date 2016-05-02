@@ -205,7 +205,7 @@ echo $head;
 <?php $resources = metadata('item', array('Item Type Metadata', 'Interview Linked Resource'), array('all'=>true));
 foreach ($resources as $resource) {
 $parts = explode("|", $resource);
-$htmlchnk1 = '<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"></td><td style="width:300px;text-align:left;">(';
+$htmlchnk1 = '<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:250px;text-align:left;"></td><td style="width:740px;text-align:left;">(';
 $htmlchnk2 = ')&nbsp;<a href="';
 $htmlchnk3 = '">';
 $htmlchnk4 = '</a></td></tr></table></div>';
