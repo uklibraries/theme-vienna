@@ -204,8 +204,8 @@ foreach ($urllink as $value1) {
 $parts = explode("|", $value1);
 foreach($parts as $value2) {
 $value2 = $parts[0] . $parts[1];
-echo $value2;
 }
+echo $value2;
 }
 ?>
 <?php endif; ?>
