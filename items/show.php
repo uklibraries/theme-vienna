@@ -207,7 +207,7 @@ foreach ($resources as $resource) {
 $parts = explode("|", $resource);
 $htmlchnk1 = '<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:250px;text-align:left;"></td><td style="width:740px;text-align:left;">(';
 $htmlchnk2 = ')&nbsp;<a href="';
-$htmlchnk3 = '">';
+$htmlchnk3 = '" target="_blank">';
 $htmlchnk4 = '</a></td></tr></table></div>';
 $link = $htmlchnk1 . $parts[0] . $htmlchnk2 . $parts[1] . $htmlchnk3 . $parts[1] . $htmlchnk4;
 echo $link;
