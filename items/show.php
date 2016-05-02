@@ -209,7 +209,7 @@ $htmlchnk1 = '<td style="width:300px;text-align:left;">';
 $htmlchnk2 = '<a href="';
 $htmlchnk3 = '">';
 $htmlchnk4 = '</a></td></tr></table></div>';
-$link = $htmlchnk1 . $htmlchnk2 . $parts[0] . $htmlchnk3 . $parts[1] . $htmlchnk4;
+$link = $htmlchnk1 . $parts[0] . $htmlchnk2 . $parts[1] . $htmlchnk3 . $parts[1] . $htmlchnk4;
 echo $link;
 }
 ?>
