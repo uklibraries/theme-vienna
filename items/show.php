@@ -201,8 +201,7 @@ if ('interviews' === $type): ?>
 <?php if (metadata('item', array('Item Type Metadata', 'Interview Linked Resource'))): ?>
 <?php $urllink = metadata('item', array('Item Type Metadata', 'Interview Linked Resource'), array('all'=>true));
 foreach ($urllink as $value1) {
-$value1 = $urls;
-$parts = explode("|", $urls);
+$parts = explode("|", $value1);
 foreach($parts as $value2) {
 $value2 = $parts[0] . $parts[1];
 echo $value2;
@@ -210,6 +209,7 @@ echo $value2;
 }
 ?>
 <?php endif; ?>
+
 
 
 <?php if(metadata('item', array('Item Type Metadata', 'Online Access'))): ?>
