@@ -202,8 +202,11 @@ if ('interviews' === $type): ?>
 <?php $resources = metadata('item', array('Item Type Metadata', 'Interview Linked Resource'), array('all'=>true));
 foreach ($resources as $resource) {
 $parts = explode("|", $resource);
-$htmlchk1 = '<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Linked Resource: </h4></td><td style="width:300px;text-align:left;">';
-$link = $htmlchk1 . $parts[0] . $parts[1];
+$htmlchnk1 = '<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Interview Linked Resource: </h4></td><td style="width:300px;text-align:left;">';
+$htmlchnk2 = '<a href="';
+$htmlchnk3 = '">';
+$htmlchnk4 = '</a></td></tr></table></div>';
+$link = $htmlchnk1 . $htmlchnk2 . $parts[0] . $htmlchnk3 . $parts[1] . $htmlchnk4;
 echo $link;
 }
 ?>
