@@ -111,6 +111,10 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Collection Legacy Identifier'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Legacy Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Legacy Identifier')); ?></td></tr></table></div>
 <?php endif; ?>
+<?php if (metadata('item', array('Item Type Metadata', 'Collection Linked Resource'))): ?>
+<?php $head = '<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Linked Resource(s): </h4></td></tr></table></div>';
+echo $head;
+?>
 <?php $resources = metadata('item', array('Item Type Metadata', 'Collection Linked Resource'), array('all'=>true));
 foreach ($resources as $resource) {
 $parts = explode("|", $resource);
@@ -141,6 +145,10 @@ echo $link;
 <?php if(metadata('item', array('Item Type Metadata', 'Series ARK Identifier'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series ARK Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?></td></tr></table></div>
 <?php endif; ?>
+<?php if (metadata('item', array('Item Type Metadata', 'Series Linked Resource'))): ?>
+<?php $head = '<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Linked Resource(s): </h4></td></tr></table></div>';
+echo $head;
+?>
 <?php $resources = metadata('item', array('Item Type Metadata', 'Series Linked Resource'), array('all'=>true));
 foreach ($resources as $resource) {
 $parts = explode("|", $resource);
