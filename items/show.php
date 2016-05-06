@@ -111,8 +111,17 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Collection Legacy Identifier'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Legacy Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Legacy Identifier')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Collection Linked Resource'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Collection Linked Resource: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Collection Linked Resource')); ?></td></tr></table></div>
+<?php $resources = metadata('item', array('Item Type Metadata', 'Collection Linked Resource'), array('all'=>true));
+foreach ($resources as $resource) {
+$parts = explode("|", $resource);
+$htmlchnk1 = '<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:250px;text-align:left;"></td><td style="width:740px;text-align:left;">(';
+$htmlchnk2 = ')&nbsp;<a href="';
+$htmlchnk3 = '" target="_blank">';
+$htmlchnk4 = '</a></td></tr></table></div>';
+$link = $htmlchnk1 . $parts[0] . $htmlchnk2 . $parts[1] . $htmlchnk3 . $parts[1] . $htmlchnk4;
+echo $link;
+}
+?>
 <?php endif; ?>
 
 
@@ -132,8 +141,17 @@ if ('interviews' === $type): ?>
 <?php if(metadata('item', array('Item Type Metadata', 'Series ARK Identifier'))): ?>
         <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series ARK Identifier: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series ARK Identifier')); ?></td></tr></table></div>
 <?php endif; ?>
-<?php if(metadata('item', array('Item Type Metadata', 'Series Linked Resource'))): ?>
-        <div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:100px;text-align:left;"><h4>Series Linked Resource: </h4></td><td style="width:300px;text-align:left;"><?php echo metadata('item', array('Item Type Metadata', 'Series Linked Resource')); ?></td></tr></table></div>
+<?php $resources = metadata('item', array('Item Type Metadata', 'Series Linked Resource'), array('all'=>true));
+foreach ($resources as $resource) {
+$parts = explode("|", $resource);
+$htmlchnk1 = '<div class="item-description-static"><table style="width:100%;text-align:left;"><tr><td style="width:250px;text-align:left;"></td><td style="width:740px;text-align:left;">(';
+$htmlchnk2 = ')&nbsp;<a href="';
+$htmlchnk3 = '" target="_blank">';
+$htmlchnk4 = '</a></td></tr></table></div>';
+$link = $htmlchnk1 . $parts[0] . $htmlchnk2 . $parts[1] . $htmlchnk3 . $parts[1] . $htmlchnk4;
+echo $link;
+}
+?>
 <?php endif; ?>
 
 
