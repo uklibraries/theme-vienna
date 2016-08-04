@@ -611,7 +611,7 @@ if ('series' === $type): ?>
             <?php 
 $clcsubject = metadata('item', array('Item Type Metadata', 'Series LC Subject'), array('delimiter'=>'</subject><subject source="lcsh">'));
 $suppressed = metadata('item', array('Item Type Metadata', 'Series Suppressed'));
-$ark = metadata('item', array('Item Type Metadata', 'Collection ARK Identifier'));
+$ark = metadata('item', array('Item Type Metadata', 'Series ARK Identifier'));
 $identifier = metadata('item', array('Dublin Core', 'Identifier'));
 $title = metadata('item', array('Dublin Core', 'Title'));
 $creationdate = date('Y-m-d');
