@@ -576,7 +576,6 @@ if ('collections' === $type): ?>
 
 
 <div id="view10">
-<p><a href="https://oralhistory.uky.edu/ead/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml" target="_blank"><img src="https://oralhistory.uky.edu/ead_btn.png" /></a></p>
 <p><a href="https://oralhistory.uky.edu/marc/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml" target="_blank"><img src="https://oralhistory.uky.edu/marc_btn.png" /></a></p>
 </div>
 
@@ -602,7 +601,6 @@ $type = $item->getItemType()->name;
 if ('series' === $type): ?>
 
 <div id="view10">
-<p><a href="https://oralhistory.uky.edu/ead/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml" target="_blank"><img src="https://oralhistory.uky.edu/ead_btn.png" /></a></p>
 <p><a href="https://oralhistory.uky.edu/marc/<?php echo metadata('item', array('Dublin Core', 'Identifier')); ?>.xml" target="_blank"><img src="https://oralhistory.uky.edu/marc_btn.png" /></a></p>
 </div>
 
